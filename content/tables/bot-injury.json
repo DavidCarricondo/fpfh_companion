@@ -1,0 +1,37 @@
+{
+  "id": "bot-injury",
+  "name": "Bot Injury Table",
+  "page": 122,
+  "dice": "D100",
+  "group": "post-battle",
+  "verified": true,
+  "fieldDefs": [{ "id": "repairTime", "label": "Repair time (campaign turns)" }],
+  "notes": "Used by Bot and Soulless characters instead of the Injury Table. Damaged equipment cannot be used until it has been Repaired (p.78).",
+  "rows": [
+    {
+      "range": [1, 5],
+      "result": "Obliterated",
+      "detail": "Destroyed, and all carried equipment is damaged."
+    },
+    { "range": [6, 15], "result": "Destroyed", "detail": "Destroyed" },
+    {
+      "range": [16, 30],
+      "result": "Equipment loss",
+      "detail": "Random carried item is damaged",
+      "fields": { "repairTime": 0 }
+    },
+    {
+      "range": [31, 45],
+      "result": "Severe damage",
+      "detail": "No long-term effect",
+      "fields": { "repairTime": "1D6" }
+    },
+    {
+      "range": [46, 65],
+      "result": "Minor damage",
+      "detail": "No long-term effect",
+      "fields": { "repairTime": 1 }
+    },
+    { "range": [66, 100], "result": "Just a few dents", "detail": "No long-term effect" }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "strange-character",
+  "name": "Strange Character Table",
+  "aliases": ["Strange Character"],
+  "page": 14,
+  "dice": "D100",
+  "group": "creation",
+  "verified": true,
+  "notes": "Roll once on each of the Background, Motivation, and Class Tables, unless the entry predetermines one of them (then do not roll on that table).",
+  "fieldDefs": [
+    { "id": "reactions", "label": "Reactions" },
+    { "id": "speed", "label": "Speed" },
+    { "id": "combat", "label": "Combat Skill" },
+    { "id": "toughness", "label": "Toughness" },
+    { "id": "savvy", "label": "Savvy" }
+  ],
+  "rows": [
+    {
+      "range": [1, 2],
+      "result": "De-converted",
+      "page": 19,
+      "detail": "6+ Armor Saving Throw due to built-in plating. Can be fitted with up to 3 implants. Savvy can never be improved. Motivation is always Revenge.",
+      "fields": { "reactions": 1, "speed": "4\"", "combat": "+0", "toughness": 3, "savvy": "+0 (forever)" }
+    },
+    {
+      "range": [3, 8],
+      "result": "Unity Agent",
+      "page": 20,
+      "detail": "Call in a Favor: each campaign turn, may roll 2D6. On a 10-12, either remove a Rival, gain a Quest Rumor, or gain a Patron. On a 2-4, you must travel to the next planet immediately; if unable to do so, lose this trait permanently. Motivation is always Order.",
+      "fields": { "reactions": 2, "speed": "4\"", "combat": "+0", "toughness": 3, "savvy": "+0" }
+    },
+    {
+      "range": [9, 17],
+      "result": "Mysterious Past",
+      "page": 20,
+      "detail": "Create as a Baseline Human, but roll twice on the Background Table and apply both results. Any bonus story points from the Background, Motivation, or Class Tables are ignored for this character."
+    },
+    {
+      "range": [18, 22],
+      "result": "Hakshan",
+      "page": 20,
+      "detail": "In addition to the usual rolls on the Background, Motivation, and Class Tables, automatically has the Truth motivation.",
+      "fields": { "reactions": 1, "speed": "4\"", "combat": "+0", "toughness": 3, "savvy": "+0" }
+    },
+    {
+      "range": [23, 27],
+      "result": "Stalker",
+      "page": 20,
+      "detail": "Alternative Movement: may teleport. Roll 1D6\" and reposition the character anywhere within this distance; they can take their action normally. Can be improved with XP twice (4 XP each, +1\" each time).",
+      "fields": { "reactions": 1, "speed": "4\"", "combat": "+0", "toughness": 3, "savvy": "+0" }
+    },
+    {
+      "range": [28, 34],
+      "result": "Hulker",
+      "page": 21,
+      "detail": "When shooting, Combat Skill is always treated as +0, with no bonuses from weapons, gun sights, or gun mods. Ignores the Clumsy and Heavy traits on weapons. On the Class Table, any result of Technician, Scientist, or Hacker is treated as Primitive.",
+      "fields": { "reactions": 1, "speed": "4\"", "combat": "+1", "toughness": 5, "savvy": "+0" }
+    },
+    {
+      "range": [35, 41],
+      "result": "Hopeful Rookie",
+      "page": 21,
+      "detail": "Baseline Human. Begins with 1 Luck and gains 1 bonus XP every game where they do not become a casualty. The first time they become a casualty (without any more Luck to save them) they lose all Luck permanently, can never receive it again, and no longer receive the bonus XP."
+    },
+    {
+      "range": [42, 47],
+      "result": "Genetic Uplift",
+      "page": 21,
+      "detail": "All Background rolls that would result in additional credits are ignored. The crew receives 1 additional Rival (see p.77).",
+      "fields": { "reactions": 2, "speed": "5\"", "combat": "+1", "toughness": 4, "savvy": "+1" }
+    },
+    {
+      "range": [48, 53],
+      "result": "Mutant",
+      "page": 21,
+      "detail": "As Baseline Human. Cannot be sent to perform Recruit or Find a Patron tasks. Background is always Lower classes of megacity."
+    },
+    {
+      "range": [54, 58],
+      "result": "Assault Bot",
+      "page": 21,
+      "detail": "As a Bot, but Savvy is +0 and cannot be upgraded. Ignores the Clumsy and Heavy traits on weapons. 5+ Armor Saving Throw. No background, motivation, or class.",
+      "fields": { "reactions": 2, "speed": "4\"", "combat": "+1", "toughness": 4, "savvy": "+0" }
+    },
+    {
+      "range": [59, 62],
+      "result": "Manipulator",
+      "page": 22,
+      "detail": "Cannot enter a Brawl voluntarily under any circumstances. May use tentacles to fire 2 Pistols in the same round, at separate targets if desired. Whenever the crew earns story points, roll 1D6 per Manipulator: each 6 grants a bonus story point (which does not grant another roll). Background is always Bureaucrat.",
+      "fields": { "reactions": 2, "speed": "4\"", "combat": "+0", "toughness": 3, "savvy": "+1" }
+    },
+    {
+      "range": [63, 67],
+      "result": "Primitive",
+      "page": 22,
+      "detail": "As Baseline Human. Cannot benefit from gun sights or fire above 8\" range. All Melee weapons count as Elegant. Background is always Primitive or Regressed World."
+    },
+    {
+      "range": [68, 73],
+      "result": "Feeler",
+      "page": 22,
+      "detail": "As Baseline Human. Roll twice on the Motivation Table and receive the benefits of both rolls. If the character ever ends up in a fight with another crew member, they have a mental breakdown and leave the crew immediately, never to return."
+    },
+    {
+      "range": [74, 79],
+      "result": "Emo-suppressed",
+      "page": 22,
+      "detail": "As Baseline Human. Will never voluntarily leave the crew for any reason, and may ignore any event that would require them to get in a fight with a local or other crew member. Can never receive any Luck points. Motivation is always Survival."
+    },
+    {
+      "range": [80, 85],
+      "result": "Minor Alien",
+      "page": 22,
+      "detail": "As Baseline Human. If the Background, Motivation, or Class Table results would grant bonus credits or bonus story points, reduce the final increase by 1. Roll 1D6: an increase to the indicated ability score has its XP cost reduced by 1 (1 Reactions, 2-3 Speed, 4 Combat, 5 Toughness, 6 Savvy)."
+    },
+    {
+      "range": [86, 87],
+      "result": "Traveler",
+      "page": 23,
+      "detail": "Begin with +2 story points and 2 Quest Rumors. Speed is +2\" if moving directly away from a visible enemy. After every battle, roll 2D6: on a 2, they disappear forever (claim 2 story points); on an 11-12, the crew immediately receives a Quest. Motivation is always Truth.",
+      "fields": { "reactions": 3, "speed": "4\"", "combat": "+0", "toughness": 4, "savvy": "+2" }
+    },
+    {
+      "range": [88, 93],
+      "result": "Empath",
+      "page": 23,
+      "detail": "As Baseline Human. When sent on Recruit or Find a Patron tasks, add +1 to the roll. Cannot be given implants without losing this ability."
+    },
+    {
+      "range": [94, 100],
+      "result": "Bio-upgrade",
+      "page": 23,
+      "detail": "As Baseline Human. May have up to 4 implants, and could benefit from 2 of the same implant. If Background, Motivation, or Class rolls produce bonus credits, receive 2 credits less."
+    }
+  ]
+}

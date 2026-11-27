@@ -1,0 +1,61 @@
+{
+  "id": "primary-alien",
+  "name": "Primary Alien Table",
+  "aliases": ["Primary Alien"],
+  "page": 14,
+  "dice": "D100",
+  "group": "creation",
+  "verified": true,
+  "notes": "Roll once on each of the Background, Motivation, and Class Tables (pp.24-27). Rules listed here apply only to the player's crew.",
+  "fieldDefs": [
+    { "id": "reactions", "label": "Reactions" },
+    { "id": "speed", "label": "Speed" },
+    { "id": "combat", "label": "Combat Skill" },
+    { "id": "toughness", "label": "Toughness" },
+    { "id": "savvy", "label": "Savvy" }
+  ],
+  "rows": [
+    {
+      "range": [1, 20],
+      "result": "Engineer",
+      "page": 16,
+      "detail": "If rolling to repair a damaged item, may add +1 to the roll. Cannot ever have a Toughness score exceeding 4, even with equipment bonuses.",
+      "fields": { "reactions": 1, "speed": "4\"", "combat": "+0", "toughness": 2, "savvy": "+1" }
+    },
+    {
+      "range": [21, 40],
+      "result": "K'Erin",
+      "page": 16,
+      "detail": "When Brawling, may roll twice, picking the better of the dice. If they begin their round within base movement speed of an enemy, they MUST move to engage them in Brawling combat.",
+      "fields": { "reactions": 1, "speed": "4\"", "combat": "+0", "toughness": 4, "savvy": "+0" }
+    },
+    {
+      "range": [41, 55],
+      "result": "Soulless",
+      "page": 17,
+      "detail": "6+ Armor Saving Throw. Cannot use consumables or receive implants. Use the Bot Injury table. Receive XP normally. May have Bot Upgrades installed at 1.5 times the normal cost (rounded up).",
+      "fields": { "reactions": 1, "speed": "4\"", "combat": "+0", "toughness": 4, "savvy": "+1" }
+    },
+    {
+      "range": [56, 70],
+      "result": "Precursor",
+      "page": 17,
+      "detail": "If the subject of a Character Event, may roll for 2 events and pick which one they prefer; may avoid the event altogether by spending 1 story point after rolling twice.",
+      "fields": { "reactions": 1, "speed": "5\"", "combat": "+0", "toughness": 2, "savvy": "+0" }
+    },
+    {
+      "range": [71, 90],
+      "result": "Feral",
+      "page": 18,
+      "detail": "If a Feral takes part in a battle, all enemy-imposed penalties to Seize the Initiative rolls are ignored. When making a Reaction Roll, if the dice only score a single 1, it must be given to a Feral crew member, if possible.",
+      "fields": { "reactions": 1, "speed": "4\"", "combat": "+0", "toughness": 3, "savvy": "+0" }
+    },
+    {
+      "range": [91, 100],
+      "result": "Swift",
+      "page": 18,
+      "detail": "May use their Movement Action to glide down to a lower position (see p.42). Can leap gaps up to 4\" wide and, as a free action, jump from any height without damage. When firing a weapon with multiple shots, must direct every shot at the same target.",
+      "fields": { "reactions": 1, "speed": "5\"", "combat": "+0", "toughness": 3, "savvy": "+0" }
+    }
+  ]
+}

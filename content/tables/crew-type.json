@@ -1,0 +1,45 @@
+{
+  "id": "crew-type",
+  "name": "Crew Type Table",
+  "aliases": ["Crew Type"],
+  "page": 14,
+  "dice": "D100",
+  "group": "creation",
+  "verified": true,
+  "notes": "Step 1: If using the random method, roll for the basic crew type first. If you roll Primary Alien or Strange Character, proceed to the relevant subtable, and roll for the exact type. Step 2: Note down the basic character profile and any special rules. If the character is a Bot, you are now done; go to Step 4. Step 3: If the character is a Baseline Human or Primary Alien, roll once on each of the Background, Motivation, and Class Tables (pp.24-27). Strange Characters: consult the specific entry to see if any of the three rolls are modified. Step 4: Name the character and select a miniature.",
+  "fieldDefs": [
+    { "id": "reactions", "label": "Reactions" },
+    { "id": "speed", "label": "Speed" },
+    { "id": "combat", "label": "Combat Skill" },
+    { "id": "toughness", "label": "Toughness" },
+    { "id": "savvy", "label": "Savvy" }
+  ],
+  "rows": [
+    {
+      "range": [1, 60],
+      "result": "Baseline Human",
+      "page": 15,
+      "detail": "They are the only character type that can exceed 1 point of Luck. Roll once on each of the Background, Motivation, and Class Tables.",
+      "fields": { "reactions": 1, "speed": "4\"", "combat": "+0", "toughness": 3, "savvy": "+0" }
+    },
+    {
+      "range": [61, 80],
+      "result": "Primary Alien",
+      "page": 15,
+      "next": [{ "tableId": "primary-alien", "label": "Roll Primary Alien" }]
+    },
+    {
+      "range": [81, 90],
+      "result": "Bot",
+      "page": 15,
+      "detail": "Bots do not make any rolls on the character creation tables. They use the Bot Injury Table, receive a 6+ Armor Saving Throw, do not earn XP (upgraded with credits instead), cannot benefit from implants or consumables in battle, and cannot be the subject of a Character Event.",
+      "fields": { "reactions": 2, "speed": "4\"", "combat": "+1", "toughness": 4, "savvy": "+2" }
+    },
+    {
+      "range": [91, 100],
+      "result": "Strange Character",
+      "page": 19,
+      "next": [{ "tableId": "strange-character", "label": "Roll Strange Character" }]
+    }
+  ]
+}

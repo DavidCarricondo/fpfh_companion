@@ -1,0 +1,44 @@
+{
+  "id": "injury",
+  "name": "Injury Table",
+  "page": 122,
+  "dice": "D100",
+  "group": "post-battle",
+  "verified": true,
+  "fieldDefs": [{ "id": "sickBay", "label": "Campaign turns in Sick Bay" }],
+  "notes": "Any character that became a casualty in the battle must roll on the Injury Table (Bot and Soulless characters use the Bot Injury Table instead). If a character was merely knocked out (from suffering 3 Stun results simultaneously), no roll is required. If a character with Luck would be slain through a roll on this table, they miraculously survive, but immediately lose ALL Luck points. Damaged equipment cannot be used until it has been Repaired (p.78).",
+  "rows": [
+    { "range": [1, 5], "result": "Gruesome fate", "detail": "Dead, and all carried equipment is damaged." },
+    {
+      "range": [6, 15],
+      "result": "Death or permanent injury",
+      "detail": "Dead, or removed from the campaign."
+    },
+    {
+      "range": [16, 16],
+      "result": "Miraculous escape",
+      "detail": "The character survives and receives +1 Luck, but all items carried are permanently lost."
+    },
+    { "range": [17, 30], "result": "Equipment loss", "detail": "Random carried item is damaged." },
+    {
+      "range": [31, 45],
+      "result": "Crippling wound",
+      "detail": "Require 1D6 credits of surgery immediately, or suffer -1 permanent reduction to highest of Speed or Toughness.",
+      "fields": { "sickBay": "1D6" }
+    },
+    {
+      "range": [46, 54],
+      "result": "Serious injury",
+      "detail": "No long-term effect",
+      "fields": { "sickBay": "1D3+1" }
+    },
+    {
+      "range": [55, 80],
+      "result": "Minor injuries",
+      "detail": "No long-term effect",
+      "fields": { "sickBay": 1 }
+    },
+    { "range": [81, 95], "result": "Knocked out", "detail": "No long-term effect" },
+    { "range": [96, 100], "result": "School of hard knocks", "detail": "Earn 1 XP." }
+  ]
+}

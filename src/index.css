@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Tema oscuro por defecto (spec §2); el claro se activa con data-theme="light" en <html>. */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+@theme {
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
