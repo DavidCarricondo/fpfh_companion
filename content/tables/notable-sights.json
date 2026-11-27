@@ -1,0 +1,111 @@
+{
+  "verified": true,
+  "id": "notable-sights",
+  "name": "Notable Sights",
+  "page": 89,
+  "dice": "D100",
+  "group": "battle",
+  "columns": [
+    {
+      "id": "opportunity-patron",
+      "label": "Opportunity / Patron"
+    },
+    {
+      "id": "rival",
+      "label": "Rival"
+    },
+    {
+      "id": "quest",
+      "label": "Quest"
+    }
+  ],
+  "notes": "Not rolled in an Invasion battle. The item is placed 2D6+2\" in a random direction from the center of the table, and can be acquired by moving into contact with it, and foregoing any other actions that round.",
+  "rows": [
+    {
+      "range": {
+        "opportunity-patron": [1, 20],
+        "rival": [1, 40],
+        "quest": [1, 10]
+      },
+      "result": "Nothing special"
+    },
+    {
+      "range": {
+        "opportunity-patron": [21, 30],
+        "rival": [41, 50],
+        "quest": [11, 25]
+      },
+      "result": "Documentation",
+      "detail": "Gain a Quest Rumor."
+    },
+    {
+      "range": {
+        "opportunity-patron": [31, 40],
+        "rival": [51, 60],
+        "quest": [26, 35]
+      },
+      "result": "Priority target",
+      "detail": "Select a random enemy figure. Add +1 to their Toughness. If they are slain, gain 1D3 credits."
+    },
+    {
+      "range": {
+        "opportunity-patron": [41, 50],
+        "rival": [61, 70],
+        "quest": [36, 50]
+      },
+      "result": "Loot cache",
+      "detail": "Roll once on the Loot Table (p.131).",
+      "next": [
+        {
+          "tableId": "loot",
+          "label": "Roll Loot"
+        }
+      ]
+    },
+    {
+      "range": {
+        "opportunity-patron": [51, 60],
+        "rival": [71, 75],
+        "quest": [51, 55]
+      },
+      "result": "Shiny bits",
+      "detail": "Gain 1 credit."
+    },
+    {
+      "range": {
+        "opportunity-patron": [61, 70],
+        "rival": [76, 80],
+        "quest": [56, 65]
+      },
+      "result": "Really shiny bits",
+      "detail": "Gain 2 credits."
+    },
+    {
+      "range": {
+        "opportunity-patron": [71, 80],
+        "rival": [81, 90],
+        "quest": [66, 80]
+      },
+      "result": "Person of interest",
+      "detail": "Gain +1 story point."
+    },
+    {
+      "range": {
+        "opportunity-patron": [81, 90],
+        "rival": [91, 95],
+        "quest": [81, 90]
+      },
+      "result": "Peculiar item",
+      "detail": "Gain +2 XP."
+    },
+    {
+      "range": {
+        "opportunity-patron": [91, 100],
+        "rival": [96, 100],
+        "quest": [91, 100]
+      },
+      "result": "Curious item",
+      "detail": "Roll 1D6. On a 1-4, it can be sold for 1 credit. On a 5-6, roll on the Loot Table (p.131)."
+    }
+  ]
+}

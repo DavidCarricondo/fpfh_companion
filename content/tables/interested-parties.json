@@ -1,0 +1,265 @@
+{
+  "verified": true,
+  "id": "interested-parties",
+  "name": "Interested Parties",
+  "page": [99, 100],
+  "dice": "D100",
+  "group": "enemies",
+  "fieldDefs": [
+    {
+      "id": "numbers",
+      "label": "Numbers"
+    },
+    {
+      "id": "panic",
+      "label": "Panic"
+    },
+    {
+      "id": "speed",
+      "label": "Speed"
+    },
+    {
+      "id": "combat",
+      "label": "Combat Skill"
+    },
+    {
+      "id": "toughness",
+      "label": "Toughness"
+    },
+    {
+      "id": "ai",
+      "label": "AI"
+    },
+    {
+      "id": "weapons",
+      "label": "Weapons"
+    }
+  ],
+  "notes": "Add +1 when rolling for Unique Individuals. During Quest missions, when rolling for the number of opponents, reroll any die scoring 1 once. AI codes: A Aggressive, C Cautious, D Defensive, G Guardian, R Rampage, T Tactical, B Beast. Weapons: number = Weapon column, letter = Specialist column (p.104).",
+  "rows": [
+    {
+      "range": [1, 6],
+      "result": "Renegade Soldiers",
+      "detail": "Grudge: If encountered as Rivals, they bring one additional figure.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 5,
+        "ai": "T",
+        "weapons": "2 B"
+      }
+    },
+    {
+      "range": [7, 13],
+      "result": "Bounty Hunters",
+      "detail": "Intrigue: Roll 2D6 and add +1 if you killed a Lieutenant and/or Unique Individual. On a 9+, you obtain a Quest Rumor.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1-2",
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "T",
+        "weapons": "1 B"
+      }
+    },
+    {
+      "range": [14, 18],
+      "result": "Abandoned",
+      "detail": "Careless: You are +1 to Seize the Initiative. Cowardly: Lieutenants are affected by Morale dice.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-3",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "A",
+        "weapons": "1 A"
+      }
+    },
+    {
+      "range": [19, 27],
+      "result": "Vigilantes",
+      "detail": "Persistent: If encountered as Rivals, all rolls to remove them from Rival status are at -1.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "A",
+        "weapons": "2 A"
+      }
+    },
+    {
+      "range": [28, 35],
+      "result": "Isolationists",
+      "detail": "Dogged: If reduced to only 1 or 2 figures, they become Fearless and will not flee.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "C",
+        "weapons": "1 A"
+      }
+    },
+    {
+      "range": [36, 41],
+      "result": "Zealots",
+      "detail": "Ferocious: +1 to Brawling rolls when initiating combat.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1",
+        "speed": "5\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "A",
+        "weapons": "1 A"
+      }
+    },
+    {
+      "range": [42, 48],
+      "result": "Mutants",
+      "detail": "Cowardly: Lieutenants are affected by Morale dice.",
+      "fields": {
+        "numbers": "+3",
+        "panic": "1-3",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 5,
+        "ai": "A",
+        "weapons": "1 A"
+      }
+    },
+    {
+      "range": [49, 52],
+      "result": "Primitives",
+      "detail": "Going medieval: Instead of normal weapons, each carries a Blade. Specialists carry a Brutal Melee Weapon.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1-2",
+        "speed": "6\"",
+        "combat": "+1",
+        "toughness": 3,
+        "ai": "A",
+        "weapons": "-"
+      }
+    },
+    {
+      "range": [53, 56],
+      "result": "Precursor Exiles",
+      "detail": "Prediction: You cannot Seize the Initiative.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1-2",
+        "speed": "6\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "T",
+        "weapons": "3 B"
+      }
+    },
+    {
+      "range": [57, 63],
+      "result": "K'Erin Colonists",
+      "detail": "Stubborn: They ignore the first casualty of the battle when making a Morale check. Invasion Threat.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1",
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "A",
+        "weapons": "2 A"
+      }
+    },
+    {
+      "range": [64, 68],
+      "result": "Swift War Squad",
+      "detail": "Unpredictable: Seize the Initiative roll is always unmodified.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1",
+        "speed": "6\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "A",
+        "weapons": "1 B"
+      }
+    },
+    {
+      "range": [69, 72],
+      "result": "Soulless Task Force",
+      "detail": "6+ Saving Throw.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1",
+        "speed": "4\"",
+        "combat": "+2",
+        "toughness": 5,
+        "ai": "T",
+        "weapons": "3 C"
+      }
+    },
+    {
+      "range": [73, 76],
+      "result": "Tech Zealots",
+      "detail": "Loot: Gain an extra Loot roll if Holding the Field. 6+ Saving Throw.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "5\"",
+        "combat": "+0",
+        "toughness": 5,
+        "ai": "A",
+        "weapons": "3 C"
+      }
+    },
+    {
+      "range": [77, 83],
+      "result": "Colonial Militia",
+      "detail": "Home field advantage: They always count as being in Cover if they are on their third of the table and are not within 12\" of the shooter.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "C",
+        "weapons": "2 B"
+      }
+    },
+    {
+      "range": [84, 88],
+      "result": "Planetary Nomads",
+      "detail": "Alert: You are -1 to Seize the Initiative.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1-2",
+        "speed": "6\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "C",
+        "weapons": "2 A"
+      }
+    },
+    {
+      "range": [89, 100],
+      "result": "Salvage Team",
+      "detail": "Scavengers: Roll twice on the Battlefield Finds Table.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-3",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "C",
+        "weapons": "2 B"
+      }
+    }
+  ]
+}

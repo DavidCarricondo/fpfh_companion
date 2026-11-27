@@ -1,0 +1,48 @@
+{
+  "verified": true,
+  "id": "crew-characterized-as",
+  "name": "Crew Table: We Are Best Characterized As",
+  "page": 32,
+  "dice": "D100",
+  "group": "creation",
+  "aliases": ["Characterized as", "Crew Table"],
+  "notes": "Purely to add character; these rolls do not influence gameplay, but are highly recommended.",
+  "rows": [
+    {
+      "range": [1, 12],
+      "result": "Lovable rogues"
+    },
+    {
+      "range": [13, 21],
+      "result": "Consummate professionals"
+    },
+    {
+      "range": [22, 28],
+      "result": "Cut-throat outlaws"
+    },
+    {
+      "range": [29, 34],
+      "result": "Defenders of the down-trodden"
+    },
+    {
+      "range": [35, 48],
+      "result": "Hardened rebels"
+    },
+    {
+      "range": [49, 58],
+      "result": "Starport scum"
+    },
+    {
+      "range": [59, 72],
+      "result": "Somewhat honorable bandits"
+    },
+    {
+      "range": [73, 87],
+      "result": "In it for the credits"
+    },
+    {
+      "range": [88, 100],
+      "result": "Living the dream!"
+    }
+  ]
+}

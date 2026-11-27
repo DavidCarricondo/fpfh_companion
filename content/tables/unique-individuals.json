@@ -1,0 +1,324 @@
+{
+  "verified": true,
+  "id": "unique-individuals",
+  "name": "Unique Individuals",
+  "aliases": ["Unique Individual"],
+  "page": [105, 106, 107],
+  "dice": "D100",
+  "group": "enemies",
+  "notes": "Unless fighting an Invasion battle or Roving Threats, roll 2D6 (+1 Interested Parties, +1 Hardcore): on 9+ a Unique Individual accompanies the opposition, in addition to those normally encountered. Insanity: always present, even with Roving Threats; on an unmodified 2D6 of 11-12 there are 2. Unique Individuals are Fearless and may follow a different AI routine than their group; Guardian AI must be attached to the Lieutenant (or a random non-Specialist). The Enemy Boss uses the same AI type as the main enemy type. A \"-\" means the value of the accompanying enemy type is used.",
+  "fieldDefs": [
+    {
+      "id": "speed",
+      "label": "Speed"
+    },
+    {
+      "id": "combat",
+      "label": "Combat Skill"
+    },
+    {
+      "id": "toughness",
+      "label": "Toughness"
+    },
+    {
+      "id": "ai",
+      "label": "AI"
+    },
+    {
+      "id": "luck",
+      "label": "Luck"
+    },
+    {
+      "id": "weapons",
+      "label": "Weapons"
+    }
+  ],
+  "rows": [
+    {
+      "range": [1, 6],
+      "result": "Enemy Bruiser",
+      "detail": "A particularly unpleasant-looking individual.",
+      "fields": {
+        "speed": "-",
+        "combat": "-",
+        "toughness": "+1",
+        "ai": "G",
+        "luck": 0,
+        "weapons": "Power Claw"
+      }
+    },
+    {
+      "range": [7, 12],
+      "result": "Enemy Heavy",
+      "detail": "The enemy has opted to bring some additional firepower.",
+      "fields": {
+        "speed": "-",
+        "combat": "-",
+        "toughness": "-",
+        "ai": "D",
+        "luck": 0,
+        "weapons": "Rattle Gun"
+      }
+    },
+    {
+      "range": [13, 17],
+      "result": "Enemy Boss",
+      "detail": "Bosses reduce Panic range by 1, but when slain, an extra Morale die must be rolled.",
+      "fields": {
+        "speed": "-",
+        "combat": "+1",
+        "toughness": "+1",
+        "ai": "-",
+        "luck": 1,
+        "weapons": "Hand Cannon, Brutal Melee"
+      }
+    },
+    {
+      "range": [18, 22],
+      "result": "Hired Killer",
+      "detail": "Will murder for credits.",
+      "fields": {
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 5,
+        "ai": "A",
+        "luck": 1,
+        "weapons": "Machine Pistol, Blade"
+      }
+    },
+    {
+      "range": [23, 25],
+      "result": "Corporate Spook",
+      "detail": "If all other enemies are slain or Bail, the Spook Bails as well. If the Spook is slain, you automatically receive a Corporate Rival.",
+      "fields": {
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "C",
+        "luck": 1,
+        "weapons": "Hand Laser"
+      }
+    },
+    {
+      "range": [26, 30],
+      "result": "Bounty Tracker",
+      "detail": "Someone is willing to pay money to have you brought in, whole or in pieces.",
+      "fields": {
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 5,
+        "ai": "A",
+        "luck": 1,
+        "weapons": "Shotgun, Blade"
+      }
+    },
+    {
+      "range": [31, 35],
+      "result": "Callous Merc",
+      "detail": "Bitter and disillusioned mercenaries sometimes strike out on their own.",
+      "fields": {
+        "speed": "4\"",
+        "combat": "+2",
+        "toughness": 5,
+        "ai": "T",
+        "luck": 1,
+        "weapons": "Infantry Laser, Blade"
+      }
+    },
+    {
+      "range": [36, 41],
+      "result": "Freelancer",
+      "detail": "If the freelancer is slain in a Brawl, you may roll on the Loot Table (p.131) and claim the item for use immediately.",
+      "fields": {
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "T",
+        "luck": 1,
+        "weapons": "Hand Cannon, Blade"
+      }
+    },
+    {
+      "range": [42, 44],
+      "result": "Secret Agent",
+      "detail": "Target: Randomly select a crew member. The agent will attempt to move towards and attack them, only firing at other targets if they are in the way or the priority target is not visible. May fire at the priority target, even if it is not the closest.",
+      "fields": {
+        "speed": "6\"",
+        "combat": "+2",
+        "toughness": 4,
+        "ai": "A",
+        "luck": 1,
+        "weapons": "Hand Laser, Glare Sword"
+      }
+    },
+    {
+      "range": [45, 48],
+      "result": "Hulker Brawler",
+      "detail": "Melee fighter: +1 to Combat Skill when Brawling.",
+      "fields": {
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 6,
+        "ai": "A",
+        "luck": 0,
+        "weapons": "Hand Cannon, Brutal Melee"
+      }
+    },
+    {
+      "range": [49, 53],
+      "result": "Gun Slinger",
+      "detail": "Sharp shooter: +1 to Combat Skill when shooting.",
+      "fields": {
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "T",
+        "luck": 1,
+        "weapons": "Machine Pistol"
+      }
+    },
+    {
+      "range": [54, 56],
+      "result": "Engineer Tech",
+      "detail": "A quiet alien species fascinated with technology and gadgetry.",
+      "fields": {
+        "speed": "6\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "C",
+        "luck": 1,
+        "weapons": "Blast Pistol"
+      }
+    },
+    {
+      "range": [57, 61],
+      "result": "Mutant Bruiser",
+      "detail": "Ferocious: +1 to Brawling rolls when initiating combat.",
+      "fields": {
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 5,
+        "ai": "G",
+        "luck": 1,
+        "weapons": "Shotgun, Brutal Melee"
+      }
+    },
+    {
+      "range": [62, 65],
+      "result": "Precursor Wanderer",
+      "detail": "One with the Flow: Moves before the Quick Actions phase. 6+ Saving Throw.",
+      "fields": {
+        "speed": "7\"",
+        "combat": "+2",
+        "toughness": 4,
+        "ai": "A",
+        "luck": 1,
+        "weapons": "Infantry Laser, Glare Sword"
+      }
+    },
+    {
+      "range": [66, 69],
+      "result": "Hakshan Investigator",
+      "detail": "Odd, suited aliens that trek the galaxy in search of something vitally important to their species.",
+      "fields": {
+        "speed": "5\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "D",
+        "luck": 1,
+        "weapons": "Plasma Rifle"
+      }
+    },
+    {
+      "range": [70, 75],
+      "result": "K'Erin Warrior",
+      "detail": "A noble alien warrior seeking adventure.",
+      "fields": {
+        "speed": "5\"",
+        "combat": "+2",
+        "toughness": 5,
+        "ai": "A",
+        "luck": 1,
+        "weapons": "Machine Pistol, Ripper Sword"
+      }
+    },
+    {
+      "range": [76, 79],
+      "result": "Nomad Scout",
+      "detail": "Concealed: Always counts as being in Cover when fired upon.",
+      "fields": {
+        "speed": "6\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "D",
+        "luck": 0,
+        "weapons": "Marksman's Rifle"
+      }
+    },
+    {
+      "range": [80, 82],
+      "result": "Cyborg Merc",
+      "detail": "6+ Saving Throw.",
+      "fields": {
+        "speed": "7\"",
+        "combat": "+2",
+        "toughness": 6,
+        "ai": "T",
+        "luck": 1,
+        "weapons": "Auto Rifle, Power Claw"
+      }
+    },
+    {
+      "range": [83, 85],
+      "result": "Rogue Psionic",
+      "detail": "Self-taught psionics are a substantial asset in a gun battle.",
+      "fields": {
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "C",
+        "luck": 3,
+        "weapons": "Hand Gun"
+      }
+    },
+    {
+      "range": [86, 91],
+      "result": "Gene Dog",
+      "detail": "Loyal: When owner or Dog moves into a Brawl, it is not resolved until both have had a chance to act. If the owner is slain, the Dog becomes Fearless and remains in place, but attacks anyone that approaches within 8\". If all other enemies are slain or Bailed, it will also Bail.",
+      "fields": {
+        "speed": "6\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "G",
+        "luck": 0,
+        "weapons": "Fangs (Damage +0)"
+      }
+    },
+    {
+      "range": [92, 96],
+      "result": "Sand Runner",
+      "detail": "These fierce lizards can make surprisingly loyal companions.",
+      "fields": {
+        "speed": "7\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "G",
+        "luck": 0,
+        "weapons": "Fangs (Damage +1)"
+      }
+    },
+    {
+      "range": [97, 100],
+      "result": "Mk II Security Bot",
+      "detail": "Targeting AI: May fire twice per round at the two closest visible targets. If only one target is visible, only one shot is taken. 6+ Saving Throw.",
+      "fields": {
+        "speed": "4\"",
+        "combat": "+2",
+        "toughness": 5,
+        "ai": "G",
+        "luck": 0,
+        "weapons": "Fury Rifle"
+      }
+    }
+  ]
+}

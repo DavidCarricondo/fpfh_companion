@@ -1,0 +1,59 @@
+{
+  "verified": true,
+  "id": "patron-benefits",
+  "name": "Benefits Subtable",
+  "aliases": ["Patron Benefits"],
+  "page": [83, 84],
+  "dice": "D10",
+  "group": "world",
+  "notes": "Benefits, Hazards, and Conditions: roll 1D10 for each category. Benefits apply on 8+ (Wealthy Individual 5+); Hazards on 8+ (Secretive Group 5+); Conditions on 8+ (Corporation 5+). If you have worked for this Patron before, the Benefit (if any) always remains the same. Benefits are paid out ONLY if the mission is a success.",
+  "rows": [
+    {
+      "range": [1, 2],
+      "result": "Fringe Benefit",
+      "detail": "Roll on the Loot Table (p.131).",
+      "next": [
+        {
+          "tableId": "loot",
+          "label": "Roll Loot"
+        }
+      ]
+    },
+    {
+      "range": [3, 4],
+      "result": "Connections",
+      "detail": "Gain a Rumor."
+    },
+    {
+      "range": [5, 5],
+      "result": "Company Store",
+      "detail": "Roll on the Trade Table (p.79).",
+      "next": [
+        {
+          "tableId": "trade",
+          "label": "Roll Trade"
+        }
+      ]
+    },
+    {
+      "range": [6, 6],
+      "result": "Health Insurance",
+      "detail": "Mark down 2 campaign turns of injury recovery, assigned as you see fit."
+    },
+    {
+      "range": [7, 7],
+      "result": "Security Team",
+      "detail": "Reduce enemy force numbers by 1."
+    },
+    {
+      "range": [8, 9],
+      "result": "Persistent",
+      "detail": "Patron remains available if you travel."
+    },
+    {
+      "range": [10, 10],
+      "result": "Negotiable",
+      "detail": "If you accept this job, you may reroll the Danger Pay roll and pick the better of the two rolls."
+    }
+  ]
+}

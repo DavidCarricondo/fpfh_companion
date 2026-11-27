@@ -1,0 +1,362 @@
+{
+  "terms": [
+    {
+      "id": "campaign-turn",
+      "term": "Campaign turn",
+      "aliases": ["Turn"],
+      "explanation": "Unidad de tiempo de la campaña: Viaje, Mundo, batalla y Post-batalla. Dentro de una batalla se habla de rondas, no de turnos.",
+      "page": 68
+    },
+    {
+      "id": "round",
+      "term": "Round",
+      "aliases": ["Battle round"],
+      "explanation": "Ronda de batalla: Reaction Roll, Quick Actions, Enemy Actions, Slow Actions y End Phase.",
+      "page": 112
+    },
+    {
+      "id": "natural-roll",
+      "term": "Natural roll",
+      "aliases": ["Natural 6", "Natural 1"],
+      "explanation": "El valor que muestra el dado antes de aplicar modificadores. Un \"natural 6\" es un 6 en el dado, no un 4+2.",
+      "page": 9
+    },
+    {
+      "id": "reroll",
+      "term": "Reroll",
+      "explanation": "Volver a tirar; el resultado original deja de contar. Solo se permite una repetición por circunstancia.",
+      "page": 9
+    },
+    {
+      "id": "credits",
+      "term": "Credits",
+      "explanation": "La moneda de la campaña. Se guardan en una reserva común de la tripulación y nunca se pierden por bajas.",
+      "page": 36
+    },
+    {
+      "id": "xp",
+      "term": "Experience Points",
+      "aliases": ["XP"],
+      "explanation": "Puntos de experiencia de cada personaje. Se gastan en Character Upgrades. Los Bots no ganan XP.",
+      "page": 36
+    },
+    {
+      "id": "story-points",
+      "term": "Story points",
+      "aliases": ["Story point"],
+      "explanation": "Recurso para torcer la suerte: tirar dos veces en una tabla fuera de combate, hacer que algo funcione, repetir una tirada, ganar 3 créditos o +3 XP (una vez por turno), o una acción de campaña extra.",
+      "page": 66
+    },
+    {
+      "id": "luck",
+      "term": "Luck",
+      "explanation": "Si un personaje con Luck fuera a convertirse en baja, pierde 1 punto de Luck y se aparta 1D6\" en dirección aleatoria. Se recupera tras cada batalla. Solo los humanos pueden tener más de 1.",
+      "page": [12, 46]
+    },
+    {
+      "id": "quest-rumor",
+      "term": "Quest Rumor",
+      "aliases": ["Rumor", "Rumors", "Quest Rumors"],
+      "explanation": "Pista común de la tripulación. Cada turno, en el paso de Rumores, un D6 igual o menor que el número de Rumores convierte todos en una Quest.",
+      "page": [36, 85]
+    },
+    {
+      "id": "quest",
+      "term": "Quest",
+      "explanation": "Misión de varias batallas. Tras cada batalla de Quest se tira su progreso; con 7+ la siguiente es el final.",
+      "page": [85, 120]
+    },
+    {
+      "id": "rival",
+      "term": "Rival",
+      "aliases": ["Rivals"],
+      "explanation": "Enemigo que te guarda rencor. Cada turno puede atacarte (D6 ≤ número de Rivales) y tú puedes rastrearlo con la tarea Track.",
+      "page": 77
+    },
+    {
+      "id": "patron",
+      "term": "Patron",
+      "aliases": ["Patrons"],
+      "explanation": "Empleador que ofrece trabajos mejor pagados (Danger Pay, Benefits) con posibles Hazards y Conditions. Se queda en su mundo salvo que sea Persistent.",
+      "page": [77, 83]
+    },
+    {
+      "id": "persistent",
+      "term": "Persistent",
+      "explanation": "Patrón que te sigue a otros mundos cuando viajas.",
+      "page": 84
+    },
+    {
+      "id": "upkeep",
+      "term": "Upkeep",
+      "explanation": "Mantenimiento de la tripulación cada turno: 1 crédito con 4–6 tripulantes, +1 por cada uno por encima de 6. Los que están en Sick Bay no cuentan.",
+      "page": 76
+    },
+    {
+      "id": "sick-bay",
+      "term": "Sick Bay",
+      "explanation": "Enfermería. Un personaje en Sick Bay no hace tareas ni combate; descuenta un turno al empezar el Mundo (o 4 créditos por turno con atención médica).",
+      "page": [76, 122]
+    },
+    {
+      "id": "stash",
+      "term": "Stash",
+      "explanation": "Equipo guardado en la nave, común a la tripulación. No se puede usar durante la batalla. Ilimitado con nave; 5 objetos sin ella.",
+      "page": 85
+    },
+    {
+      "id": "hull-points",
+      "term": "Hull Points",
+      "aliases": ["Hull Point", "Hull Point damage"],
+      "explanation": "Daño que puede aguantar la nave. Con daño en el casco no se puede despegar con seguridad (Emergency Take-off: 3D6 de daño).",
+      "page": 59
+    },
+    {
+      "id": "ship-debt",
+      "term": "Debt",
+      "aliases": ["Ship debt"],
+      "explanation": "Deuda de la nave. Sube +1 por turno (+2 si es de 31 o más); al llegar a 75, 2D6: con 2–6 te embargan la nave.",
+      "page": 76
+    },
+    {
+      "id": "crew-task",
+      "term": "Crew task",
+      "aliases": ["Crew tasks"],
+      "explanation": "Lo que hace cada tripulante en el Mundo: Find a Patron, Train, Trade, Recruit, Explore, Track, Repair your Kit o Decoy. Máximo dos por tarea.",
+      "page": 76
+    },
+    {
+      "id": "decoy",
+      "term": "Decoy",
+      "explanation": "Tarea de despiste: cada tripulante asignado suma +1 a la tirada para evitar que los Rivales te encuentren.",
+      "page": 78
+    },
+    {
+      "id": "repair",
+      "term": "Repair",
+      "aliases": ["Repaired"],
+      "explanation": "Arreglar un objeto dañado: 1D6 + Savvy (+1 Engineer, +1 por crédito gastado), 6+ éxito; un 1 natural lo destruye.",
+      "page": 78
+    },
+    {
+      "id": "opportunity-mission",
+      "term": "Opportunity mission",
+      "explanation": "Misión siempre disponible cuando no hay otra: un trabajo local sin Patrón.",
+      "page": 87
+    },
+    {
+      "id": "invasion",
+      "term": "Invasion",
+      "aliases": ["Invaded", "Invasion Threat", "Invasion battle"],
+      "explanation": "Si luchas contra un enemigo Invasion Threat, tras la batalla 2D6: con 9+ el mundo es invadido y el siguiente turno debes intentar huir.",
+      "page": [69, 121]
+    },
+    {
+      "id": "win",
+      "term": "Win",
+      "aliases": ["Won"],
+      "explanation": "Ganar la misión: cumplir su objetivo, aunque luego te expulsen del campo (salvo que el objetivo diga otra cosa).",
+      "page": 89
+    },
+    {
+      "id": "held-the-field",
+      "term": "Held the Field",
+      "aliases": ["Hold the Field", "Holding the Field"],
+      "explanation": "Mantener el campo: todos los enemigos han caído o huido, o se retiran tras cumplir tú el objetivo. Si tu tripulación sale de la mesa, no lo mantienes.",
+      "page": 114
+    },
+    {
+      "id": "seize-the-initiative",
+      "term": "Seize the Initiative",
+      "explanation": "Antes de la ronda 1: 2D6 + mejor Savvy (+1 si te superan en número, modificadores del enemigo y de dificultad). Con 10+ toda la tripulación puede moverse o disparar (impacta solo con 6 natural).",
+      "page": 112
+    },
+    {
+      "id": "reaction-roll",
+      "term": "Reaction Roll",
+      "explanation": "Al inicio de cada ronda tiras un D6 por tripulante y los asignas: igual o menor que su Reactions → Quick Actions; mayor → Slow Actions.",
+      "page": 113
+    },
+    {
+      "id": "quick-actions",
+      "term": "Quick Actions",
+      "explanation": "Fase en la que actúan los tripulantes con dado de reacción ≤ Reactions, antes que el enemigo.",
+      "page": 113
+    },
+    {
+      "id": "enemy-actions",
+      "term": "Enemy Actions",
+      "explanation": "Fase del enemigo: actúan empezando por los más cercanos a tu borde.",
+      "page": 113
+    },
+    {
+      "id": "slow-actions",
+      "term": "Slow Actions",
+      "explanation": "Fase en la que actúan los tripulantes con dado de reacción mayor que su Reactions, después del enemigo.",
+      "page": 113
+    },
+    {
+      "id": "snap-fire",
+      "term": "Snap Fire",
+      "explanation": "Un tripulante que puede actuar en Quick Actions espera para disparar durante el movimiento enemigo (y entonces no puede moverse esa ronda) o actuar en Slow Actions.",
+      "page": 113
+    },
+    {
+      "id": "combat-action",
+      "term": "Combat Action",
+      "explanation": "Disparar o pelear (Brawl), u otra acción que la exija. Se hace después del movimiento, nunca antes.",
+      "page": [40, 113]
+    },
+    {
+      "id": "free-action",
+      "term": "Free Action",
+      "explanation": "Acción que no impide las demás (p. ej. usar un consumible). Una segunda acción libre en la ronda cuesta la Combat Action.",
+      "page": 40
+    },
+    {
+      "id": "dash",
+      "term": "Dash",
+      "explanation": "Mover 2\" extra renunciando a la Combat Action. No se puede entrar en Brawl con un Dash.",
+      "page": 41
+    },
+    {
+      "id": "aim",
+      "term": "Aim",
+      "aliases": ["Aimed shot"],
+      "explanation": "Si no estás Stunned y no te mueves, repites los 1 en las tiradas para impactar.",
+      "page": 46
+    },
+    {
+      "id": "cover",
+      "term": "Cover",
+      "explanation": "Cobertura: impactar a un objetivo a cubierto requiere 5+ a 6\" o menos y 6+ dentro del alcance (en vez de 3+ y 5+). En caso de duda, se permite el disparo pero cuenta como cobertura.",
+      "page": 39
+    },
+    {
+      "id": "line-of-sight",
+      "term": "Line of Sight",
+      "explanation": "Línea de visión entre dos figuras; es mutua. Otra figura en medio la bloquea.",
+      "page": 38
+    },
+    {
+      "id": "brawl",
+      "term": "Brawl",
+      "aliases": ["Brawling"],
+      "explanation": "Cuerpo a cuerpo: cada uno 1D6 + Combat Skill (+2 Melee, +1 Pistol). El menor recibe un Hit; empate, ambos. Un 6 natural inflige un Hit extra; un 1 natural lo recibe.",
+      "page": 45
+    },
+    {
+      "id": "hit",
+      "term": "Hit",
+      "explanation": "Al recibir un Hit: 1D6 + Damage del arma. Si iguala o supera la Toughness, o es un 6 natural, es baja; si no, retrocede 1\" y queda Stunned.",
+      "page": 46
+    },
+    {
+      "id": "stunned",
+      "term": "Stunned",
+      "aliases": ["Stun", "Stun marker"],
+      "explanation": "Aturdido: en su siguiente activación solo puede mover O hacer una Combat Action, y después retira un marcador. Con 3 marcadores a la vez queda fuera de combate.",
+      "page": 40
+    },
+    {
+      "id": "casualty",
+      "term": "Casualty",
+      "aliases": ["Casualties"],
+      "explanation": "Baja: la figura se retira de la mesa. Tras la batalla tira en la Injury Table (Bots y Soulless en la Bot Injury Table). Quien cae por 3 Stuns no tira.",
+      "page": [46, 121]
+    },
+    {
+      "id": "saving-throw",
+      "term": "Saving Throw",
+      "aliases": ["Armor Saving Throw"],
+      "explanation": "Tirada de salvación por armadura o pantalla al convertirse en baja: igual o mayor que el número anula el Hit (sigue Stunned). Piercing ignora la armadura, no las pantallas.",
+      "page": 46
+    },
+    {
+      "id": "panic-range",
+      "term": "Panic range",
+      "aliases": ["Panic"],
+      "explanation": "Rango de pánico del enemigo. Al final de la ronda se tira 1D6 por cada baja enemiga; cada dado dentro del rango hace que huya (Bail) una figura.",
+      "page": 114
+    },
+    {
+      "id": "morale",
+      "term": "Morale",
+      "explanation": "Chequeo de moral enemigo al final de cada ronda con bajas (ver Panic range). La tripulación del jugador no chequea moral.",
+      "page": 114
+    },
+    {
+      "id": "bail",
+      "term": "Bail",
+      "aliases": ["Bailed"],
+      "explanation": "Huir del combate. Las figuras que huyen salen de la mesa empezando por las más cercanas a su borde; no cuentan como muertas.",
+      "page": 114
+    },
+    {
+      "id": "fearless",
+      "term": "Fearless",
+      "explanation": "Nunca huye (Bail) por moral. Lo son todos los Lieutenants y Unique Individuals.",
+      "page": 114
+    },
+    {
+      "id": "specialist",
+      "term": "Specialist",
+      "aliases": ["Specialists"],
+      "explanation": "Enemigo con armamento especial (columna de letra en Enemy Weapons): 1 con 3–6 enemigos, 2 con 7 o más.",
+      "page": 93
+    },
+    {
+      "id": "lieutenant",
+      "term": "Lieutenant",
+      "explanation": "Con 4 o más enemigos, uno no especialista es Lugarteniente: +1 Combat Skill y una Blade además de su arma. Es Fearless.",
+      "page": 93
+    },
+    {
+      "id": "unique-individual",
+      "term": "Unique Individual",
+      "aliases": ["Unique Individuals"],
+      "explanation": "Personaje especial que acompaña al enemigo (2D6 ≥ 9, con modificadores). Va además de los enemigos normales y es Fearless.",
+      "page": [93, 105]
+    },
+    {
+      "id": "character-upgrade",
+      "term": "Character Upgrade",
+      "aliases": ["Character Upgrades"],
+      "explanation": "Subir +1 una característica gastando XP según la Ability Increase Table.",
+      "page": 123
+    },
+    {
+      "id": "advanced-training",
+      "term": "Advanced Training",
+      "explanation": "Curso que da una ventaja permanente. Solicitud: 1 crédito y 2D6 ≥ 4; luego se paga el coste con XP y/o créditos. Uno por personaje.",
+      "page": 124
+    },
+    {
+      "id": "stars-of-the-story",
+      "term": "Stars of the Story",
+      "explanation": "Cinco opciones de rescate que se usan una sola vez por campaña: \"It's time to go!\", \"Looked worse than it was!\", \"Did you ever meet my mate?\", \"Lucky shot!\" y \"Rainy day fund!\".",
+      "page": 67
+    },
+    {
+      "id": "elite-rank",
+      "term": "Elite Rank",
+      "aliases": ["Elite Ranks"],
+      "explanation": "Rango que ganas como jugador al completar una condición de victoria; da ventajas al empezar campañas nuevas.",
+      "page": 65
+    },
+    {
+      "id": "leader",
+      "term": "Leader",
+      "aliases": ["Captain"],
+      "explanation": "El capitán: recibe 1 punto de Luck y nunca abandona la tripulación por eventos aleatorios.",
+      "page": 24
+    },
+    {
+      "id": "bot",
+      "term": "Bot",
+      "aliases": ["Bots"],
+      "explanation": "Robot de la tripulación: no tira en las tablas de creación, salva a 6+, no gana XP (mejora con créditos), no usa implantes ni consumibles y no sufre Character Events.",
+      "page": 15
+    }
+  ]
+}

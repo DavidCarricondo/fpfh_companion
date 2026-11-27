@@ -1,0 +1,44 @@
+{
+  "verified": true,
+  "id": "military-weapon",
+  "name": "Military Weapon Table",
+  "page": 28,
+  "dice": "D100",
+  "group": "equipment",
+  "aliases": ["Military Weapon"],
+  "notes": "Starting equipment: 3 rolls on the Military Weapon Table (for each crew member who rolled at least one Savvy increase, one of these may be taken on the High-tech Weapon Table instead), 3 rolls on the Low-tech Weapon Table, 1 roll on the Gear Table, 1 roll on the Gadget Table, and 1 credit per crew member. Items can be distributed as you see fit. All weapons are detailed on pages 50-52.",
+  "rows": [
+    {
+      "range": [1, 25],
+      "result": "Military Rifle"
+    },
+    {
+      "range": [26, 45],
+      "result": "Infantry Laser"
+    },
+    {
+      "range": [46, 50],
+      "result": "Marksman's Rifle"
+    },
+    {
+      "range": [51, 60],
+      "result": "Needle Rifle"
+    },
+    {
+      "range": [61, 75],
+      "result": "Auto Rifle"
+    },
+    {
+      "range": [76, 80],
+      "result": "Rattle Gun"
+    },
+    {
+      "range": [81, 95],
+      "result": "Boarding Saber"
+    },
+    {
+      "range": [96, 100],
+      "result": "Shatter Axe"
+    }
+  ]
+}

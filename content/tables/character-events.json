@@ -1,0 +1,174 @@
+{
+  "verified": true,
+  "id": "character-events",
+  "name": "Character Events Table",
+  "aliases": ["Character Events", "Character Event"],
+  "page": [128, 129, 130],
+  "dice": "D100",
+  "group": "post-battle",
+  "notes": "Select a random non-Bot, non-Soulless character (any crew member, even in Sick Bay) and roll D100. If the selected character is a Precursor, you may roll twice and pick either score. Apply the result immediately. If an event is completely inapplicable, simply add +1 XP to the character.",
+  "rows": [
+    {
+      "range": [1, 3],
+      "result": "All this endless violence is depressing you.",
+      "detail": "The character refuses to participate in any battle during the next campaign turn (except for an Invasion battle). Get +1 story point, as they get a new perspective on life. K'Erin are unaffected by this."
+    },
+    {
+      "range": [4, 6],
+      "result": "You have some business to attend to elsewhere.",
+      "detail": "The character is unavailable for the next two campaign turns. They require no Upkeep during this time, and cannot be the target of any events. When they return, award them 1D6 XP, and roll once on the Loot Table. If the character is Swift, they never return but are replaced with a brand new Swift character rolled up normally."
+    },
+    {
+      "range": [7, 10],
+      "result": "You make some local friends.",
+      "detail": "The character earns +1 XP."
+    },
+    {
+      "range": [11, 12],
+      "result": "You are starting to wonder if it is time to move on.",
+      "detail": "If the character is currently in Sick Bay, roll 1D6. If the roll is equal or below the number of campaign turns of recovery left, they will decide to leave the crew."
+    },
+    {
+      "range": [13, 15],
+      "result": "You get a letter from home.",
+      "detail": "The character earns +1 XP. Roll 1D6. On a 5-6 you immediately receive a Quest."
+    },
+    {
+      "range": [16, 19],
+      "result": "You argue with the rest of the crew.",
+      "detail": "During the next campaign turn, the crew member refuses to do any tasks but will participate in battle normally."
+    },
+    {
+      "range": [20, 23],
+      "result": "You get in a scrap with another crew member.",
+      "detail": "Randomly select another crew member and roll 1D6+Combat Skill for each. The lower score must spend one campaign turn in Sick Bay. On a draw, both go to Sick Bay. If a K'Erin is in the crew, you must fight them."
+    },
+    {
+      "range": [24, 26],
+      "result": "The local food is sitting well with you.",
+      "detail": "If in Sick Bay, reduce your recovery time by one campaign turn. If not, earn +1 XP. Engineers receive no benefit from this."
+    },
+    {
+      "range": [27, 29],
+      "result": "You are not sure you are really the same person any longer.",
+      "detail": "Roll on the Motivation Table (p.26) and change to that motivation. You do not receive any items or resources, but if the new motivation would have any ability score bonuses, earn +1 XP for each +1 ability score you would have received normally. If you roll the current motivation, the character becomes particularly self-assured. Earn +1 story point.",
+      "next": [
+        {
+          "tableId": "motivation",
+          "label": "Roll Motivation"
+        }
+      ]
+    },
+    {
+      "range": [30, 33],
+      "result": "It is time for a make-over!",
+      "detail": "The character changes their clothes, hair-style, or something else. This is only cosmetic. If you are able to, reflect this on the miniature."
+    },
+    {
+      "range": [34, 38],
+      "result": "Overhear something useful.",
+      "detail": "Earn 1 Quest Rumor."
+    },
+    {
+      "range": [39, 41],
+      "result": "Earn a little on the side.",
+      "detail": "Receive +2 credits."
+    },
+    {
+      "range": [42, 45],
+      "result": "Have a heart to heart talk with a crew member.",
+      "detail": "Select a random crew member. Both earn +1 XP."
+    },
+    {
+      "range": [46, 48],
+      "result": "Time spent exercising is never wasted.",
+      "detail": "Earn +2 XP."
+    },
+    {
+      "range": [49, 51],
+      "result": "You pick up an unusual hobby.",
+      "detail": "Earn +1 story point and the character talks about it constantly. If the character is Swift or Precursor, they also earn +2 XP."
+    },
+    {
+      "range": [52, 55],
+      "result": "The scars tell the story.",
+      "detail": "If the character was injured in any way last or this campaign turn, they earn +2 XP."
+    },
+    {
+      "range": [56, 59],
+      "result": "You've had time to reflect on your adventures.",
+      "detail": "Earn +1D3 XP."
+    },
+    {
+      "range": [60, 62],
+      "result": "You've made a real personal breakthrough.",
+      "detail": "Select one ability score that has not been increased from its starting value when the character entered the campaign. It increases by +1 immediately."
+    },
+    {
+      "range": [63, 66],
+      "result": "You get hurt while working on the ship.",
+      "detail": "Spend one campaign turn in Sick Bay, and the ship takes 1 Hull Point damage."
+    },
+    {
+      "range": [67, 68],
+      "result": "You have finally found true love in this bleak universe.",
+      "detail": "If the character's motivation was True Love, they earn +1D6 XP. Regardless, get +1 story point."
+    },
+    {
+      "range": [69, 71],
+      "result": "A personal enemy has tracked you down.",
+      "detail": "Add a Rival. If this character leaves your crew, the Rival also leaves."
+    },
+    {
+      "range": [72, 75],
+      "result": "Someone has sent you a gift.",
+      "detail": "Roll once on the Loot Table (p.131).",
+      "next": [
+        {
+          "tableId": "loot",
+          "label": "Roll Loot"
+        }
+      ]
+    },
+    {
+      "range": [76, 78],
+      "result": "You feel great. Eating well must be paying off.",
+      "detail": "Put a note on your record sheet: Next time this character would be forced to roll on the Injury Table, the roll is ignored. Engineers cannot benefit from this event."
+    },
+    {
+      "range": [79, 82],
+      "result": "You know someone who knows someone.",
+      "detail": "Add a Patron."
+    },
+    {
+      "range": [83, 84],
+      "result": "Maybe you are leading a charmed existence?",
+      "detail": "Add +1 Luck."
+    },
+    {
+      "range": [85, 87],
+      "result": "You've put in a lot of hard work around here.",
+      "detail": "Either repair 2 Hull Point damage or Repair one damaged item in the inventory. Engineers may do both."
+    },
+    {
+      "range": [88, 91],
+      "result": "They don't make them like they used to.",
+      "detail": "A random item carried by the character is damaged, and must be Repaired before it can be used again. Engineers are not affected by this event."
+    },
+    {
+      "range": [92, 94],
+      "result": "Where did it go?",
+      "detail": "A random item carried by the character has been lost. When rolling for a Character Event next campaign turn, roll 1D6+Savvy as well. On a 5+, the item turns up again, otherwise it is lost for good."
+    },
+    {
+      "range": [95, 97],
+      "result": "A deep feeling of melancholy and despair is afflicting you.",
+      "detail": "The character will earn no XP next campaign turn. K'Erin are not affected by this event."
+    },
+    {
+      "range": [98, 100],
+      "result": "You've had a lot of time to burn.",
+      "detail": "Next campaign turn, the character may perform an additional action, even if they are in Sick Bay."
+    }
+  ]
+}

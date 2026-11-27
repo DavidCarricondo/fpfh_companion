@@ -1,0 +1,175 @@
+{
+  "verified": true,
+  "id": "motivation",
+  "name": "Motivation Table",
+  "aliases": ["Motivation"],
+  "page": 26,
+  "dice": "D100",
+  "group": "creation",
+  "notes": "Ability score increases are applied immediately. The Resources column may grant extra credits, Quest Rumors, known Patrons, or story points; all such resources are pooled together for the crew. Bonus equipment and weapon rolls provide items the character has as they arrive at the campaign; they may be handed to other characters or sold normally. A starting Patron is local to the starting world; a starting Rival is rolled on the Unknown Rivals Table (p.94).",
+  "fieldDefs": [
+    {
+      "id": "effect",
+      "label": "Effect"
+    },
+    {
+      "id": "resources",
+      "label": "Resources"
+    },
+    {
+      "id": "startingRolls",
+      "label": "Starting rolls"
+    }
+  ],
+  "rows": [
+    {
+      "range": [1, 8],
+      "result": "Wealth",
+      "fields": {
+        "resources": "+1D6 credits"
+      }
+    },
+    {
+      "range": [9, 14],
+      "result": "Fame",
+      "fields": {
+        "resources": "+1 story point"
+      }
+    },
+    {
+      "range": [15, 19],
+      "result": "Glory",
+      "fields": {
+        "effect": "+1 Combat Skill",
+        "startingRolls": "+1 Military Weapon"
+      },
+      "next": [
+        {
+          "tableId": "military-weapon",
+          "label": "Roll Military Weapon"
+        }
+      ]
+    },
+    {
+      "range": [20, 26],
+      "result": "Survival",
+      "fields": {
+        "effect": "+1 Toughness"
+      }
+    },
+    {
+      "range": [27, 32],
+      "result": "Escape",
+      "fields": {
+        "effect": "+1 Speed"
+      }
+    },
+    {
+      "range": [33, 39],
+      "result": "Adventure",
+      "fields": {
+        "resources": "+1D6 credits",
+        "startingRolls": "+1 Low-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "low-tech-weapon",
+          "label": "Roll Low-tech Weapon"
+        }
+      ]
+    },
+    {
+      "range": [40, 44],
+      "result": "Truth",
+      "fields": {
+        "resources": "1 Rumor, +1 story point"
+      }
+    },
+    {
+      "range": [45, 49],
+      "result": "Technology",
+      "fields": {
+        "effect": "+1 Savvy",
+        "startingRolls": "+1 Gadget"
+      },
+      "next": [
+        {
+          "tableId": "gadget",
+          "label": "Roll Gadget"
+        }
+      ]
+    },
+    {
+      "range": [50, 56],
+      "result": "Discovery",
+      "fields": {
+        "effect": "+1 Savvy",
+        "startingRolls": "+1 Gear"
+      },
+      "next": [
+        {
+          "tableId": "gear",
+          "label": "Roll Gear"
+        }
+      ]
+    },
+    {
+      "range": [57, 63],
+      "result": "Loyalty",
+      "fields": {
+        "resources": "Patron, +1 story point"
+      }
+    },
+    {
+      "range": [64, 69],
+      "result": "Revenge",
+      "fields": {
+        "effect": "+2 XP",
+        "resources": "Rival"
+      }
+    },
+    {
+      "range": [70, 74],
+      "result": "Romance",
+      "fields": {
+        "resources": "1 Rumor, +1 story point"
+      }
+    },
+    {
+      "range": [75, 79],
+      "result": "Faith",
+      "fields": {
+        "resources": "1 Rumor, +1 story point"
+      }
+    },
+    {
+      "range": [80, 84],
+      "result": "Political",
+      "fields": {
+        "resources": "Patron, +1 story point"
+      }
+    },
+    {
+      "range": [85, 90],
+      "result": "Power",
+      "fields": {
+        "effect": "+2 XP",
+        "resources": "Rival"
+      }
+    },
+    {
+      "range": [91, 95],
+      "result": "Order",
+      "fields": {
+        "resources": "Patron, +1 story point"
+      }
+    },
+    {
+      "range": [96, 100],
+      "result": "Freedom",
+      "fields": {
+        "effect": "+2 XP"
+      }
+    }
+  ]
+}

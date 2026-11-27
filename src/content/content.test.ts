@@ -6,14 +6,21 @@ import fc from 'fast-check'
 import { describe, expect, it } from 'vitest'
 import { diceRange } from '../engine/dice'
 import { lookupRow, resolveRoll, rowRange } from '../engine/lookup'
-import { getTable, tables } from './index'
+import { getTable, glossary, steps, tables } from './index'
 
 const rollable = tables.filter((t) => t.dice)
 const cases = rollable.flatMap((t) => (t.columns ?? [undefined]).map((c) => ({ table: t, column: c?.id })))
 
 describe('contenido', () => {
-  it('hay tablas cargadas', () => {
+  it('hay tablas, pasos y glosario cargados', () => {
     expect(tables.length).toBeGreaterThan(0)
+    expect(steps.some((s) => s.phase === 'creation')).toBe(true)
+    expect(steps.some((s) => s.phase === 'post-battle')).toBe(true)
+    expect(glossary.length).toBeGreaterThan(0)
+  })
+
+  it('todas las tablas v1 están verificadas', () => {
+    expect(tables.filter((t) => !t.verified).map((t) => t.id)).toEqual([])
   })
 
   it.each(cases.map((c) => [`${c.table.id}${c.column ? `:${c.column}` : ''}`, c] as const))(
@@ -43,6 +50,20 @@ describe('contenido', () => {
     expect(res.next).toEqual([{ tableId: 'primary-alien', label: 'Roll Primary Alien' }])
     const alien = getTable(res.next[0]!.tableId)!
     expect(resolveRoll(alien, { natural: 100 }).match.row.result).toBe('Swift')
+  })
+
+  it('Loot → Weapon Category → Slug Weapons se encadena (criterio v1)', () => {
+    const loot = resolveRoll(getTable('loot')!, { natural: 10 })
+    expect(loot.match.row.result).toBe('Weapon')
+    const category = resolveRoll(getTable(loot.next[0]!.tableId)!, { natural: 1 })
+    expect(category.match.row.result).toBe('Slug Weapons')
+    const slug = resolveRoll(getTable(category.next[0]!.tableId)!, { natural: 100 })
+    expect(slug.match.row.result).toBe('Rattle Gun')
+  })
+
+  it('Damaged weapons: dos tiradas en Weapon Category', () => {
+    const res = resolveRoll(getTable('loot')!, { natural: 30 })
+    expect(res.next.map((n) => n.tableId)).toEqual(['loot-weapon-category', 'loot-weapon-category'])
   })
 
   it('Deployment Conditions por columna', () => {

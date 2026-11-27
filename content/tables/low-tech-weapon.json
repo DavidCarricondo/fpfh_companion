@@ -1,0 +1,44 @@
+{
+  "verified": true,
+  "id": "low-tech-weapon",
+  "name": "Low Tech Weapon Table",
+  "page": 28,
+  "dice": "D100",
+  "group": "equipment",
+  "aliases": ["Low-tech Weapon"],
+  "notes": "Starting equipment: 3 rolls on the Military Weapon Table (for each crew member who rolled at least one Savvy increase, one of these may be taken on the High-tech Weapon Table instead), 3 rolls on the Low-tech Weapon Table, 1 roll on the Gear Table, 1 roll on the Gadget Table, and 1 credit per crew member. Items can be distributed as you see fit. All weapons are detailed on pages 50-52.",
+  "rows": [
+    {
+      "range": [1, 15],
+      "result": "Handgun"
+    },
+    {
+      "range": [16, 35],
+      "result": "Scrap Pistol"
+    },
+    {
+      "range": [36, 40],
+      "result": "Machine Pistol"
+    },
+    {
+      "range": [41, 65],
+      "result": "Colony Rifle"
+    },
+    {
+      "range": [66, 75],
+      "result": "Shotgun"
+    },
+    {
+      "range": [76, 80],
+      "result": "Hunting Rifle"
+    },
+    {
+      "range": [81, 95],
+      "result": "Blade"
+    },
+    {
+      "range": [96, 100],
+      "result": "Brutal Melee Weapon"
+    }
+  ]
+}

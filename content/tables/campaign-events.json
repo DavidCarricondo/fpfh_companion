@@ -1,0 +1,171 @@
+{
+  "verified": true,
+  "id": "campaign-events",
+  "name": "Campaign Events Table",
+  "aliases": ["Campaign Events", "Campaign Event"],
+  "page": [126, 127, 128],
+  "dice": "D100",
+  "group": "post-battle",
+  "notes": "Roll D100 and apply the result immediately. If an event does not make any sense, adjust or ignore it as necessary.",
+  "rows": [
+    {
+      "range": [1, 3],
+      "result": "You've met a friendly doc who doesn't ask too many questions.",
+      "detail": "Select up to two crew members in Sick Bay and reduce their Recovery time by one campaign turn each. If they recover, they can act normally next campaign turn."
+    },
+    {
+      "range": [4, 8],
+      "result": "The life support system on the ship needs upgrading badly.",
+      "detail": "Upgrading the life support system will cost 1D6 credits. The ship cannot be flown until this is paid. If your crew has an Engineer, modify the roll by -1."
+    },
+    {
+      "range": [9, 12],
+      "result": "A chance meeting turns into a new ally.",
+      "detail": "Roll up a new character and add them to the crew, OR add +1 story point. You may decide after rolling up the new character."
+    },
+    {
+      "range": [13, 16],
+      "result": "You've made friends among the locals.",
+      "detail": "+1 story point."
+    },
+    {
+      "range": [17, 20],
+      "result": "You managed to mouth off to the wrong people.",
+      "detail": "Add a Rival."
+    },
+    {
+      "range": [21, 23],
+      "result": "An old nemesis has tracked you down.",
+      "detail": "Select a prior Rival, or roll up a new one. They will follow you from planet to planet until resolved and receive +1 when rolling for the number of enemies in a battle."
+    },
+    {
+      "range": [24, 26],
+      "result": "A shady character offers you a deal.",
+      "detail": "Give him any one item of equipment, then roll on the Trade Table (p.79).",
+      "next": [
+        {
+          "tableId": "trade",
+          "label": "Roll Trade"
+        }
+      ]
+    },
+    {
+      "range": [27, 30],
+      "result": "You sell off some cargo you acquired on the last planet.",
+      "detail": "Earn 1D6 credits."
+    },
+    {
+      "range": [31, 35],
+      "result": "One of the crew overheard something interesting.",
+      "detail": "Add 1 Rumor."
+    },
+    {
+      "range": [36, 38],
+      "result": "You've managed to settle some old \"business\".",
+      "detail": "If you have any, you may remove one Rival of your choice. If you have no Rivals, your captain earns +1 XP instead."
+    },
+    {
+      "range": [39, 41],
+      "result": "An admirer wants to come along.",
+      "detail": "Gain a new crew member, if desired. They have only the base profile with no extra rolls, and bring no equipment. If your crew has any Feral members, the new member is also Feral."
+    },
+    {
+      "range": [42, 44],
+      "result": "An alien merchant offers you some strange device.",
+      "detail": "If you want to buy it, pay 4 credits and then roll on the Loot Table.",
+      "next": [
+        {
+          "tableId": "loot",
+          "label": "Roll Loot"
+        }
+      ]
+    },
+    {
+      "range": [45, 48],
+      "result": "Equipment malfunction.",
+      "detail": "If there are any items in your Stash, a random item is damaged and must be Repaired."
+    },
+    {
+      "range": [49, 51],
+      "result": "You've earned a bit of a bad reputation.",
+      "detail": "If you know any Patrons on the current world, randomly select one that will no longer work with you. If you have no Patrons, shrug and move on."
+    },
+    {
+      "range": [52, 56],
+      "result": "The tax man is taking an interest in your business conduct.",
+      "detail": "Roll 2D6 and pay the higher die in credits. If you have insufficient credits your ship is impounded until you can pay."
+    },
+    {
+      "range": [57, 59],
+      "result": "The crew has decided it's time for a new person to be in charge.",
+      "detail": "Select a crew member to be the new captain. They immediately receive 3 XP. Roll 1D6. On a 1, the old captain leaves the campaign permanently, taking any items carried with them. If your crew has any K'Erin, one of them must be selected, or they will leave."
+    },
+    {
+      "range": [60, 63],
+      "result": "You've made some business contacts.",
+      "detail": "Add a new Patron to the list of those known."
+    },
+    {
+      "range": [64, 66],
+      "result": "Recent events made for a good learning opportunity.",
+      "detail": "Every crew member receives +1 XP."
+    },
+    {
+      "range": [67, 70],
+      "result": "During routine maintenance, the gravitational adjuster got knocked out of alignment.",
+      "detail": "Your ship suffers 1D6 points of Hull Point damage."
+    },
+    {
+      "range": [71, 74],
+      "result": "The crew spends a night drinking, watching movies, and playing cards.",
+      "detail": "+1 story point."
+    },
+    {
+      "range": [75, 78],
+      "result": "You meet up with an old arms dealer contact who owes you a deal.",
+      "detail": "Add your choice of 3 weapons from the following list: Hand Cannons, Military Rifles, Shotguns, or Machine Pistols."
+    },
+    {
+      "range": [79, 81],
+      "result": "You renegotiate some old debts.",
+      "detail": "If you currently owe money, reduce your debt by 1D6+1 credits. If you owe nothing, earn 2 credits for being prudent with your money."
+    },
+    {
+      "range": [82, 84],
+      "result": "The sector news networks are awash with rumors of war.",
+      "detail": "While you remain on this planet, any roll for Invasion is at +2."
+    },
+    {
+      "range": [85, 88],
+      "result": "A bit of time on your hands",
+      "detail": "The crew has a few days to do their own thing. Select two crew members at random and have each make a roll on the Exploration Table (p.80).",
+      "next": [
+        {
+          "tableId": "exploration",
+          "label": "Roll Exploration",
+          "times": 2
+        }
+      ]
+    },
+    {
+      "range": [89, 91],
+      "result": "You got noticed by someone you'd rather avoid.",
+      "detail": "Add a Rival. If you currently are on a Quest, the next campaign turn is automatically a battle against the new Rival, and they will add +1 to the number of enemies."
+    },
+    {
+      "range": [92, 94],
+      "result": "It's time to go!",
+      "detail": "Whatever you did, every campaign turn you stay on this planet, you must add an additional Rival."
+    },
+    {
+      "range": [95, 97],
+      "result": "Unity government says no ships are authorized to leave.",
+      "detail": "You cannot leave the planet during the next two campaign turns."
+    },
+    {
+      "range": [98, 100],
+      "result": "In hindsight, it'll make a great story.",
+      "detail": "Select a crew member who was a casualty last battle. They receive +1 Luck. If nobody got hurt, receive +1 story point instead."
+    }
+  ]
+}

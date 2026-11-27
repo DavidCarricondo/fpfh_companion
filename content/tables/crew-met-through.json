@@ -1,0 +1,48 @@
+{
+  "verified": true,
+  "id": "crew-met-through",
+  "name": "Crew Table: We Met Through",
+  "page": 32,
+  "dice": "D100",
+  "group": "creation",
+  "aliases": ["We met through", "Crew Table"],
+  "notes": "Purely to add character; these rolls do not influence gameplay, but are highly recommended.",
+  "rows": [
+    {
+      "range": [1, 10],
+      "result": "Hired by a random member of the group"
+    },
+    {
+      "range": [11, 20],
+      "result": "Pursuit of random group member's motivation"
+    },
+    {
+      "range": [21, 30],
+      "result": "Being in trouble with the authorities"
+    },
+    {
+      "range": [31, 40],
+      "result": "A common enemy"
+    },
+    {
+      "range": [41, 50],
+      "result": "A common cause or belief"
+    },
+    {
+      "range": [51, 65],
+      "result": "A random meeting in a bar"
+    },
+    {
+      "range": [66, 75],
+      "result": "A previous job"
+    },
+    {
+      "range": [76, 90],
+      "result": "Mutual protection in a hostile universe"
+    },
+    {
+      "range": [91, 100],
+      "result": "Being old war buddies"
+    }
+  ]
+}

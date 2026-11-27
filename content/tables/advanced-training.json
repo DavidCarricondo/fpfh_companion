@@ -1,0 +1,66 @@
+{
+  "verified": true,
+  "id": "advanced-training",
+  "name": "Advanced Training",
+  "aliases": ["Advanced Training courses"],
+  "page": [124, 125],
+  "group": "post-battle",
+  "notes": "Select a crew member, pay an application fee of 1 credit, and roll 2D6, requiring a 4+ to be approved (one attempt per campaign turn). Pay the course cost with unspent XP, credits, or any combination. The training can be used from the following campaign turn, but not while the crew member is in Sick Bay. Each crew member can only ever be trained in a single course, and you cannot benefit from more than one crew member with the same training. Bots can have a training module installed, paid in credits exclusively.",
+  "fieldDefs": [
+    {
+      "id": "cost",
+      "label": "Course cost"
+    }
+  ],
+  "rows": [
+    {
+      "result": "Pilot Training",
+      "detail": "If a Starship Travel event calls for a Savvy test, you may roll 2D6, pick the better die and add +2 to the score.",
+      "fields": {
+        "cost": 20
+      }
+    },
+    {
+      "result": "Mechanic training",
+      "detail": "If your ship is in need of Repairs, you may repair +1 Hull Point damage every campaign turn (meaning 2 points of damage are repaired per campaign turn). Engineers count any XP spent as double value for obtaining this.",
+      "fields": {
+        "cost": 15
+      }
+    },
+    {
+      "result": "Medical school",
+      "detail": "After each battle, you may nominate a casualty that will roll twice on the Injury Table, picking the better result. This crew member must have been in the battle and must not have become a casualty. If your ship has a Shuttle, they can apply their skill even if they did not participate in the battle.",
+      "fields": {
+        "cost": 20
+      }
+    },
+    {
+      "result": "Merchant school",
+      "detail": "When this crew member Trades, you may reroll one Trade roll each campaign turn. The new roll must be accepted and if the new roll offers a choice of whether to buy an item, you must accept. You may roll up all eligible Trade rolls before choosing what to reroll.",
+      "fields": {
+        "cost": 10
+      }
+    },
+    {
+      "result": "Security training",
+      "detail": "If this crew member is part of your squad when fighting a battle, you may add +1 when rolling to Seize the Initiative. Ferals can obtain this training at -2 Cost.",
+      "fields": {
+        "cost": 10
+      }
+    },
+    {
+      "result": "Broker training",
+      "detail": "When rolling to obtain licenses, Advanced Training applications, or searching for Patrons, add +1 to the roll.",
+      "fields": {
+        "cost": 15
+      }
+    },
+    {
+      "result": "Bot technician",
+      "detail": "All Bot upgrades cost 1 credit less. If a Bot or Soulless character must roll for a post-battle injury, you may roll twice, picking the better result.",
+      "fields": {
+        "cost": 10
+      }
+    }
+  ]
+}

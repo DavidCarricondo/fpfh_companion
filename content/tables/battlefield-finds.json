@@ -1,0 +1,58 @@
+{
+  "verified": true,
+  "id": "battlefield-finds",
+  "name": "Battlefield Finds Table",
+  "aliases": ["Battlefield Finds"],
+  "page": [120, 121],
+  "dice": "D100",
+  "group": "post-battle",
+  "notes": "Roll once if you Held the Field after the battle, even if you failed or had no objective. This is in addition to any Loot. Not rolled after an Invasion battle. Unless indicated by this table, you CANNOT acquire weapons from fallen opponents.",
+  "rows": [
+    {
+      "range": [1, 15],
+      "result": "Weapon",
+      "detail": "Randomly select a slain (but not Bailed) enemy from the battle. You may keep any weapons they were carrying."
+    },
+    {
+      "range": [16, 25],
+      "result": "Usable goods",
+      "detail": "Roll on the Consumables Table in the \"Loot\" chapter of the rules. You receive 1 dosage of the item indicated.",
+      "next": [
+        {
+          "tableId": "loot-consumables",
+          "label": "Roll Consumables"
+        }
+      ]
+    },
+    {
+      "range": [26, 35],
+      "result": "Curious data stick / Invasion Evidence",
+      "detail": "You obtain a Quest Rumor. If the enemy is an Invasion Threat, you instead find Invasion Evidence: earn +1 credit, and add +1 when checking for Invasion in the next step."
+    },
+    {
+      "range": [36, 45],
+      "result": "Starship part",
+      "detail": "Redeemable as equivalent to 2 credits only when installing a Starship Component (see page 60)."
+    },
+    {
+      "range": [46, 60],
+      "result": "Personal trinket",
+      "detail": "On each planet you visit in the future, roll 2D6. On a 9+ you find the owner and receive a Loot roll (p.131) as payment."
+    },
+    {
+      "range": [61, 75],
+      "result": "Debris",
+      "detail": "1D3 credits' worth on the scrap market."
+    },
+    {
+      "range": [76, 90],
+      "result": "Vital info / Invasion Evidence",
+      "detail": "Turn in this information to get a Corporate Patron automatically on this world. If the enemy is an Invasion Threat, you instead find Invasion Evidence; if so, earn +1 credit and add +1 when checking for Invasion in the next step."
+    },
+    {
+      "range": [91, 100],
+      "result": "Nothing of value",
+      "detail": "…not one thing!"
+    }
+  ]
+}

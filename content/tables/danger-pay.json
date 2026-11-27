@@ -1,0 +1,29 @@
+{
+  "verified": true,
+  "id": "danger-pay",
+  "name": "Danger Pay Table",
+  "aliases": ["Danger Pay"],
+  "page": 83,
+  "dice": "D10",
+  "group": "world",
+  "notes": "Danger Pay is on top of any normal battle earnings. Unless stated otherwise, it is paid even if the mission fails, but only if the mission is attempted. Add +1 to the roll if working for a Corporation (use the Modifier field; the result is capped at 10+).",
+  "rows": [
+    {
+      "range": [1, 4],
+      "result": "+1 credit"
+    },
+    {
+      "range": [5, 8],
+      "result": "+2 credits"
+    },
+    {
+      "range": [9, 9],
+      "result": "+3 credits"
+    },
+    {
+      "range": [10, 10],
+      "result": "+3 credits and roll twice",
+      "detail": "Roll twice, picking the higher die when rolling for mission pay after the battle."
+    }
+  ]
+}

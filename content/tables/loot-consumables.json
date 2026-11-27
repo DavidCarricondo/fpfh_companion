@@ -1,0 +1,35 @@
+{
+  "verified": true,
+  "id": "loot-consumables",
+  "name": "Consumables Subtable",
+  "page": 133,
+  "dice": "D100",
+  "group": "loot",
+  "aliases": ["Consumables Table"],
+  "rows": [
+    {
+      "range": [1, 20],
+      "result": "Booster Pills"
+    },
+    {
+      "range": [21, 30],
+      "result": "Combat Serum"
+    },
+    {
+      "range": [31, 40],
+      "result": "Kiranin Crystals"
+    },
+    {
+      "range": [41, 55],
+      "result": "Rage Out"
+    },
+    {
+      "range": [56, 70],
+      "result": "Still"
+    },
+    {
+      "range": [71, 100],
+      "result": "Stim-pack"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "verified": true,
+  "id": "loot-implants",
+  "name": "Implants Subtable",
+  "page": 133,
+  "dice": "D100",
+  "group": "loot",
+  "rows": [
+    {
+      "range": [1, 10],
+      "result": "AI Companion"
+    },
+    {
+      "range": [11, 16],
+      "result": "Body Wire"
+    },
+    {
+      "range": [17, 28],
+      "result": "Boosted Arm"
+    },
+    {
+      "range": [29, 40],
+      "result": "Boosted Leg"
+    },
+    {
+      "range": [41, 50],
+      "result": "Cyber Hand"
+    },
+    {
+      "range": [51, 61],
+      "result": "Genetic Defenses"
+    },
+    {
+      "range": [62, 71],
+      "result": "Health Boost"
+    },
+    {
+      "range": [72, 79],
+      "result": "Nerve Adjuster"
+    },
+    {
+      "range": [80, 85],
+      "result": "Neural Optimization"
+    },
+    {
+      "range": [86, 94],
+      "result": "Night Sight"
+    },
+    {
+      "range": [95, 100],
+      "result": "Pain Suppressor"
+    }
+  ]
+}

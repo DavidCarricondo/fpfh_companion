@@ -1,0 +1,51 @@
+{
+  "verified": true,
+  "id": "loot-gear",
+  "name": "Gear Subtable",
+  "page": 132,
+  "dice": "D100",
+  "group": "loot",
+  "aliases": ["Loot Gear Subtable"],
+  "rows": [
+    {
+      "range": [1, 20],
+      "result": "Gun Mods",
+      "next": [
+        {
+          "tableId": "loot-gun-mods",
+          "label": "Roll Gun Mods"
+        }
+      ]
+    },
+    {
+      "range": [21, 40],
+      "result": "Gun Sights",
+      "next": [
+        {
+          "tableId": "loot-gun-sights",
+          "label": "Roll Gun Sights"
+        }
+      ]
+    },
+    {
+      "range": [41, 75],
+      "result": "Protective Items",
+      "next": [
+        {
+          "tableId": "loot-protective-items",
+          "label": "Roll Protective Items"
+        }
+      ]
+    },
+    {
+      "range": [76, 100],
+      "result": "Utility Items",
+      "next": [
+        {
+          "tableId": "loot-utility-items",
+          "label": "Roll Utility Items"
+        }
+      ]
+    }
+  ]
+}

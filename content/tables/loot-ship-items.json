@@ -1,0 +1,86 @@
+{
+  "verified": true,
+  "id": "loot-ship-items",
+  "name": "Ship Items Subtable",
+  "page": 134,
+  "dice": "D100",
+  "group": "loot",
+  "rows": [
+    {
+      "range": [1, 4],
+      "result": "Analyzer"
+    },
+    {
+      "range": [5, 11],
+      "result": "Colonist Ration Packs"
+    },
+    {
+      "range": [12, 17],
+      "result": "Duplicator"
+    },
+    {
+      "range": [18, 24],
+      "result": "Fake ID"
+    },
+    {
+      "range": [25, 31],
+      "result": "Fixer"
+    },
+    {
+      "range": [32, 34],
+      "result": "Genetic Reconfiguration Kit"
+    },
+    {
+      "range": [35, 39],
+      "result": "Loaded Dice"
+    },
+    {
+      "range": [40, 44],
+      "result": "Lucky Dice"
+    },
+    {
+      "range": [45, 48],
+      "result": "Mk II Translator"
+    },
+    {
+      "range": [49, 56],
+      "result": "Med-patch"
+    },
+    {
+      "range": [57, 60],
+      "result": "Meditation Orb"
+    },
+    {
+      "range": [61, 67],
+      "result": "Nano-doc"
+    },
+    {
+      "range": [68, 71],
+      "result": "Novelty Stuffed Animal"
+    },
+    {
+      "range": [72, 74],
+      "result": "Purifier"
+    },
+    {
+      "range": [75, 78],
+      "result": "Repair Bot"
+    },
+    {
+      "range": [79, 83],
+      "result": "Sector Permit"
+    },
+    {
+      "range": [84, 91],
+      "result": "Spare Parts"
+    },
+    {
+      "range": [92, 96],
+      "result": "Teach-Bot"
+    },
+    {
+      "range": [97, 100],
+      "result": "Transcender"
+    }
+  ]
+}

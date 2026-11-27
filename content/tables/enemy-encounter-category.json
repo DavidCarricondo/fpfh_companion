@@ -1,0 +1,89 @@
+{
+  "verified": true,
+  "id": "enemy-encounter-category",
+  "name": "Enemy Encounter Category Table",
+  "aliases": ["Enemy Encounter Category", "Unknown Rivals"],
+  "page": 94,
+  "dice": "D100",
+  "group": "enemies",
+  "columns": [
+    {
+      "id": "opportunity",
+      "label": "Opportunity"
+    },
+    {
+      "id": "patron",
+      "label": "Patron"
+    },
+    {
+      "id": "quest",
+      "label": "Quest"
+    },
+    {
+      "id": "unknown-rival",
+      "label": "Unknown Rival"
+    }
+  ],
+  "notes": "Roll D100 for the category, then roll D100 on the subtable for the exact enemy type. For a Rival or Invasion battle you will usually know who you are fighting; for an unexpected Rival use the Unknown Rival column (roll twice and pick the more interesting). AI codes: A Aggressive, C Cautious, D Defensive, G Guardian, R Rampage, T Tactical, B Beast.",
+  "rows": [
+    {
+      "range": {
+        "opportunity": [1, 30],
+        "patron": [1, 25],
+        "quest": [1, 15],
+        "unknown-rival": [1, 50]
+      },
+      "result": "Criminal Elements",
+      "next": [
+        {
+          "tableId": "criminal-elements",
+          "label": "Roll Criminal Elements"
+        }
+      ]
+    },
+    {
+      "range": {
+        "opportunity": [31, 60],
+        "patron": [26, 60],
+        "quest": [16, 40],
+        "unknown-rival": [51, 80]
+      },
+      "result": "Hired Muscle",
+      "next": [
+        {
+          "tableId": "hired-muscle",
+          "label": "Roll Hired Muscle"
+        }
+      ]
+    },
+    {
+      "range": {
+        "opportunity": [61, 80],
+        "patron": [61, 75],
+        "quest": [41, 70],
+        "unknown-rival": [81, 100]
+      },
+      "result": "Interested Parties",
+      "next": [
+        {
+          "tableId": "interested-parties",
+          "label": "Roll Interested Parties"
+        }
+      ]
+    },
+    {
+      "range": {
+        "opportunity": [81, 100],
+        "patron": [76, 100],
+        "quest": [71, 100]
+      },
+      "result": "Roving Threats",
+      "next": [
+        {
+          "tableId": "roving-threats",
+          "label": "Roll Roving Threats"
+        }
+      ]
+    }
+  ]
+}

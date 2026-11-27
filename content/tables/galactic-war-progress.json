@@ -1,0 +1,32 @@
+{
+  "verified": true,
+  "id": "galactic-war-progress",
+  "name": "Galactic War Progress",
+  "aliases": ["Galactic War"],
+  "page": 126,
+  "dice": "2D6",
+  "group": "post-battle",
+  "notes": "If you are tracking any planets that were previously Invaded, roll 2D6 for each. Apply any accumulated \"Making Ground\" bonuses and world-trait modifiers with the Modifier field (the result is capped at 12).",
+  "rows": [
+    {
+      "range": [2, 4],
+      "result": "Lost to Unity",
+      "detail": "The planet is lost to the invaders and cannot be visited again."
+    },
+    {
+      "range": [5, 7],
+      "result": "Contested",
+      "detail": "No progress."
+    },
+    {
+      "range": [8, 9],
+      "result": "Making Ground",
+      "detail": "Add +1 to all future rolls on this table."
+    },
+    {
+      "range": [10, 12],
+      "result": "Unity Victorious",
+      "detail": "The planet can now be visited again. Due to increased troop presence, all future Invasion Threat rolls on this world are at -2."
+    }
+  ]
+}

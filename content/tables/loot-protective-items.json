@@ -1,0 +1,46 @@
+{
+  "verified": true,
+  "id": "loot-protective-items",
+  "name": "Protective Items Subtable",
+  "page": 132,
+  "dice": "D100",
+  "group": "loot",
+  "rows": [
+    {
+      "range": [1, 5],
+      "result": "Battle Dress"
+    },
+    {
+      "range": [6, 15],
+      "result": "Camo Cloak"
+    },
+    {
+      "range": [16, 40],
+      "result": "Combat Armor"
+    },
+    {
+      "range": [41, 50],
+      "result": "Deflector Field"
+    },
+    {
+      "range": [51, 65],
+      "result": "Flak Screen"
+    },
+    {
+      "range": [66, 75],
+      "result": "Flex-Armor"
+    },
+    {
+      "range": [76, 90],
+      "result": "Frag Vest"
+    },
+    {
+      "range": [91, 95],
+      "result": "Screen Generator"
+    },
+    {
+      "range": [96, 100],
+      "result": "Stealth Gear"
+    }
+  ]
+}

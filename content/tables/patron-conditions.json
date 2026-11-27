@@ -1,0 +1,52 @@
+{
+  "verified": true,
+  "id": "patron-conditions",
+  "name": "Conditions Subtable",
+  "aliases": ["Patron Conditions"],
+  "page": 84,
+  "dice": "D10",
+  "group": "world",
+  "notes": "Benefits, Hazards, and Conditions: roll 1D10 for each category. Benefits apply on 8+ (Wealthy Individual 5+); Hazards on 8+ (Secretive Group 5+); Conditions on 8+ (Corporation 5+). If you have worked for this Patron before, the Benefit (if any) always remains the same. Benefits are paid out ONLY if the mission is a success.",
+  "rows": [
+    {
+      "range": [1, 1],
+      "result": "Vengeful",
+      "detail": "If the mission fails, the Patron becomes a Rival."
+    },
+    {
+      "range": [2, 3],
+      "result": "Demanding",
+      "detail": "Danger Pay is only upon success."
+    },
+    {
+      "range": [4, 4],
+      "result": "Small Squad",
+      "detail": "You cannot deploy more than 4 crew."
+    },
+    {
+      "range": [5, 5],
+      "result": "Full Squad",
+      "detail": "You must have 6 available crew."
+    },
+    {
+      "range": [6, 6],
+      "result": "Clean",
+      "detail": "You cannot ever have made law enforcement Rivals."
+    },
+    {
+      "range": [7, 8],
+      "result": "Busy",
+      "detail": "If the mission is a success, the Patron offers a new job next campaign turn."
+    },
+    {
+      "range": [9, 9],
+      "result": "One-time Contract",
+      "detail": "This Patron cannot be retained as a contact."
+    },
+    {
+      "range": [10, 10],
+      "result": "Reputation Required",
+      "detail": "You must have completed a prior Patron job on this world."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "verified": true,
+  "id": "loot-weapon-category",
+  "name": "Weapon Category Subtable",
+  "page": 131,
+  "dice": "D100",
+  "group": "loot",
+  "aliases": ["Weapons Category Subtable"],
+  "rows": [
+    {
+      "range": [1, 35],
+      "result": "Slug Weapons",
+      "next": [
+        {
+          "tableId": "loot-slug-weapons",
+          "label": "Roll Slug Weapons"
+        }
+      ]
+    },
+    {
+      "range": [36, 50],
+      "result": "Energy Weapons",
+      "next": [
+        {
+          "tableId": "loot-energy-weapons",
+          "label": "Roll Energy Weapons"
+        }
+      ]
+    },
+    {
+      "range": [51, 65],
+      "result": "Special Weapons",
+      "next": [
+        {
+          "tableId": "loot-special-weapons",
+          "label": "Roll Special Weapons"
+        }
+      ]
+    },
+    {
+      "range": [66, 85],
+      "result": "Melee Weapons",
+      "next": [
+        {
+          "tableId": "loot-melee-weapons",
+          "label": "Roll Melee Weapons"
+        }
+      ]
+    },
+    {
+      "range": [86, 100],
+      "result": "Grenades",
+      "next": [
+        {
+          "tableId": "loot-grenades",
+          "label": "Roll Grenades"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "verified": true,
+  "id": "loot-rewards",
+  "name": "Rewards Table",
+  "page": 134,
+  "dice": "D100",
+  "group": "loot",
+  "aliases": ["Rewards Subtable", "Rewards"],
+  "rows": [
+    {
+      "range": [1, 10],
+      "result": "Documents",
+      "detail": "1 Rumor"
+    },
+    {
+      "range": [11, 20],
+      "result": "Data Files",
+      "detail": "2 Rumors"
+    },
+    {
+      "range": [21, 25],
+      "result": "Scrap",
+      "detail": "3 credits"
+    },
+    {
+      "range": [26, 40],
+      "result": "Cargo Crate",
+      "detail": "1D6 credits"
+    },
+    {
+      "range": [41, 55],
+      "result": "Valuable Materials",
+      "detail": "1D6+2 credits"
+    },
+    {
+      "range": [56, 70],
+      "result": "Rare Substance",
+      "detail": "Roll 2D6. Receive credits equal to highest roll."
+    },
+    {
+      "range": [71, 85],
+      "result": "Ship Parts",
+      "detail": "Discount your next ship component purchase by 1D6 credits. Establish value now."
+    },
+    {
+      "range": [86, 90],
+      "result": "Military Ship Part",
+      "detail": "Discount your next ship component purchase by 1D6+2 credits. Establish the value now."
+    },
+    {
+      "range": [91, 95],
+      "result": "Mysterious Items",
+      "detail": "2 story points"
+    },
+    {
+      "range": [96, 100],
+      "result": "Personal Item",
+      "detail": "3 story points"
+    }
+  ]
+}

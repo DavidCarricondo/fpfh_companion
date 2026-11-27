@@ -1,0 +1,28 @@
+{
+  "verified": true,
+  "id": "time-frame",
+  "name": "Time Frame Table",
+  "aliases": ["Time Frame"],
+  "page": 83,
+  "dice": "D10",
+  "group": "world",
+  "notes": "The number of campaign turns within which you must finish the job. If the job isn't done when the time runs out, it counts as a failure. Add +1 to the roll if working for a Secretive Group (use the Modifier field; the result is capped at 10+).",
+  "rows": [
+    {
+      "range": [1, 5],
+      "result": "This campaign turn."
+    },
+    {
+      "range": [6, 7],
+      "result": "This or the next campaign turn."
+    },
+    {
+      "range": [8, 9],
+      "result": "This or the following 2 campaign turns."
+    },
+    {
+      "range": [10, 10],
+      "result": "Any time."
+    }
+  ]
+}

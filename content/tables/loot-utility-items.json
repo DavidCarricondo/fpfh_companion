@@ -1,0 +1,90 @@
+{
+  "verified": true,
+  "id": "loot-utility-items",
+  "name": "Utility Items Subtable",
+  "page": 133,
+  "dice": "D100",
+  "group": "loot",
+  "rows": [
+    {
+      "range": [1, 6],
+      "result": "Auto Sensor"
+    },
+    {
+      "range": [7, 11],
+      "result": "Battle Visor"
+    },
+    {
+      "range": [12, 17],
+      "result": "Communicator"
+    },
+    {
+      "range": [18, 23],
+      "result": "Concealed Blade"
+    },
+    {
+      "range": [24, 29],
+      "result": "Displacer"
+    },
+    {
+      "range": [30, 34],
+      "result": "Distraction Bot"
+    },
+    {
+      "range": [35, 38],
+      "result": "Grapple Launcher"
+    },
+    {
+      "range": [39, 43],
+      "result": "Grav Dampener"
+    },
+    {
+      "range": [44, 49],
+      "result": "Hazard Suit"
+    },
+    {
+      "range": [50, 54],
+      "result": "Hover Board"
+    },
+    {
+      "range": [55, 57],
+      "result": "Insta-Wall"
+    },
+    {
+      "range": [58, 63],
+      "result": "Jump Belt"
+    },
+    {
+      "range": [64, 70],
+      "result": "Motion Tracker"
+    },
+    {
+      "range": [71, 75],
+      "result": "Multi-Cutter"
+    },
+    {
+      "range": [76, 79],
+      "result": "Robo-Rabbit's Foot"
+    },
+    {
+      "range": [80, 84],
+      "result": "Scanner Bot"
+    },
+    {
+      "range": [85, 89],
+      "result": "Snooper Bot"
+    },
+    {
+      "range": [90, 93],
+      "result": "Sonic Emitter"
+    },
+    {
+      "range": [94, 96],
+      "result": "Steel Boots"
+    },
+    {
+      "range": [97, 100],
+      "result": "Time Distorter"
+    }
+  ]
+}
