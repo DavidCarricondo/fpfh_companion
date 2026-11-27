@@ -1,0 +1,47 @@
+{
+  "verified": false,
+  "id": "patron-objectives",
+  "name": "Patron Mission Objectives",
+  "page": [89, 90, 91],
+  "dice": "D10",
+  "group": "battle",
+  "notes": "To Win the battle, you must achieve the objective (even if you are subsequently chased from the battlefield, unless the objective states otherwise). If this is the final battle of a Quest, it is always a Fight Off objective and you must add +1 to the number of enemies faced.",
+  "rows": [
+    {
+      "range": [1, 2],
+      "result": "Deliver",
+      "detail": "A crew member of your choosing is carrying a package that must be delivered to the exact center of the table (placing it requires a Combat Action). If the carrier becomes a casualty, roll 1D6: on a 1, the item is destroyed; otherwise it can be picked up by spending a Combat Action at the location they fell. If you drive off all enemies, you Win as long as the package is undamaged.",
+      "page": 90
+    },
+    {
+      "range": [3, 3],
+      "result": "Eliminate",
+      "detail": "Select a random enemy figure as the target. If they are killed, you Win. If the target would Bail, put a marker next to them and leave them in place: for the next round they cannot move, but may shoot and fight normally. If you fail to kill them in this final round, they escape and the mission has failed.",
+      "page": 90
+    },
+    {
+      "range": [4, 5],
+      "result": "Move Through",
+      "detail": "You Win if at least 2 crew members move off the opposing battlefield edge. If you drive off all enemies, you Win as long as you have at least 2 crew members remaining.",
+      "page": 90
+    },
+    {
+      "range": [6, 7],
+      "result": "Secure",
+      "detail": "You must end 2 consecutive rounds with crew within 2\" of the center of the table. A crew member with an enemy within 6\" of them does not count. If you drive off the opposition, you can complete the objective at your leisure.",
+      "page": 91
+    },
+    {
+      "range": [8, 8],
+      "result": "Protect",
+      "detail": "You are accompanied by a VIP (Reactions 1 / 4\" / +0 / 3), unarmed, never initiates a Brawl, cannot be given equipment; treat them as a crew member. The VIP sets up at least 12\" from the center; the enemy sets up 12\" from the center on their side. If the VIP spends a full round within 3\" of the center, you Win; within the first 4 rounds earns an additional 2 credits in pay.",
+      "page": 91
+    },
+    {
+      "range": [9, 10],
+      "result": "Fight Off",
+      "detail": "There is no objective other than driving off the enemy. To Win, you must Hold the Field.",
+      "page": 90
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "verified": false,
+  "id": "enemy-specialist-b",
+  "name": "Enemy Weapons: Specialist B",
+  "page": 104,
+  "dice": "D6",
+  "group": "enemies",
+  "notes": "Roll once for the weapon carried by the basic opponents (except Specialists), then roll for the Specialist weapon if available. Enemies with the Aggressive AI type carry a Blade in addition to any listed weapons, unless their Combat Skill is +0. Enemies with the Psycho AI type always carry a Blade. Some enemies have a specific weapon listed and always carry that. Optional Varied Armaments: split the non-Specialists into two groups and roll for each group.",
+  "rows": [
+    {
+      "range": [1, 1],
+      "result": "Marksman's rifle"
+    },
+    {
+      "range": [2, 2],
+      "result": "Auto rifle"
+    },
+    {
+      "range": [3, 3],
+      "result": "Shell gun"
+    },
+    {
+      "range": [4, 4],
+      "result": "Hand flamer"
+    },
+    {
+      "range": [5, 5],
+      "result": "Rattle gun"
+    },
+    {
+      "range": [6, 6],
+      "result": "Rattle gun"
+    }
+  ]
+}

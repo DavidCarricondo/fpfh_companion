@@ -1,0 +1,37 @@
+{
+  "verified": false,
+  "id": "rival-attack-type",
+  "name": "Rival Attacks",
+  "aliases": ["Rival Attack Types"],
+  "page": [91, 92],
+  "dice": "D10",
+  "group": "battle",
+  "notes": "Roll if you are being attacked by a Rival. If you tracked them down, you always fight a Showdown. There is no Win condition against Rivals, but if you Hold the Field, you have an increased chance of permanently chasing them off. If you flee from the battle before 4 rounds are up, a random crew member will lose a random item of equipment carried in your flight.",
+  "rows": [
+    {
+      "range": [1, 1],
+      "result": "Ambush",
+      "detail": "You can deploy one crew member less than standard (5 in a typical campaign) for this fight, and cannot roll to Seize the Initiative."
+    },
+    {
+      "range": [2, 3],
+      "result": "Brought friends",
+      "detail": "Add 1 additional enemy."
+    },
+    {
+      "range": [4, 7],
+      "result": "Showdown",
+      "detail": "A straight-up fight. No modifications."
+    },
+    {
+      "range": [8, 8],
+      "result": "Assault",
+      "detail": "Add one additional enemy figure. Your crew must all set up in or adjacent to a building. If you fail to Hold the Field, you will lose 1D3 credits."
+    },
+    {
+      "range": [9, 10],
+      "result": "Raid",
+      "detail": "If you fail to Hold the Field, your ship will take 1D6+1 points of Hull Point damage."
+    }
+  ]
+}

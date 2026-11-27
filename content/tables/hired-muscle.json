@@ -1,0 +1,265 @@
+{
+  "verified": false,
+  "id": "hired-muscle",
+  "name": "Hired Muscle",
+  "page": [96, 97, 98],
+  "dice": "D100",
+  "group": "enemies",
+  "fieldDefs": [
+    {
+      "id": "numbers",
+      "label": "Numbers"
+    },
+    {
+      "id": "panic",
+      "label": "Panic"
+    },
+    {
+      "id": "speed",
+      "label": "Speed"
+    },
+    {
+      "id": "combat",
+      "label": "Combat Skill"
+    },
+    {
+      "id": "toughness",
+      "label": "Toughness"
+    },
+    {
+      "id": "ai",
+      "label": "AI"
+    },
+    {
+      "id": "weapons",
+      "label": "Weapons"
+    }
+  ],
+  "notes": "Being paid professionals, you are -1 to any attempt to Seize the Initiative. This is cumulative with any modifiers listed below. AI codes: A Aggressive, C Cautious, D Defensive, G Guardian, R Rampage, T Tactical, B Beast. Weapons: number = Weapon column, letter = Specialist column (p.104).",
+  "rows": [
+    {
+      "range": [1, 14],
+      "result": "Unknown Mercs",
+      "detail": "Lets just call it a day: If they are down to 1 or 2 figures remaining, they will accept ending the fight at the end of any round. Neither side Holds the Field in this case.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1-2",
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "T",
+        "weapons": "2 B"
+      }
+    },
+    {
+      "range": [15, 26],
+      "result": "Enforcers",
+      "detail": "Cop killer: If you ever fight Enforcers as Rivals, add +2 to their numbers.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "T",
+        "weapons": "2 A"
+      }
+    },
+    {
+      "range": [27, 34],
+      "result": "Guild Troops",
+      "detail": "Intrigue: Roll 2D6, and add +1 if you killed a Lieutenant and/or Unique Individual. On a 9+, you obtain a Quest Rumor.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "T",
+        "weapons": "2 C"
+      }
+    },
+    {
+      "range": [35, 39],
+      "result": "Roid-gangers",
+      "detail": "Careless: You are +1 to Seize the Initiative (for a final modifier of 0).",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 5,
+        "ai": "A",
+        "weapons": "1 A"
+      }
+    },
+    {
+      "range": [40, 42],
+      "result": "Black Ops Team",
+      "detail": "Tough fight: A random survivor gains +1 XP.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1",
+        "speed": "6\"",
+        "combat": "+2",
+        "toughness": 5,
+        "ai": "T",
+        "weapons": "3 A"
+      }
+    },
+    {
+      "range": [43, 46],
+      "result": "War Bots",
+      "detail": "Fearless: Never affected by Morale. 5+ Saving Throw.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "0",
+        "speed": "3\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "A",
+        "weapons": "3 C"
+      }
+    },
+    {
+      "range": [47, 50],
+      "result": "Secret Agents",
+      "detail": "Loot: Gain an extra Loot roll if Holding the Field. Intrigue: Roll 2D6, and add +1 if you killed a Lieutenant and/or Unique Individual. On a 9+, you obtain a Quest Rumor.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1-2",
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "C",
+        "weapons": "2 C"
+      }
+    },
+    {
+      "range": [51, 53],
+      "result": "Assassins",
+      "detail": "Gruesome: Characters rolling for post-battle Injuries must apply a -5 to the roll. Tough fight: A random survivor gains +1 XP.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1",
+        "speed": "6\"",
+        "combat": "+2",
+        "toughness": 3,
+        "ai": "A",
+        "weapons": "1 B"
+      }
+    },
+    {
+      "range": [54, 59],
+      "result": "Feral Mercenaries",
+      "detail": "Quick feet: They add +1\" to the distance for any Dash move.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1-2",
+        "speed": "5\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "A",
+        "weapons": "2 B"
+      }
+    },
+    {
+      "range": [60, 64],
+      "result": "Skulker Mercenaries",
+      "detail": "Alert: You are -1 to Seize the Initiative (for a total of -2). Scavengers: Roll twice on the Battlefield Finds Table.",
+      "fields": {
+        "numbers": "+3",
+        "panic": "1-2",
+        "speed": "7\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "C",
+        "weapons": "2 C"
+      }
+    },
+    {
+      "range": [65, 74],
+      "result": "Corporate Security",
+      "detail": "6+ Saving Throw.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "D",
+        "weapons": "2 B"
+      }
+    },
+    {
+      "range": [75, 79],
+      "result": "Unity Grunts",
+      "detail": "6+ Saving Throw.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1",
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "T",
+        "weapons": "2 C"
+      }
+    },
+    {
+      "range": [80, 85],
+      "result": "Security Bots",
+      "detail": "Careless: You are +1 to Seize the Initiative (for a total of 0). Fearless: Never affected by Morale. 6+ Saving Throw.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "0",
+        "speed": "3\"",
+        "combat": "+0",
+        "toughness": 5,
+        "ai": "D",
+        "weapons": "2 A"
+      }
+    },
+    {
+      "range": [86, 90],
+      "result": "Black Dragon Mercs",
+      "detail": "Stubborn: They ignore the first casualty of the battle when making a Morale check.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "T",
+        "weapons": "2 C"
+      }
+    },
+    {
+      "range": [91, 95],
+      "result": "Rage Lizard Mercs",
+      "detail": "Up close: If a Rage Lizard is within 1\" of terrain, they may add +1 to Brawling rolls.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 5,
+        "ai": "T",
+        "weapons": "3 B"
+      }
+    },
+    {
+      "range": [96, 100],
+      "result": "Blood Storm Mercs",
+      "detail": "Ferocious: +1 to Brawling rolls when initiating combat.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1",
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "A",
+        "weapons": "2 B"
+      }
+    }
+  ]
+}

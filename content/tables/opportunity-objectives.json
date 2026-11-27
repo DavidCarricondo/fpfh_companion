@@ -1,0 +1,41 @@
+{
+  "verified": false,
+  "id": "opportunity-objectives",
+  "name": "Opportunity Mission Objectives",
+  "page": [89, 90, 91],
+  "dice": "D10",
+  "group": "battle",
+  "notes": "To Win the battle, you must achieve the objective (even if you are subsequently chased from the battlefield, unless the objective states otherwise). If this is the final battle of a Quest, it is always a Fight Off objective and you must add +1 to the number of enemies faced.",
+  "rows": [
+    {
+      "range": [1, 2],
+      "result": "Move Through",
+      "detail": "You Win if at least 2 crew members move off the opposing battlefield edge. If you drive off all enemies, you Win as long as you have at least 2 crew members remaining.",
+      "page": 90
+    },
+    {
+      "range": [3, 4],
+      "result": "Deliver",
+      "detail": "A crew member of your choosing is carrying a package that must be delivered to the exact center of the table (placing it requires a Combat Action). If the carrier becomes a casualty, roll 1D6: on a 1, the item is destroyed; otherwise it can be picked up by spending a Combat Action at the location they fell. If you drive off all enemies, you Win as long as the package is undamaged.",
+      "page": 90
+    },
+    {
+      "range": [5, 6],
+      "result": "Access",
+      "detail": "You must reach a computer console in the exact center of the battlefield and gain access: 1D6+Savvy, scoring a 6+. A Combat Action is required for each attempt; up to two characters can attempt every round. Soulless can attempt it while within 6\". Engineer or Bot crew add +1. A natural 1 means the system is hardened; a second natural 1 during the battle means the mission fails (Engineers ignore natural 1s). Once accessed, you Win. If you drive off all enemies, you must still roll, using any remaining crew member.",
+      "page": 90
+    },
+    {
+      "range": [7, 8],
+      "result": "Patrol",
+      "detail": "Tally up the large terrain features (or equivalent clusters) and select 3 at random. A crew member must end a move within 2\" of each feature. Once all 3 have been checked, you Win. If you drive off the enemy, you can do this at your leisure.",
+      "page": 90
+    },
+    {
+      "range": [9, 10],
+      "result": "Fight Off",
+      "detail": "There is no objective other than driving off the enemy. To Win, you must Hold the Field.",
+      "page": 90
+    }
+  ]
+}

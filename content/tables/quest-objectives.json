@@ -1,0 +1,41 @@
+{
+  "verified": false,
+  "id": "quest-objectives",
+  "name": "Quest Mission Objectives",
+  "page": [89, 90, 91],
+  "dice": "D10",
+  "group": "battle",
+  "notes": "To Win the battle, you must achieve the objective (even if you are subsequently chased from the battlefield, unless the objective states otherwise). If this is the final battle of a Quest, it is always a Fight Off objective and you must add +1 to the number of enemies faced.",
+  "rows": [
+    {
+      "range": [1, 2],
+      "result": "Move Through",
+      "detail": "You Win if at least 2 crew members move off the opposing battlefield edge. If you drive off all enemies, you Win as long as you have at least 2 crew members remaining.",
+      "page": 90
+    },
+    {
+      "range": [3, 4],
+      "result": "Search",
+      "detail": "Put a token on each medium or large terrain feature. A character in contact with, inside, or on the feature may search it as a Combat Action: 1D6, 5+ finds what you were looking for and you Win. If the roll fails at every location, the mission cannot be Won. If you drive the enemy away, roll for all remaining features at once.",
+      "page": 91
+    },
+    {
+      "range": [5, 6],
+      "result": "Defend",
+      "detail": "Your objective is to drive off the enemy. To Win, you must Hold the Field. If the opposing AI is normally Cautious, Defensive, or Tactical, change it to Aggressive. Add +1 when determining the enemy numbers.",
+      "page": 90
+    },
+    {
+      "range": [7, 8],
+      "result": "Acquire",
+      "detail": "An item is placed at the center of the table. A crew member must move into contact, take a Combat Action, and then move off the table. If the carrier becomes a casualty, roll 1D6: on a 1, the item is destroyed; otherwise it can be picked up by spending a Combat Action at the location they fell. If you drive off the enemy, you can pick up the item at your own leisure.",
+      "page": 90
+    },
+    {
+      "range": [9, 10],
+      "result": "Fight Off",
+      "detail": "There is no objective other than driving off the enemy. To Win, you must Hold the Field.",
+      "page": 90
+    }
+  ]
+}

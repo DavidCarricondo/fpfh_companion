@@ -1,0 +1,223 @@
+{
+  "verified": false,
+  "id": "roving-threats",
+  "name": "Roving Threats",
+  "page": [101, 102, 103],
+  "dice": "D100",
+  "group": "enemies",
+  "fieldDefs": [
+    {
+      "id": "numbers",
+      "label": "Numbers"
+    },
+    {
+      "id": "panic",
+      "label": "Panic"
+    },
+    {
+      "id": "speed",
+      "label": "Speed"
+    },
+    {
+      "id": "combat",
+      "label": "Combat Skill"
+    },
+    {
+      "id": "toughness",
+      "label": "Toughness"
+    },
+    {
+      "id": "ai",
+      "label": "AI"
+    },
+    {
+      "id": "weapons",
+      "label": "Weapons"
+    }
+  ],
+  "notes": "Enemies from this list never become Rivals. They are never accompanied by Unique Individuals unless the difficulty mode is Insanity. AI codes: A Aggressive, C Cautious, D Defensive, G Guardian, R Rampage, T Tactical, B Beast. Weapons: number = Weapon column, letter = Specialist column (p.104).",
+  "rows": [
+    {
+      "range": [1, 4],
+      "result": "Converted Acquisition",
+      "detail": "Careless: You are +1 to Seize the Initiative. Built-in: Always count as stationary when firing. Invasion Threat. Test at +1. 6+ Saving Throw.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "0",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 5,
+        "ai": "A",
+        "weapons": "2 B"
+      }
+    },
+    {
+      "range": [5, 12],
+      "result": "Converted Infiltrators",
+      "detail": "Invasion Threat. 6+ Saving Throw.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "0",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "A",
+        "weapons": "1 A"
+      }
+    },
+    {
+      "range": [13, 18],
+      "result": "Abductor Raiders",
+      "detail": "Invasion Threat.",
+      "fields": {
+        "numbers": "+3",
+        "panic": "1",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "A",
+        "weapons": "2 A"
+      }
+    },
+    {
+      "range": [19, 28],
+      "result": "Swarm Brood",
+      "detail": "Pack hunters: All Brawls initiated by Swarm are resolved at the end of the Enemy Actions phase. Swarm will always attempt to gang up on prey, where possible. Invasion Threat.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "0",
+        "speed": "6\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "B",
+        "weapons": "Claws (Damage +1)"
+      }
+    },
+    {
+      "range": [29, 34],
+      "result": "Haywire Robots",
+      "detail": "Careless: You are +1 to Seize the Initiative. 6+ Saving Throw.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "0",
+        "speed": "3\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "R",
+        "weapons": "Smash (Damage +0)"
+      }
+    },
+    {
+      "range": [35, 44],
+      "result": "Razor Lizards",
+      "detail": "Needle fangs: Armor Saving Throws are ignored.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1-2",
+        "speed": "6\"",
+        "combat": "+1",
+        "toughness": 3,
+        "ai": "B",
+        "weapons": "Fangs (Damage +0)"
+      }
+    },
+    {
+      "range": [45, 56],
+      "result": "Sand Runners",
+      "detail": "Leap: If they end a move within 3\" of a Human, they may leap into contact as a Free Action.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "7\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "B",
+        "weapons": "Fangs (Damage +1)"
+      }
+    },
+    {
+      "range": [57, 63],
+      "result": "Void Rippers",
+      "detail": "Gruesome: Characters rolling for post-battle Injuries must apply a -5 to the roll.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1-2",
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 5,
+        "ai": "R",
+        "weapons": "Fangs (Damage +0)"
+      }
+    },
+    {
+      "range": [64, 69],
+      "result": "Krorg",
+      "detail": "Ferocious: +1 to Brawling rolls when initiating combat. Easy targets: +1 when firing at this enemy. 5+ Saving Throw. Tough fight: A random survivor gains +1 XP.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "0",
+        "speed": "5\"",
+        "combat": "+2",
+        "toughness": 6,
+        "ai": "R",
+        "weapons": "Claws (Damage +2)"
+      }
+    },
+    {
+      "range": [70, 78],
+      "result": "Large Bugs",
+      "detail": "Easy targets: +1 when firing at this enemy. Stubborn: They ignore the first casualty of the battle when making a Morale check.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1",
+        "speed": "5\"",
+        "combat": "+1",
+        "toughness": 5,
+        "ai": "R",
+        "weapons": "Mandibles (Damage +1)"
+      }
+    },
+    {
+      "range": [79, 84],
+      "result": "Carnivore Chasers",
+      "detail": "Alert: You are -1 to Seize the Initiative.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1-2",
+        "speed": "6\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "B",
+        "weapons": "Fangs (Damage +0)"
+      }
+    },
+    {
+      "range": [85, 97],
+      "result": "Vent Crawlers",
+      "detail": "Fate worse than death: If the post-battle Injury roll is death, the character cannot be saved, and no rerolls are possible for any reason.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "0",
+        "speed": "6\"",
+        "combat": "+2",
+        "toughness": 5,
+        "ai": "R",
+        "weapons": "Claws (Damage +0)"
+      }
+    },
+    {
+      "range": [98, 100],
+      "result": "Distorts",
+      "detail": "Stubborn: They ignore the first casualty when making a Morale check. Shimmer: Move through terrain and solid obstacles. When slain, roll 1D6. On a 5-6, another Distort is placed 1D6\" further away.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "0",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "B",
+        "weapons": "Touch (Damage +3)"
+      }
+    }
+  ]
+}

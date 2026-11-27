@@ -1,0 +1,251 @@
+{
+  "verified": false,
+  "id": "criminal-elements",
+  "name": "Criminal Elements",
+  "page": [94, 95, 96],
+  "dice": "D100",
+  "group": "enemies",
+  "fieldDefs": [
+    {
+      "id": "numbers",
+      "label": "Numbers"
+    },
+    {
+      "id": "panic",
+      "label": "Panic"
+    },
+    {
+      "id": "speed",
+      "label": "Speed"
+    },
+    {
+      "id": "combat",
+      "label": "Combat Skill"
+    },
+    {
+      "id": "toughness",
+      "label": "Toughness"
+    },
+    {
+      "id": "ai",
+      "label": "AI"
+    },
+    {
+      "id": "weapons",
+      "label": "Weapons"
+    }
+  ],
+  "notes": "Increased chance of a bounty: when setting up, roll 1D6; on 1-3 that many bonus credits are paid if you Hold the Field. When rolling to see if a defeated criminal group becomes a Rival, roll 2D6: a 1 on either die makes them Rivals; if both dice score a 1, they hate you: they become Rivals AND increase the numbers encountered by +1 in all battles. AI codes: A Aggressive, C Cautious, D Defensive, G Guardian, R Rampage, T Tactical, B Beast. Weapons: number = Weapon column, letter = Specialist column (p.104).",
+  "rows": [
+    {
+      "range": [1, 10],
+      "result": "Gangers",
+      "detail": "Leg it: When a ganger is hit by a shot, they will retreat 3\" away from the shooter.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "A",
+        "weapons": "1 A"
+      }
+    },
+    {
+      "range": [11, 19],
+      "result": "Punks",
+      "detail": "Careless: You are +1 to Seize the Initiative. Bad shots: Their shooting only Hits on a natural 6.",
+      "fields": {
+        "numbers": "+3",
+        "panic": "1-3",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "A",
+        "weapons": "1 A"
+      }
+    },
+    {
+      "range": [20, 27],
+      "result": "Raiders",
+      "detail": "Scavengers: Roll twice on the Battlefield Finds Table.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 3,
+        "ai": "A",
+        "weapons": "2 A"
+      }
+    },
+    {
+      "range": [28, 34],
+      "result": "Cultists",
+      "detail": "Intrigue: Roll 2D6 and add +1 if you killed a Lieutenant and/or Unique Individual. On a 9+, you obtain a Quest Rumor.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "A",
+        "weapons": "1 A"
+      }
+    },
+    {
+      "range": [35, 43],
+      "result": "Psychos",
+      "detail": "Bad shots: Their shooting only Hits on a natural 6.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1",
+        "speed": "6\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "R",
+        "weapons": "1 B"
+      }
+    },
+    {
+      "range": [44, 48],
+      "result": "Brat Gang",
+      "detail": "Careless: You are +1 to Seize the Initiative. 6+ Saving Throw.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1-3",
+        "speed": "5\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "A",
+        "weapons": "2 C"
+      }
+    },
+    {
+      "range": [49, 51],
+      "result": "Gene Renegades",
+      "detail": "Alert: You are -1 to Seize the Initiative.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "5\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "C",
+        "weapons": "1 B"
+      }
+    },
+    {
+      "range": [52, 57],
+      "result": "Anarchists",
+      "detail": "Stubborn: They ignore the first casualty of the battle when making a Morale check.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1-2",
+        "speed": "5\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "A",
+        "weapons": "2 B"
+      }
+    },
+    {
+      "range": [58, 64],
+      "result": "Pirates",
+      "detail": "Loot: Gain an extra Loot roll if Holding the Field.",
+      "fields": {
+        "numbers": "+2",
+        "panic": "1-3",
+        "speed": "5\"",
+        "combat": "+0",
+        "toughness": 4,
+        "ai": "A",
+        "weapons": "2 A"
+      }
+    },
+    {
+      "range": [65, 71],
+      "result": "K'Erin Outlaws",
+      "detail": "Stubborn: They ignore the first casualty when making a Morale check.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1",
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 4,
+        "ai": "A",
+        "weapons": "2 A"
+      }
+    },
+    {
+      "range": [72, 79],
+      "result": "Skulker Brigands",
+      "detail": "Alert: You are -1 to Seize the Initiative. Scavengers: Roll twice on the Battlefield Finds Table.",
+      "fields": {
+        "numbers": "+3",
+        "panic": "1-2",
+        "speed": "6\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "C",
+        "weapons": "1 B"
+      }
+    },
+    {
+      "range": [80, 83],
+      "result": "Tech Gangers",
+      "detail": "Loot: Gain an extra Loot roll if Holding the Field. 6+ Saving Throw.",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 5,
+        "ai": "T",
+        "weapons": "3 C"
+      }
+    },
+    {
+      "range": [84, 90],
+      "result": "Starport Scum",
+      "detail": "Friday Night Warriors: When a scum is slain, all allies within 6\" will retreat a standard move at their base speed directly back towards their own battlefield edge.",
+      "fields": {
+        "numbers": "+3",
+        "panic": "1-3",
+        "speed": "4\"",
+        "combat": "+0",
+        "toughness": 3,
+        "ai": "D",
+        "weapons": "1 A"
+      }
+    },
+    {
+      "range": [91, 94],
+      "result": "Hulker Gang",
+      "detail": "Ferocious: +1 to Brawling rolls when initiating combat. Aggro: If Hit by a shot and surviving, immediately move 1\" towards the shooter.",
+      "fields": {
+        "numbers": "+0",
+        "panic": "1",
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 5,
+        "ai": "A",
+        "weapons": "1 A"
+      }
+    },
+    {
+      "range": [95, 100],
+      "result": "Gun Slingers",
+      "detail": "Trick shot: Any natural 6 when they shoot allows an additional shot against the same target or another target within 2\".",
+      "fields": {
+        "numbers": "+1",
+        "panic": "1-2",
+        "speed": "4\"",
+        "combat": "+1",
+        "toughness": 3,
+        "ai": "T",
+        "weapons": "1 B"
+      }
+    }
+  ]
+}
