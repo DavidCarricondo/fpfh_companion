@@ -1,0 +1,32 @@
+{
+  "verified": false,
+  "id": "quest-rumor",
+  "name": "Rumor Is",
+  "page": 36,
+  "dice": "D10",
+  "group": "campaign",
+  "aliases": ["Quest Rumor", "Rumor flavor"],
+  "notes": "For flavor, roll D10 to determine what nature the Rumor takes. This does not affect gameplay.",
+  "rows": [
+    {
+      "range": [1, 2],
+      "result": "An extracted data file"
+    },
+    {
+      "range": [3, 4],
+      "result": "Notebook with secret information"
+    },
+    {
+      "range": [5, 6],
+      "result": "Old map showing a location"
+    },
+    {
+      "range": [7, 8],
+      "result": "A tip from a contact"
+    },
+    {
+      "range": [9, 10],
+      "result": "An intercepted transmission"
+    }
+  ]
+}

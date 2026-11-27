@@ -1,0 +1,99 @@
+{
+  "verified": false,
+  "id": "gear",
+  "name": "Gear Table",
+  "page": 29,
+  "dice": "D100",
+  "group": "equipment",
+  "notes": "Starting equipment: 3 rolls on the Military Weapon Table (for each crew member who rolled at least one Savvy increase, one of these may be taken on the High-tech Weapon Table instead), 3 rolls on the Low-tech Weapon Table, 1 roll on the Gear Table, 1 roll on the Gadget Table, and 1 credit per crew member. Items can be distributed as you see fit. All equipment is detailed on pages 53-58.",
+  "rows": [
+    {
+      "range": [1, 4],
+      "result": "Assault Blade"
+    },
+    {
+      "range": [5, 10],
+      "result": "Beam Light"
+    },
+    {
+      "range": [11, 15],
+      "result": "Bipod"
+    },
+    {
+      "range": [16, 20],
+      "result": "Booster Pills"
+    },
+    {
+      "range": [21, 24],
+      "result": "Camo Cloak"
+    },
+    {
+      "range": [25, 28],
+      "result": "Combat Armor"
+    },
+    {
+      "range": [29, 33],
+      "result": "Communicator"
+    },
+    {
+      "range": [34, 37],
+      "result": "Concealed Blade"
+    },
+    {
+      "range": [38, 42],
+      "result": "Fake ID"
+    },
+    {
+      "range": [43, 46],
+      "result": "Fixer"
+    },
+    {
+      "range": [47, 52],
+      "result": "Frag Vest"
+    },
+    {
+      "range": [53, 57],
+      "result": "Grapple Launcher"
+    },
+    {
+      "range": [58, 61],
+      "result": "Hazard Suit"
+    },
+    {
+      "range": [62, 65],
+      "result": "Laser Sight"
+    },
+    {
+      "range": [66, 69],
+      "result": "Loaded Dice"
+    },
+    {
+      "range": [70, 75],
+      "result": "Med-patch"
+    },
+    {
+      "range": [76, 81],
+      "result": "Nano-doc"
+    },
+    {
+      "range": [82, 85],
+      "result": "Purifier"
+    },
+    {
+      "range": [86, 89],
+      "result": "Scanner bot"
+    },
+    {
+      "range": [90, 92],
+      "result": "Sector Permit"
+    },
+    {
+      "range": [93, 96],
+      "result": "Steel Boots"
+    },
+    {
+      "range": [97, 100],
+      "result": "Tracker Sight"
+    }
+  ]
+}

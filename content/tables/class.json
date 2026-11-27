@@ -1,0 +1,269 @@
+{
+  "verified": false,
+  "id": "class",
+  "name": "Class Table",
+  "aliases": ["Class"],
+  "page": 27,
+  "dice": "D100",
+  "group": "creation",
+  "notes": "Ability score increases are applied immediately. The Resources column may grant extra credits, Quest Rumors, known Patrons, or story points; all such resources are pooled together for the crew. Bonus equipment and weapon rolls provide items the character has as they arrive at the campaign; they may be handed to other characters or sold normally. A starting Patron is local to the starting world; a starting Rival is rolled on the Unknown Rivals Table (p.94).",
+  "fieldDefs": [
+    {
+      "id": "effect",
+      "label": "Effect"
+    },
+    {
+      "id": "resources",
+      "label": "Resources"
+    },
+    {
+      "id": "startingRolls",
+      "label": "Starting rolls"
+    }
+  ],
+  "rows": [
+    {
+      "range": [1, 5],
+      "result": "Working Class",
+      "fields": {
+        "effect": "+1 Savvy, +1 Luck"
+      }
+    },
+    {
+      "range": [6, 9],
+      "result": "Technician",
+      "fields": {
+        "effect": "+1 Savvy",
+        "startingRolls": "+1 Gear"
+      },
+      "next": [
+        {
+          "tableId": "gear",
+          "label": "Roll Gear"
+        }
+      ]
+    },
+    {
+      "range": [10, 13],
+      "result": "Scientist",
+      "fields": {
+        "effect": "+1 Savvy",
+        "startingRolls": "+1 Gadget"
+      },
+      "next": [
+        {
+          "tableId": "gadget",
+          "label": "Roll Gadget"
+        }
+      ]
+    },
+    {
+      "range": [14, 17],
+      "result": "Hacker",
+      "fields": {
+        "effect": "+1 Savvy",
+        "resources": "Rival"
+      }
+    },
+    {
+      "range": [18, 22],
+      "result": "Soldier",
+      "fields": {
+        "effect": "+1 Combat Skill",
+        "resources": "+1D6 credits"
+      }
+    },
+    {
+      "range": [23, 27],
+      "result": "Mercenary",
+      "fields": {
+        "effect": "+1 Combat Skill",
+        "startingRolls": "+1 Military Weapon"
+      },
+      "next": [
+        {
+          "tableId": "military-weapon",
+          "label": "Roll Military Weapon"
+        }
+      ]
+    },
+    {
+      "range": [28, 32],
+      "result": "Agitator",
+      "fields": {
+        "resources": "Rival"
+      }
+    },
+    {
+      "range": [33, 36],
+      "result": "Primitive",
+      "fields": {
+        "effect": "+1 Speed",
+        "startingRolls": "+1 Low-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "low-tech-weapon",
+          "label": "Roll Low-tech Weapon"
+        }
+      ]
+    },
+    {
+      "range": [37, 40],
+      "result": "Artist",
+      "fields": {
+        "resources": "+1D6 credits"
+      }
+    },
+    {
+      "range": [41, 44],
+      "result": "Negotiator",
+      "fields": {
+        "resources": "Patron, +1 story point"
+      }
+    },
+    {
+      "range": [45, 49],
+      "result": "Trader",
+      "fields": {
+        "resources": "+2D6 credits"
+      }
+    },
+    {
+      "range": [50, 54],
+      "result": "Starship Crew",
+      "fields": {
+        "effect": "+1 Savvy"
+      }
+    },
+    {
+      "range": [55, 58],
+      "result": "Petty Criminal",
+      "fields": {
+        "effect": "+1 Speed"
+      }
+    },
+    {
+      "range": [59, 63],
+      "result": "Ganger",
+      "fields": {
+        "effect": "+1 Reactions",
+        "startingRolls": "+1 Low-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "low-tech-weapon",
+          "label": "Roll Low-tech Weapon"
+        }
+      ]
+    },
+    {
+      "range": [64, 67],
+      "result": "Scoundrel",
+      "fields": {
+        "effect": "+1 Speed"
+      }
+    },
+    {
+      "range": [68, 71],
+      "result": "Enforcer",
+      "fields": {
+        "effect": "+1 Combat Skill",
+        "resources": "Patron"
+      }
+    },
+    {
+      "range": [72, 75],
+      "result": "Special Agent",
+      "fields": {
+        "effect": "+1 Reactions",
+        "resources": "Patron",
+        "startingRolls": "+1 Gadget"
+      },
+      "next": [
+        {
+          "tableId": "gadget",
+          "label": "Roll Gadget"
+        }
+      ]
+    },
+    {
+      "range": [76, 79],
+      "result": "Troubleshooter",
+      "fields": {
+        "effect": "+1 Reactions",
+        "startingRolls": "+1 Low-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "low-tech-weapon",
+          "label": "Roll Low-tech Weapon"
+        }
+      ]
+    },
+    {
+      "range": [80, 83],
+      "result": "Bounty Hunter",
+      "fields": {
+        "effect": "+1 Speed",
+        "resources": "1 Rumor",
+        "startingRolls": "+1 Low-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "low-tech-weapon",
+          "label": "Roll Low-tech Weapon"
+        }
+      ]
+    },
+    {
+      "range": [84, 88],
+      "result": "Nomad",
+      "fields": {
+        "startingRolls": "+1 Gear"
+      },
+      "next": [
+        {
+          "tableId": "gear",
+          "label": "Roll Gear"
+        }
+      ]
+    },
+    {
+      "range": [89, 92],
+      "result": "Explorer",
+      "fields": {
+        "effect": "+2 XP",
+        "startingRolls": "+1 Gear"
+      },
+      "next": [
+        {
+          "tableId": "gear",
+          "label": "Roll Gear"
+        }
+      ]
+    },
+    {
+      "range": [93, 96],
+      "result": "Punk",
+      "fields": {
+        "effect": "+2 XP",
+        "resources": "Rival"
+      }
+    },
+    {
+      "range": [97, 100],
+      "result": "Scavenger",
+      "fields": {
+        "resources": "1 Rumor",
+        "startingRolls": "+1 High-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "high-tech-weapon",
+          "label": "Roll High-tech Weapon"
+        }
+      ]
+    }
+  ]
+}

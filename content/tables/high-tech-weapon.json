@@ -1,0 +1,48 @@
+{
+  "verified": false,
+  "id": "high-tech-weapon",
+  "name": "High-tech Weapon Table",
+  "page": 28,
+  "dice": "D100",
+  "group": "equipment",
+  "aliases": ["High-tech Weapon"],
+  "notes": "Starting equipment: 3 rolls on the Military Weapon Table (for each crew member who rolled at least one Savvy increase, one of these may be taken on the High-tech Weapon Table instead), 3 rolls on the Low-tech Weapon Table, 1 roll on the Gear Table, 1 roll on the Gadget Table, and 1 credit per crew member. Items can be distributed as you see fit. All weapons are detailed on pages 50-52.",
+  "rows": [
+    {
+      "range": [1, 5],
+      "result": "Dueling Pistol"
+    },
+    {
+      "range": [6, 15],
+      "result": "Hand Cannon"
+    },
+    {
+      "range": [16, 30],
+      "result": "Hand Laser"
+    },
+    {
+      "range": [31, 45],
+      "result": "Beam Pistol"
+    },
+    {
+      "range": [46, 55],
+      "result": "Infantry Laser"
+    },
+    {
+      "range": [56, 70],
+      "result": "Blast Pistol"
+    },
+    {
+      "range": [71, 80],
+      "result": "Blast Rifle"
+    },
+    {
+      "range": [81, 85],
+      "result": "Plasma Rifle"
+    },
+    {
+      "range": [86, 100],
+      "result": "Glare Sword"
+    }
+  ]
+}

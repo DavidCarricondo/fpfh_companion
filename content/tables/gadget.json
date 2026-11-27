@@ -1,0 +1,99 @@
+{
+  "verified": false,
+  "id": "gadget",
+  "name": "Gadget Table",
+  "page": 29,
+  "dice": "D100",
+  "group": "equipment",
+  "notes": "Starting equipment: 3 rolls on the Military Weapon Table (for each crew member who rolled at least one Savvy increase, one of these may be taken on the High-tech Weapon Table instead), 3 rolls on the Low-tech Weapon Table, 1 roll on the Gear Table, 1 roll on the Gadget Table, and 1 credit per crew member. Items can be distributed as you see fit. All equipment is detailed on pages 53-58.",
+  "rows": [
+    {
+      "range": [1, 4],
+      "result": "AI Companion"
+    },
+    {
+      "range": [5, 9],
+      "result": "Analyzer"
+    },
+    {
+      "range": [10, 13],
+      "result": "Battle Visor"
+    },
+    {
+      "range": [14, 17],
+      "result": "Boosted Arm"
+    },
+    {
+      "range": [18, 21],
+      "result": "Boosted Leg"
+    },
+    {
+      "range": [22, 24],
+      "result": "Cyber Hand"
+    },
+    {
+      "range": [25, 27],
+      "result": "Displacer"
+    },
+    {
+      "range": [28, 31],
+      "result": "Distraction Bot"
+    },
+    {
+      "range": [32, 36],
+      "result": "Duplicator"
+    },
+    {
+      "range": [37, 41],
+      "result": "Insta-Wall"
+    },
+    {
+      "range": [42, 46],
+      "result": "Jump Belt"
+    },
+    {
+      "range": [47, 50],
+      "result": "Nerve Adjuster"
+    },
+    {
+      "range": [51, 55],
+      "result": "Repair Bot"
+    },
+    {
+      "range": [56, 60],
+      "result": "Scanner Bot"
+    },
+    {
+      "range": [61, 65],
+      "result": "Screen Generator"
+    },
+    {
+      "range": [66, 69],
+      "result": "Seeker Sight"
+    },
+    {
+      "range": [70, 73],
+      "result": "Shock Attachment"
+    },
+    {
+      "range": [74, 79],
+      "result": "Snooper Bot"
+    },
+    {
+      "range": [80, 83],
+      "result": "Sonic Emitter"
+    },
+    {
+      "range": [84, 89],
+      "result": "Stabilizer"
+    },
+    {
+      "range": [90, 93],
+      "result": "Stealth Gear"
+    },
+    {
+      "range": [94, 100],
+      "result": "Stim-pack"
+    }
+  ]
+}

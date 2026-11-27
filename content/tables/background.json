@@ -1,0 +1,280 @@
+{
+  "verified": false,
+  "id": "background",
+  "name": "Background Table",
+  "aliases": ["Background"],
+  "page": 25,
+  "dice": "D100",
+  "group": "creation",
+  "notes": "Ability score increases are applied immediately. The Resources column may grant extra credits, Quest Rumors, known Patrons, or story points; all such resources are pooled together for the crew. Bonus equipment and weapon rolls provide items the character has as they arrive at the campaign; they may be handed to other characters or sold normally. A starting Patron is local to the starting world; a starting Rival is rolled on the Unknown Rivals Table (p.94).",
+  "fieldDefs": [
+    {
+      "id": "effect",
+      "label": "Effect"
+    },
+    {
+      "id": "resources",
+      "label": "Resources"
+    },
+    {
+      "id": "startingRolls",
+      "label": "Starting rolls"
+    }
+  ],
+  "rows": [
+    {
+      "range": [1, 4],
+      "result": "Peaceful, High-Tech Colony",
+      "fields": {
+        "effect": "+1 Savvy",
+        "resources": "+1D6 credits"
+      }
+    },
+    {
+      "range": [5, 9],
+      "result": "Giant, Overcrowded, Dystopian City",
+      "fields": {
+        "effect": "+1 Speed"
+      }
+    },
+    {
+      "range": [10, 13],
+      "result": "Low-Tech Colony",
+      "fields": {
+        "startingRolls": "+1 Low-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "low-tech-weapon",
+          "label": "Roll Low-tech Weapon"
+        }
+      ]
+    },
+    {
+      "range": [14, 17],
+      "result": "Mining Colony",
+      "fields": {
+        "effect": "+1 Toughness"
+      }
+    },
+    {
+      "range": [18, 21],
+      "result": "Military Brat",
+      "fields": {
+        "effect": "+1 Combat Skill"
+      }
+    },
+    {
+      "range": [22, 25],
+      "result": "Space Station",
+      "fields": {
+        "startingRolls": "+1 Gear"
+      },
+      "next": [
+        {
+          "tableId": "gear",
+          "label": "Roll Gear"
+        }
+      ]
+    },
+    {
+      "range": [26, 29],
+      "result": "Military Outpost",
+      "fields": {
+        "effect": "+1 Reactions"
+      }
+    },
+    {
+      "range": [30, 34],
+      "result": "Drifter",
+      "fields": {
+        "startingRolls": "+1 Gear"
+      },
+      "next": [
+        {
+          "tableId": "gear",
+          "label": "Roll Gear"
+        }
+      ]
+    },
+    {
+      "range": [35, 39],
+      "result": "Lower Megacity Class",
+      "fields": {
+        "startingRolls": "+1 Low-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "low-tech-weapon",
+          "label": "Roll Low-tech Weapon"
+        }
+      ]
+    },
+    {
+      "range": [40, 42],
+      "result": "Wealthy Merchant Family",
+      "fields": {
+        "resources": "+2D6 credits"
+      }
+    },
+    {
+      "range": [43, 46],
+      "result": "Frontier Gang",
+      "fields": {
+        "effect": "+1 Combat Skill"
+      }
+    },
+    {
+      "range": [47, 49],
+      "result": "Religious Cult",
+      "fields": {
+        "resources": "Patron, +1 story point"
+      }
+    },
+    {
+      "range": [50, 52],
+      "result": "War-Torn Hell-Hole",
+      "fields": {
+        "effect": "+1 Reactions",
+        "startingRolls": "+1 Military Weapon"
+      },
+      "next": [
+        {
+          "tableId": "military-weapon",
+          "label": "Roll Military Weapon"
+        }
+      ]
+    },
+    {
+      "range": [53, 55],
+      "result": "Tech Guild",
+      "fields": {
+        "effect": "+1 Savvy",
+        "resources": "+1D6 credits",
+        "startingRolls": "+1 High-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "high-tech-weapon",
+          "label": "Roll High-tech Weapon"
+        }
+      ]
+    },
+    {
+      "range": [56, 59],
+      "result": "Subjugated Colony on Alien World",
+      "fields": {
+        "startingRolls": "+1 Gadget"
+      },
+      "next": [
+        {
+          "tableId": "gadget",
+          "label": "Roll Gadget"
+        }
+      ]
+    },
+    {
+      "range": [60, 64],
+      "result": "Long-Term Space Mission",
+      "fields": {
+        "effect": "+1 Savvy"
+      }
+    },
+    {
+      "range": [65, 68],
+      "result": "Research Outpost",
+      "fields": {
+        "effect": "+1 Savvy",
+        "startingRolls": "+1 Gadget"
+      },
+      "next": [
+        {
+          "tableId": "gadget",
+          "label": "Roll Gadget"
+        }
+      ]
+    },
+    {
+      "range": [69, 72],
+      "result": "Primitive or Regressed World",
+      "fields": {
+        "effect": "+1 Toughness",
+        "startingRolls": "+1 Low-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "low-tech-weapon",
+          "label": "Roll Low-tech Weapon"
+        }
+      ]
+    },
+    {
+      "range": [73, 76],
+      "result": "Orphan Utility Program",
+      "fields": {
+        "resources": "Patron, +1 story point"
+      }
+    },
+    {
+      "range": [77, 80],
+      "result": "Isolationist Enclave",
+      "fields": {
+        "resources": "2 Quest Rumors"
+      }
+    },
+    {
+      "range": [81, 84],
+      "result": "Comfortable Megacity Class",
+      "fields": {
+        "resources": "+1D6 credits"
+      }
+    },
+    {
+      "range": [85, 89],
+      "result": "Industrial World",
+      "fields": {
+        "startingRolls": "+1 Gear"
+      },
+      "next": [
+        {
+          "tableId": "gear",
+          "label": "Roll Gear"
+        }
+      ]
+    },
+    {
+      "range": [90, 93],
+      "result": "Bureaucrat",
+      "fields": {
+        "resources": "+1D6 credits"
+      }
+    },
+    {
+      "range": [94, 97],
+      "result": "Wasteland Nomads",
+      "fields": {
+        "effect": "+1 Reactions",
+        "startingRolls": "+1 Low-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "low-tech-weapon",
+          "label": "Roll Low-tech Weapon"
+        }
+      ]
+    },
+    {
+      "range": [98, 100],
+      "result": "Alien Culture",
+      "fields": {
+        "startingRolls": "+1 High-tech Weapon"
+      },
+      "next": [
+        {
+          "tableId": "high-tech-weapon",
+          "label": "Roll High-tech Weapon"
+        }
+      ]
+    }
+  ]
+}
