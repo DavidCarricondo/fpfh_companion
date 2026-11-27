@@ -1,5 +1,5 @@
 {
-  "verified": false,
+  "verified": true,
   "id": "character-events",
   "name": "Character Events Table",
   "aliases": ["Character Events", "Character Event"],

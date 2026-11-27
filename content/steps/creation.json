@@ -1,0 +1,281 @@
+{
+  "steps": [
+    {
+      "id": "creation.prep.crew-size",
+      "phase": "creation",
+      "section": "1. Preparar la campaña (Campaign Preparation)",
+      "title": "Elegir tamaño de tripulación de campaña",
+      "body": "6 (estándar), 5 o 4. Es la tripulación inicial y el máximo que despliegas en batalla. Fija cómo se tiran los enemigos: 6 → 2D6 el mayor · 5 → 1D6 · 4 → 2D6 el menor.",
+      "page": 63
+    },
+    {
+      "id": "creation.prep.story-track",
+      "phase": "creation",
+      "section": "1. Preparar la campaña (Campaign Preparation)",
+      "title": "Decidir si usas el Story Track",
+      "body": "Eventos narrativos añadidos a la campaña.",
+      "page": [64, 153]
+    },
+    {
+      "id": "creation.prep.victory",
+      "phase": "creation",
+      "section": "1. Preparar la campaña (Campaign Preparation)",
+      "title": "Elegir (o no) una condición de victoria",
+      "body": "No se puede cambiar ni añadir después de empezar.",
+      "page": 64
+    },
+    {
+      "id": "creation.prep.difficulty",
+      "phase": "creation",
+      "section": "1. Preparar la campaña (Campaign Preparation)",
+      "title": "Elegir modo de dificultad",
+      "body": "Easy, Normal, Challenging, Hardcore o Insanity.",
+      "page": [64, 65]
+    },
+    {
+      "id": "creation.prep.house-rules",
+      "phase": "creation",
+      "section": "1. Preparar la campaña (Campaign Preparation)",
+      "title": "Acordar reglas caseras",
+      "body": "En la primera campaña, mejor jugar las reglas tal cual.",
+      "page": 65,
+      "optional": true
+    },
+    {
+      "id": "creation.prep.elite-ranks",
+      "phase": "creation",
+      "section": "1. Preparar la campaña (Campaign Preparation)",
+      "title": "Aplicar Elite Ranks",
+      "body": "Si tienes [[Elite Ranks]] de campañas anteriores, aplicar sus beneficios (puntos de historia, XP, personajes extra).",
+      "page": 65,
+      "optional": true,
+      "when": {
+        "flag": "elite-ranks"
+      }
+    },
+    {
+      "id": "creation.composition.method",
+      "phase": "creation",
+      "section": "2. Elegir el método de composición (Crew Composition)",
+      "title": "Elegir el método de composición",
+      "body": "- **Primera vez:** 6 humanos, o usar la tripulación de ejemplo del libro.\n- **Estándar:** 3 humanos · 2 humanos o aliens primarios · 1 humano o Bot.\n- **Miniaturas:** eliges los tipos que encajen con tus 6 figuras (el resto se tira normal).\n- **Aleatorio:** tiras en la tabla de tipo de tripulante para cada puesto.",
+      "page": 13
+    },
+    {
+      "id": "creation.character.type",
+      "phase": "creation",
+      "section": "3. Crear cada personaje",
+      "title": "Paso 1 · Tipo",
+      "body": "Si es aleatorio, D100 en Crew Type (Humano / Alien primario / Bot / Personaje extraño) y, si procede, en su subtabla.",
+      "page": 14,
+      "tables": ["crew-type", "primary-alien", "strange-character"],
+      "repeat": "per-crew"
+    },
+    {
+      "id": "creation.character.profile",
+      "phase": "creation",
+      "section": "3. Crear cada personaje",
+      "title": "Paso 2 · Perfil",
+      "body": "Anotar perfil base, reglas especiales y rasgos de la especie. *Si es [[Bot]], saltar al paso 4.*",
+      "page": [14, 23],
+      "repeat": "per-crew"
+    },
+    {
+      "id": "creation.character.background",
+      "phase": "creation",
+      "section": "3. Crear cada personaje",
+      "title": "Paso 3 · Trasfondo",
+      "body": "Una tirada en Background, otra en Motivation y otra en Class. Aplicar mejoras de atributos ya; anotar créditos, [[Rumors]], [[Patrons]], [[Rivals]], [[story points]] y tiradas de equipo extra (son de toda la tripulación). Personajes extraños: revisar si modifican estas tiradas.",
+      "page": [24, 27],
+      "tables": ["background", "motivation", "class"],
+      "repeat": "per-crew"
+    },
+    {
+      "id": "creation.character.name",
+      "phase": "creation",
+      "section": "3. Crear cada personaje",
+      "title": "Paso 4 · Nombre y miniatura",
+      "body": "Si tu tripulación es de 5 o 4, ignora las columnas sobrantes.",
+      "page": 14,
+      "repeat": "per-crew"
+    },
+    {
+      "id": "creation.leader",
+      "phase": "creation",
+      "section": "4. Elegir Líder (Leader)",
+      "title": "Elegir Líder",
+      "body": "Elegir un personaje como [[Leader]]: gana 1 punto de [[Luck]] y nunca abandona la tripulación por eventos aleatorios. Un Bot puede ser líder, pero no recibe Suerte.",
+      "page": 24
+    },
+    {
+      "id": "creation.equipment.military",
+      "phase": "creation",
+      "section": "5. Equipo inicial (Crew Equipment)",
+      "title": "3 tiradas en Military Weapon",
+      "body": "Por cada tripulante que haya ganado algún +Savvy, puedes cambiar una por High-tech Weapon.",
+      "page": 28,
+      "tables": ["military-weapon", "high-tech-weapon"]
+    },
+    {
+      "id": "creation.equipment.low-tech",
+      "phase": "creation",
+      "section": "5. Equipo inicial (Crew Equipment)",
+      "title": "3 tiradas en Low-tech Weapon",
+      "body": "",
+      "page": 28,
+      "tables": ["low-tech-weapon"]
+    },
+    {
+      "id": "creation.equipment.gear-gadget",
+      "phase": "creation",
+      "section": "5. Equipo inicial (Crew Equipment)",
+      "title": "1 tirada en Gear y 1 tirada en Gadget",
+      "body": "",
+      "page": 29,
+      "tables": ["gear", "gadget"]
+    },
+    {
+      "id": "creation.equipment.extra",
+      "phase": "creation",
+      "section": "5. Equipo inicial (Crew Equipment)",
+      "title": "Tiradas extra de equipo",
+      "body": "Hacer las tiradas extra de equipo ganadas en Background / Motivation / Class.",
+      "page": [24, 27],
+      "tables": ["low-tech-weapon", "military-weapon", "high-tech-weapon", "gear", "gadget"]
+    },
+    {
+      "id": "creation.equipment.credits",
+      "phase": "creation",
+      "section": "5. Equipo inicial (Crew Equipment)",
+      "title": "Créditos iniciales",
+      "body": "1 por tripulante + los obtenidos en las tablas de trasfondo (ojo a especies con penalización, p. ej. −2).",
+      "page": 28
+    },
+    {
+      "id": "creation.equipment.distribute",
+      "phase": "creation",
+      "section": "5. Equipo inicial (Crew Equipment)",
+      "title": "Repartir armas y equipo",
+      "body": "Repartir armas y equipo entre los personajes (lo que sobre va al [[Stash]]).",
+      "page": 28
+    },
+    {
+      "id": "creation.ship.roll",
+      "phase": "creation",
+      "section": "6. La nave (Ship Details)",
+      "title": "D100 en la Ship Table",
+      "body": "Tipo de nave.",
+      "page": [30, 31],
+      "tables": ["ship"]
+    },
+    {
+      "id": "creation.ship.debt",
+      "phase": "creation",
+      "section": "6. La nave (Ship Details)",
+      "title": "Anotar deuda inicial",
+      "body": "Tirar el 1D6 + valor indicado.",
+      "page": 31
+    },
+    {
+      "id": "creation.ship.hull",
+      "phase": "creation",
+      "section": "6. La nave (Ship Details)",
+      "title": "Anotar Hull Points máximos",
+      "body": "",
+      "page": 31
+    },
+    {
+      "id": "creation.ship.traits",
+      "phase": "creation",
+      "section": "6. La nave (Ship Details)",
+      "title": "Anotar rasgos especiales",
+      "body": "Fuel-efficient, Armored, Dodgy Drive…",
+      "page": 30
+    },
+    {
+      "id": "creation.ship.name",
+      "phase": "creation",
+      "section": "6. La nave (Ship Details)",
+      "title": "Ponerle nombre a la nave",
+      "body": "",
+      "page": 31
+    },
+    {
+      "id": "creation.flavor.met-through",
+      "phase": "creation",
+      "section": "7. Detalles de sabor (Crew Table)",
+      "title": "Tirar “Nos conocimos por…”",
+      "body": "We met through.",
+      "page": 32,
+      "tables": ["crew-met-through"],
+      "optional": true
+    },
+    {
+      "id": "creation.flavor.characterized-as",
+      "phase": "creation",
+      "section": "7. Detalles de sabor (Crew Table)",
+      "title": "Tirar “Se nos describe como…”",
+      "body": "We are best characterized as.",
+      "page": 32,
+      "tables": ["crew-characterized-as"],
+      "optional": true
+    },
+    {
+      "id": "creation.start.story-points",
+      "phase": "creation",
+      "section": "8. Recursos iniciales y arranque",
+      "title": "Puntos de historia iniciales",
+      "body": "1D6+1. Primera partida o enseñando: tira dos veces y quédate el mejor. Hardcore −1 · Insanity: ninguno. +1 si tienes Five Parsecs, Five Klicks y Five Leagues. No se pueden gastar durante la creación.",
+      "page": 66
+    },
+    {
+      "id": "creation.start.rivals",
+      "phase": "creation",
+      "section": "8. Recursos iniciales y arranque",
+      "title": "Rivales iniciales",
+      "body": "Tirar cada uno en la columna Unknown Rival de Enemy Encounter Category y luego en su subtabla.",
+      "page": [24, 94],
+      "tables": ["enemy-encounter-category"],
+      "when": {
+        "flag": "starting-rivals"
+      }
+    },
+    {
+      "id": "creation.start.patrons",
+      "phase": "creation",
+      "section": "8. Recursos iniciales y arranque",
+      "title": "Patrones iniciales",
+      "body": "Son locales del mundo inicial; se generan en el primer turno (paso “Ofertas de trabajo”).",
+      "page": [24, 83],
+      "when": {
+        "flag": "starting-patrons"
+      }
+    },
+    {
+      "id": "creation.start.log",
+      "phase": "creation",
+      "section": "8. Recursos iniciales y arranque",
+      "title": "Anotar recursos en el Crew Log",
+      "body": "Anotar [[Quest Rumors]], créditos totales y [[Stash]] en el Crew Log.",
+      "page": 63
+    },
+    {
+      "id": "creation.start.first-world",
+      "phase": "creation",
+      "section": "8. Recursos iniciales y arranque",
+      "title": "Primer mundo",
+      "body": "Opcionalmente, hacer los pasos de Llegada a un mundo nuevo saltando los pasos 1 y 2 (licencias y rasgos del mundo). O empezar en un mundo sin reglas especiales.",
+      "page": [68, 72],
+      "tables": ["world-traits"],
+      "optional": true
+    },
+    {
+      "id": "creation.start.world-sheet",
+      "phase": "creation",
+      "section": "8. Recursos iniciales y arranque",
+      "title": "Abrir la World Record Sheet",
+      "body": "Para el mundo inicial. ¡Listo! Pasa a la Parte 2. En el primer turno normalmente no viajas: empieza por el Paso 2 (Mundo).",
+      "page": 69
+    }
+  ]
+}

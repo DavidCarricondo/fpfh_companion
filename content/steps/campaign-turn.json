@@ -1,0 +1,565 @@
+{
+  "steps": [
+    {
+      "id": "turn.start.reputation",
+      "phase": "travel",
+      "section": "0. Inicio del turno",
+      "title": "+1 punto de historia (Your Reputation Develops)",
+      "body": "Si es el 3.er, 6.º, 9.º… turno de campaña.",
+      "page": 66,
+      "when": {
+        "flag": "every-third-turn"
+      }
+    },
+    {
+      "id": "turn.start.story-clock",
+      "phase": "travel",
+      "section": "0. Inicio del turno",
+      "title": "Revisar el reloj del Story Track",
+      "body": "Si usas el Story Track, revisar si toca evento del reloj.",
+      "page": 153,
+      "when": {
+        "flag": "story-track"
+      }
+    },
+    {
+      "id": "travel.flee.roll",
+      "phase": "travel",
+      "section": "1.1 Huir de una invasión",
+      "title": "Tirar para huir de la invasión",
+      "body": "Tirar 2D6: 8+ para salir a salvo. Si fallas: solo puedes Asignar equipo y debes jugar una Batalla de invasión.",
+      "page": 69,
+      "when": {
+        "flag": "invaded"
+      }
+    },
+    {
+      "id": "travel.flee.consequences",
+      "phase": "travel",
+      "section": "1.1 Huir de una invasión",
+      "title": "Consecuencias de huir",
+      "body": "Al huir: sin paga, compras ni Evento de campaña (sí Evento de personaje). Se pierden todos los [[Rivals]] y [[Patrons]] de este mundo.",
+      "page": 69,
+      "when": {
+        "flag": "invaded"
+      }
+    },
+    {
+      "id": "travel.decide.pay",
+      "phase": "travel",
+      "section": "1.2 Decidir si viajas",
+      "title": "Pagar el viaje",
+      "body": "Con nave: pagar 5 créditos de combustible (±1 por rasgos). Sin nave: pasaje comercial a 1 crédito por tripulante (sin eventos de viaje ni carga).",
+      "page": 69,
+      "when": {
+        "flag": "traveling"
+      }
+    },
+    {
+      "id": "travel.decide.hull",
+      "phase": "travel",
+      "section": "1.2 Decidir si viajas",
+      "title": "¿La nave tiene daño de casco?",
+      "body": "No puede viajar con seguridad; si insistes: despegue de emergencia = 3D6 de daño de [[Hull Points]].",
+      "page": [59, 60],
+      "when": {
+        "all": [
+          {
+            "flag": "traveling"
+          },
+          {
+            "flag": "hull-damaged"
+          }
+        ]
+      }
+    },
+    {
+      "id": "travel.event",
+      "phase": "travel",
+      "section": "1.3 Evento de viaje espacial",
+      "title": "Tirar D100 en Starship Travel Events",
+      "body": "Solo si viajas en tu nave. Aplicar el resultado.",
+      "page": [70, 71],
+      "tables": ["starship-travel-events"],
+      "when": {
+        "all": [
+          {
+            "flag": "traveling"
+          },
+          {
+            "not": {
+              "flag": "commercial-passage"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "travel.arrival.rivals",
+      "phase": "travel",
+      "section": "1.4 Llegada a un mundo nuevo",
+      "title": "Rivales",
+      "body": "Cada uno tira 1D6; con 5+ te sigue, si no se queda atrás.",
+      "page": 72,
+      "when": {
+        "flag": "traveling"
+      }
+    },
+    {
+      "id": "travel.arrival.patrons",
+      "phase": "travel",
+      "section": "1.4 Llegada a un mundo nuevo",
+      "title": "Patrones",
+      "body": "Se quedan atrás todos salvo los [[Persistent]].",
+      "page": 72,
+      "when": {
+        "flag": "traveling"
+      }
+    },
+    {
+      "id": "travel.arrival.licence",
+      "phase": "travel",
+      "section": "1.4 Llegada a un mundo nuevo",
+      "title": "Licencia",
+      "body": "1D6, con 5-6 hace falta Freelancer License (coste 1D6 créditos) o intentar falsificarla (1D6+Savvy 6+; un 1 natural = nuevo Rival).",
+      "page": 72,
+      "when": {
+        "flag": "traveling"
+      }
+    },
+    {
+      "id": "travel.arrival.traits",
+      "phase": "travel",
+      "section": "1.4 Llegada a un mundo nuevo",
+      "title": "Rasgo del mundo",
+      "body": "Tirar D100 en World Traits y anotarlo.",
+      "page": [72, 75],
+      "tables": ["world-traits"],
+      "when": {
+        "flag": "traveling"
+      }
+    },
+    {
+      "id": "world.upkeep.pay",
+      "phase": "world",
+      "section": "2.1 Mantenimiento y reparaciones",
+      "title": "Pagar mantenimiento",
+      "body": "[[Upkeep]]: 1 crédito con 4-6 tripulantes, +1 por cada uno por encima de 6 (los de la enfermería no cuentan). Puedes vender objetos a 1 crédito cada uno. Por cada crédito que falte, un tripulante no hará tareas.",
+      "page": 76
+    },
+    {
+      "id": "world.upkeep.dismiss",
+      "phase": "world",
+      "section": "2.1 Mantenimiento y reparaciones",
+      "title": "Expulsar a algún tripulante",
+      "body": "Te quedas un objeto suyo.",
+      "page": 76,
+      "optional": true
+    },
+    {
+      "id": "world.upkeep.debt",
+      "phase": "world",
+      "section": "2.1 Mantenimiento y reparaciones",
+      "title": "Deuda de la nave",
+      "body": "Pagar lo que quieras; si aún debes, sube +1 (+2 si debes 31 o más). Si llega a 75+: 2D6, con 2-6 te embargan la nave.",
+      "page": 76,
+      "when": {
+        "flag": "ship-debt"
+      }
+    },
+    {
+      "id": "world.upkeep.hull",
+      "phase": "world",
+      "section": "2.1 Mantenimiento y reparaciones",
+      "title": "Reparar casco",
+      "body": "1 punto gratis + 1 punto por cada crédito gastado.",
+      "page": 76,
+      "when": {
+        "flag": "hull-damaged"
+      }
+    },
+    {
+      "id": "world.upkeep.medical",
+      "phase": "world",
+      "section": "2.1 Mantenimiento y reparaciones",
+      "title": "Atención médica",
+      "body": "4 créditos = −1 turno de recuperación para un personaje (o reparación de Bot).",
+      "page": 76,
+      "optional": true,
+      "when": {
+        "flag": "sick-bay"
+      }
+    },
+    {
+      "id": "world.upkeep.sick-bay",
+      "phase": "world",
+      "section": "2.1 Mantenimiento y reparaciones",
+      "title": "Marcar −1 turno en la enfermería",
+      "body": "A todos los que estén en [[Sick Bay]]. Quien sale puede combatir, pero no hacer tarea este turno.",
+      "page": 76,
+      "when": {
+        "flag": "sick-bay"
+      }
+    },
+    {
+      "id": "world.tasks.find-patron",
+      "phase": "world",
+      "section": "2.2 Asignar y resolver tareas (Crew Tasks)",
+      "title": "Buscar Patrón (Find a Patron)",
+      "body": "1D6 + nº buscando (+1 por Patrón conocido, +1 por crédito gastado). 5+ = un trabajo · 6+ = dos.",
+      "page": 77,
+      "optional": true
+    },
+    {
+      "id": "world.tasks.train",
+      "phase": "world",
+      "section": "2.2 Asignar y resolver tareas (Crew Tasks)",
+      "title": "Entrenar (Train)",
+      "body": "+1 XP.",
+      "page": 77,
+      "optional": true
+    },
+    {
+      "id": "world.tasks.trade",
+      "phase": "world",
+      "section": "2.2 Asignar y resolver tareas (Crew Tasks)",
+      "title": "Comerciar (Trade)",
+      "body": "Una tirada en Trade Table por tripulante; tiradas extra a 3 créditos.",
+      "page": [78, 79],
+      "tables": ["trade"],
+      "optional": true
+    },
+    {
+      "id": "world.tasks.recruit",
+      "phase": "world",
+      "section": "2.2 Asignar y resolver tareas (Crew Tasks)",
+      "title": "Reclutar (Recruit)",
+      "body": "Automático si sois menos de 6; si no, 1D6 + nº reclutando, 6+.",
+      "page": 78,
+      "tables": ["crew-type"],
+      "optional": true
+    },
+    {
+      "id": "world.tasks.explore",
+      "phase": "world",
+      "section": "2.2 Asignar y resolver tareas (Crew Tasks)",
+      "title": "Explorar (Explore)",
+      "body": "Una tirada en Exploration Table por tripulante.",
+      "page": [78, 80],
+      "tables": ["exploration"],
+      "optional": true
+    },
+    {
+      "id": "world.tasks.track",
+      "phase": "world",
+      "section": "2.2 Asignar y resolver tareas (Crew Tasks)",
+      "title": "Rastrear (Track)",
+      "body": "1D6 + nº rastreando (+1 por crédito), 6+ localizas un Rival a tu elección.",
+      "page": 78,
+      "optional": true,
+      "when": {
+        "flag": "has-rivals"
+      }
+    },
+    {
+      "id": "world.tasks.repair",
+      "phase": "world",
+      "section": "2.2 Asignar y resolver tareas (Crew Tasks)",
+      "title": "Reparar equipo (Repair your Kit)",
+      "body": "1D6 + Savvy (+1 Engineer, +1 por crédito), 6+ reparado; 1 natural = irreparable.",
+      "page": 78,
+      "optional": true,
+      "when": {
+        "flag": "damaged-items"
+      }
+    },
+    {
+      "id": "world.tasks.decoy",
+      "phase": "world",
+      "section": "2.2 Asignar y resolver tareas (Crew Tasks)",
+      "title": "Señuelo (Decoy)",
+      "body": "+1 por tripulante a la tirada de Rivales de este turno.",
+      "page": 78,
+      "optional": true,
+      "when": {
+        "flag": "has-rivals"
+      }
+    },
+    {
+      "id": "world.tasks.upgrades",
+      "phase": "world",
+      "section": "2.2 Asignar y resolver tareas (Crew Tasks)",
+      "title": "Aplicar subidas de nivel",
+      "body": "Aplicar los [[Character Upgrades]] que se produzcan por la XP ganada.",
+      "page": 123,
+      "tables": ["ability-increase"],
+      "optional": true
+    },
+    {
+      "id": "world.jobs.roll",
+      "phase": "world",
+      "section": "2.3 Determinar ofertas de trabajo (Job Offers)",
+      "title": "Generar cada oferta de Patrón",
+      "body": "Por cada oferta: D10 en Patrón, Danger Pay, Plazo (Time Frame), Beneficios, Riesgos (Hazards) y Condiciones.",
+      "page": [83, 84],
+      "tables": [
+        "patron",
+        "danger-pay",
+        "time-frame",
+        "patron-benefits",
+        "patron-hazards",
+        "patron-conditions"
+      ],
+      "when": {
+        "flag": "job-offer"
+      }
+    },
+    {
+      "id": "world.jobs.accept",
+      "phase": "world",
+      "section": "2.3 Determinar ofertas de trabajo (Job Offers)",
+      "title": "Aceptar o rechazar el trabajo",
+      "body": "",
+      "page": 77,
+      "when": {
+        "flag": "job-offer"
+      }
+    },
+    {
+      "id": "world.equipment",
+      "phase": "world",
+      "section": "2.4 Asignar equipo (Assign Equipment)",
+      "title": "Repartir objetos",
+      "body": "Entre tripulantes y el [[Stash]] (sin nave: máx. 5 objetos en el Stash). **Lo que lleve ahora cada uno es lo que lleva a la batalla.**",
+      "page": 85
+    },
+    {
+      "id": "world.rumors",
+      "phase": "world",
+      "section": "2.5 Resolver Rumores (Rumors)",
+      "title": "Resolver Rumores",
+      "body": "Si no estás en una [[Quest]]: tirar 1D6; si sale ≤ nº de Rumores, los descartas todos y obtienes una Quest.",
+      "page": 85,
+      "tables": ["quest-rumor"],
+      "when": {
+        "not": {
+          "flag": "quest-active"
+        }
+      }
+    },
+    {
+      "id": "world.battle.rivals",
+      "phase": "world",
+      "section": "2.6 Elegir la batalla (Choose Your Battle)",
+      "title": "Comprobar Rivales",
+      "body": "1D6 (+1 por Señuelo); si sale ≤ nº de Rivales, uno al azar te ataca y esa es tu batalla.",
+      "page": 85,
+      "tables": ["rival-attack-type"],
+      "when": {
+        "flag": "has-rivals"
+      }
+    },
+    {
+      "id": "world.battle.choose",
+      "phase": "world",
+      "section": "2.6 Elegir la batalla (Choose Your Battle)",
+      "title": "Elegir la misión",
+      "body": "Si no te atacan, elegir UNA: Misión de oportunidad · Atacar a un Rival rastreado · Continuar Quest · Trabajo de Patrón.",
+      "page": 85
+    },
+    {
+      "id": "world.battle.crew",
+      "phase": "world",
+      "section": "2.6 Elegir la batalla (Choose Your Battle)",
+      "title": "Elegir qué tripulantes van",
+      "body": "Máx. tamaño de campaña; el resto se queda en la nave.",
+      "page": 85
+    },
+    {
+      "id": "post.rivals",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "1. Rivales",
+      "body": "Si no era Rival y mantuviste el campo, 1D6: con 1 se convierten en Rivales. Si era Rival y mantuviste el campo, 1D6 (+1 si lo rastreaste, +1 si mataste un Individuo único): 4+ lo eliminas de la lista.",
+      "page": 119
+    },
+    {
+      "id": "post.patrons",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "2. Patrones",
+      "body": "Si cumpliste un trabajo de Patrón, añádelo a tus contactos en este mundo (salvo One-time Contract).",
+      "page": 119,
+      "when": {
+        "flag": "patron-job"
+      }
+    },
+    {
+      "id": "post.quest",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "3. Progreso de Quest",
+      "body": "1D6 + nº de [[Quest Rumors]] (−2 si no ganaste). ≤3 sin avance · 4-6 +1 Quest Rumor · 7+ siguiente es el final. Con 4+, otro D6: 5-6 el siguiente paso está en otro mundo.",
+      "page": 120,
+      "when": {
+        "flag": "quest-battle"
+      }
+    },
+    {
+      "id": "post.pay",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "4. Cobrar",
+      "body": "1D6 créditos (si ganaste, 1-2 cuentan como 3, salvo Rival). Patrón: + Danger Pay y beneficios. Final de Quest: 2 dados, el mejor +1. Invasión: nada.",
+      "page": 120
+    },
+    {
+      "id": "post.finds",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "5. Hallazgos en el campo",
+      "body": "Solo si mantuviste el campo: D100 en Battlefield Finds.",
+      "page": [120, 121],
+      "tables": ["battlefield-finds"],
+      "when": {
+        "flag": "held-the-field"
+      }
+    },
+    {
+      "id": "post.invasion",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "6. ¿Invasión?",
+      "body": "Si el enemigo era [[Invasion Threat]]: 2D6 (+1 por pruebas, −1 si mantuviste el campo, + dificultad). Con 9+ el mundo será invadido.",
+      "page": 121,
+      "when": {
+        "flag": "invasion-threat"
+      }
+    },
+    {
+      "id": "post.loot",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "7. Botín",
+      "body": "1 tirada en la Loot Table (3 si era final de Quest; ninguna tras Invasión).",
+      "page": [121, 131],
+      "tables": ["loot"],
+      "when": {
+        "not": {
+          "flag": "invasion-battle"
+        }
+      }
+    },
+    {
+      "id": "post.injuries",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "8. Heridas",
+      "body": "Cada baja tira en Injury Table (Bots y Soulless en Bot Injury). Quien tenga [[Luck]] y fuera a morir, sobrevive y la pierde toda. Recuperar Suerte gastada.",
+      "page": [121, 122],
+      "tables": ["injury", "bot-injury"],
+      "repeat": "per-casualty"
+    },
+    {
+      "id": "post.xp",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "9. Experiencia",
+      "body": "Baja +1 · sobrevive sin ganar +2 · sobrevive y gana +3 · primera baja +1 · Individuo único +1 · Easy +1 · final de Quest +1. Comprar mejoras de atributo.",
+      "page": 123,
+      "tables": ["ability-increase"]
+    },
+    {
+      "id": "post.training",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "10. Entrenamiento avanzado",
+      "body": "Opcional: 1 crédito de solicitud, 2D6 4+; pagar el curso con XP y/o créditos. Un intento por turno.",
+      "page": 124,
+      "tables": ["advanced-training"],
+      "optional": true
+    },
+    {
+      "id": "post.purchase",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "11. Compras",
+      "body": "3 créditos por tirada en Military, Gear o Gadget · Handgun, Blade, Colony Rifle o Shotgun a 1 crédito · vender hasta 3 objetos a 1 crédito · nave nueva o mejoras de nave.",
+      "page": [125, 60],
+      "tables": ["military-weapon", "gear", "gadget"],
+      "optional": true
+    },
+    {
+      "id": "post.campaign-event",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "12. Evento de campaña",
+      "body": "D100 en Campaign Events.",
+      "page": [126, 127, 128],
+      "tables": ["campaign-events"],
+      "when": {
+        "not": {
+          "flag": "fled-invasion"
+        }
+      }
+    },
+    {
+      "id": "post.character-event",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "13. Evento de personaje",
+      "body": "Un personaje al azar (ni Bot ni Soulless), D100 en Character Events.",
+      "page": [128, 129, 130],
+      "tables": ["character-events"]
+    },
+    {
+      "id": "post.galactic-war",
+      "phase": "post-battle",
+      "section": "Paso 4 · Tras la batalla",
+      "title": "14. Guerra galáctica",
+      "body": "Por cada planeta invadido que sigas, 2D6 en la tabla de progreso.",
+      "page": 126,
+      "tables": ["galactic-war-progress"],
+      "when": {
+        "flag": "tracking-invasions"
+      }
+    },
+    {
+      "id": "end.crew-log",
+      "phase": "end",
+      "section": "Cierre del turno",
+      "title": "Actualizar Crew Log",
+      "body": "Créditos, XP, [[Stash]], enfermería, Rivales, Patrones, Rumores, deuda y casco.",
+      "page": 179
+    },
+    {
+      "id": "end.world-sheet",
+      "phase": "end",
+      "section": "Cierre del turno",
+      "title": "Actualizar la World Record Sheet",
+      "body": "Si vas a volver a este mundo.",
+      "page": 69,
+      "optional": true
+    },
+    {
+      "id": "end.victory",
+      "phase": "end",
+      "section": "Cierre del turno",
+      "title": "Comprobar la condición de victoria",
+      "body": "",
+      "page": 64,
+      "when": {
+        "flag": "victory-condition"
+      }
+    },
+    {
+      "id": "end.story-points",
+      "phase": "end",
+      "section": "Cierre del turno",
+      "title": "Recordar: puntos de historia",
+      "body": "1 por uso: repetir tirada, +3 créditos, +3 XP o acción extra; los tres últimos, una vez por turno.",
+      "page": 66,
+      "optional": true
+    }
+  ]
+}

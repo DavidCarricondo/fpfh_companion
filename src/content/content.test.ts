@@ -6,14 +6,21 @@ import fc from 'fast-check'
 import { describe, expect, it } from 'vitest'
 import { diceRange } from '../engine/dice'
 import { lookupRow, resolveRoll, rowRange } from '../engine/lookup'
-import { getTable, tables } from './index'
+import { getTable, glossary, steps, tables } from './index'
 
 const rollable = tables.filter((t) => t.dice)
 const cases = rollable.flatMap((t) => (t.columns ?? [undefined]).map((c) => ({ table: t, column: c?.id })))
 
 describe('contenido', () => {
-  it('hay tablas cargadas', () => {
+  it('hay tablas, pasos y glosario cargados', () => {
     expect(tables.length).toBeGreaterThan(0)
+    expect(steps.some((s) => s.phase === 'creation')).toBe(true)
+    expect(steps.some((s) => s.phase === 'post-battle')).toBe(true)
+    expect(glossary.length).toBeGreaterThan(0)
+  })
+
+  it('todas las tablas v1 están verificadas', () => {
+    expect(tables.filter((t) => !t.verified).map((t) => t.id)).toEqual([])
   })
 
   it.each(cases.map((c) => [`${c.table.id}${c.column ? `:${c.column}` : ''}`, c] as const))(

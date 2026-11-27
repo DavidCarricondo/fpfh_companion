@@ -10,6 +10,7 @@ Nov 27, 2026 · @David
 > - **`TableDef`** añade `verified`, `aliases`, `fieldDefs` (etiquetas de `fields`) y `dice` opcional (tablas de referencia sin tirada). `TableRow.range` es opcional (solo en tablas de referencia) y admite `page` y `errata` por fila. `TableGroup` añade `loot` y `campaign` (§5.1).
 > - **Glosario en pasos:** los términos se marcan como `[[Held the Field]]` y `validate:content` comprueba que existen (§5.2, §12.1).
 > - **Ciclos:** se rechazan solo los bucles _forzosos_ (tablas desde las que ninguna fila termina la cadena). "Roll again on this table" en una fila concreta es válido (§12.1).
+> - **Flags de los pasos (v1, los marca el jugador):** `battle-events`, `commercial-passage`, `damaged-items`, `elite-ranks`, `every-third-turn`, `fled-invasion`, `has-rivals`, `held-the-field`, `hull-damaged`, `invaded`, `invasion-battle`, `invasion-threat`, `job-offer`, `patron-job`, `quest-active`, `quest-battle`, `rival-battle`, `ship-debt`, `sick-bay`, `starting-patrons`, `starting-rivals`, `story-track`, `tracking-invasions`, `traveling`, `victory-condition`. Los pasos de la guía rápida se agrupan en `creation.json`, `campaign-turn.json` (inicio, viaje, mundo, post-batalla y cierre) y `battle.json`; las páginas siguen la numeración impresa del libro.
 
 ## 1. Resumen, objetivos y principios
 

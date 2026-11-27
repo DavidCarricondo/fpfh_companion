@@ -1,0 +1,216 @@
+{
+  "steps": [
+    {
+      "id": "battle.setup.deployment",
+      "phase": "battle-setup",
+      "section": "3A · Preparar el escenario",
+      "title": "Condiciones de despliegue",
+      "body": "D100 en la columna adecuada (Oportunidad/Patrón, Rival o Quest). No en Invasión.",
+      "page": 88,
+      "tables": ["deployment-conditions"],
+      "when": {
+        "not": {
+          "flag": "invasion-battle"
+        }
+      }
+    },
+    {
+      "id": "battle.setup.notable-sights",
+      "phase": "battle-setup",
+      "section": "3A · Preparar el escenario",
+      "title": "Lugar destacado (Notable Sights)",
+      "body": "D100 en su columna. Se coloca a 2D6+2\" del centro en dirección aleatoria.",
+      "page": 89,
+      "tables": ["notable-sights"],
+      "when": {
+        "not": {
+          "flag": "invasion-battle"
+        }
+      }
+    },
+    {
+      "id": "battle.setup.objective",
+      "phase": "battle-setup",
+      "section": "3A · Preparar el escenario",
+      "title": "Objetivo",
+      "body": "D10 en la tabla de Oportunidad, Patrón o Quest (final de Quest = siempre Fight Off, +1 enemigo).",
+      "page": [89, 91],
+      "tables": ["opportunity-objectives", "patron-objectives", "quest-objectives"],
+      "when": {
+        "not": {
+          "any": [
+            {
+              "flag": "invasion-battle"
+            },
+            {
+              "flag": "rival-battle"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "battle.setup.enemy-type",
+      "phase": "battle-setup",
+      "section": "3A · Preparar el escenario",
+      "title": "Tipo de enemigo",
+      "body": "Rival/Invasión = el conocido; si no, D100 en Enemy Encounter Category y D100 en la subtabla. Anotar perfil, IA y reglas.",
+      "page": [92, 103],
+      "tables": [
+        "enemy-encounter-category",
+        "criminal-elements",
+        "hired-muscle",
+        "interested-parties",
+        "roving-threats"
+      ]
+    },
+    {
+      "id": "battle.setup.enemy-numbers",
+      "phase": "battle-setup",
+      "section": "3A · Preparar el escenario",
+      "title": "Nº de enemigos",
+      "body": "Según tamaño de campaña + modificador Numbers de la tabla. −1 si llevas 2+ figuras menos de lo normal. Aplicar ajustes de dificultad.",
+      "page": [92, 93]
+    },
+    {
+      "id": "battle.setup.specialists",
+      "phase": "battle-setup",
+      "section": "3A · Preparar el escenario",
+      "title": "Especialistas y Lugarteniente",
+      "body": "[[Specialists]] (3-6 enemigos: 1 · 7+: 2) y [[Lieutenant]] (4+ enemigos: +1 Combat Skill y Blade). Tirar sus armas aparte.",
+      "page": [93, 104],
+      "tables": [
+        "enemy-weapons-1",
+        "enemy-weapons-2",
+        "enemy-weapons-3",
+        "enemy-specialist-a",
+        "enemy-specialist-b",
+        "enemy-specialist-c"
+      ]
+    },
+    {
+      "id": "battle.setup.unique",
+      "phase": "battle-setup",
+      "section": "3A · Preparar el escenario",
+      "title": "Individuo único",
+      "body": "2D6 (+1 Interested Parties, +1 Hardcore); con 9+ se añade un [[Unique Individual]]. No con Invasión ni Roving Threats.",
+      "page": [93, 94, 105],
+      "tables": ["unique-individuals"]
+    },
+    {
+      "id": "battle.setup.table",
+      "phase": "battle-setup",
+      "section": "3A · Preparar el escenario",
+      "title": "Tablero",
+      "body": "2x2, 2,5x2,5 o 3x3 pies, con mucha escenografía.",
+      "page": 108
+    },
+    {
+      "id": "battle.setup.edge",
+      "phase": "battle-setup",
+      "section": "3A · Preparar el escenario",
+      "title": "Sortear borde de entrada",
+      "body": "El enemigo, en el opuesto.",
+      "page": 110
+    },
+    {
+      "id": "battle.setup.deploy",
+      "phase": "battle-setup",
+      "section": "3A · Preparar el escenario",
+      "title": "Desplegar enemigos primero",
+      "body": "Según su IA (Aggressive/Rampage en un grupo · Tactical/Defensive en 3 equipos · Cautious en 2 grupos · Beast en parejas), luego tu tripulación. Nadie a menos de 18\" del rival.",
+      "page": 110
+    },
+    {
+      "id": "battle.setup.initiative",
+      "phase": "battle-setup",
+      "section": "3A · Preparar el escenario",
+      "title": "Tomar la iniciativa",
+      "body": "[[Seize the Initiative]]: 2D6 + mayor Savvy (+1 si te superan en número, modificadores del enemigo y dificultad). Con 10+, cada tripulante mueve o dispara (impacta solo con 6 natural).",
+      "page": 112
+    },
+    {
+      "id": "battle.round.reaction",
+      "phase": "battle",
+      "section": "3B · Cada ronda de batalla",
+      "title": "Tirada de Reacción",
+      "body": "[[Reaction Roll]]: tantos D6 como tripulantes; asigna cada dado. ≤ Reactions = actúa rápido; mayor = lento.",
+      "page": 113,
+      "repeat": "per-round"
+    },
+    {
+      "id": "battle.round.quick",
+      "phase": "battle",
+      "section": "3B · Cada ronda de batalla",
+      "title": "Acciones rápidas (Quick Actions)",
+      "body": "Mover y luego [[Combat Action]].",
+      "page": 113,
+      "repeat": "per-round"
+    },
+    {
+      "id": "battle.round.enemy",
+      "phase": "battle",
+      "section": "3B · Cada ronda de batalla",
+      "title": "Acciones enemigas",
+      "body": "Empezando por los más cercanos a tu borde, según su IA.",
+      "page": 113,
+      "repeat": "per-round"
+    },
+    {
+      "id": "battle.round.slow",
+      "phase": "battle",
+      "section": "3B · Cada ronda de batalla",
+      "title": "Acciones lentas (Slow Actions)",
+      "body": "",
+      "page": 113,
+      "repeat": "per-round"
+    },
+    {
+      "id": "battle.round.end",
+      "phase": "battle",
+      "section": "3B · Cada ronda de batalla",
+      "title": "Fase final",
+      "body": "Efectos de fin de ronda · [[Morale]] enemiga (1D6 por baja; dentro del rango [[Panic]] = huye uno).",
+      "page": 114,
+      "repeat": "per-round"
+    },
+    {
+      "id": "battle.round.events",
+      "phase": "battle",
+      "section": "3B · Cada ronda de batalla",
+      "title": "Eventos de batalla",
+      "body": "Opcional: al final de la ronda 2 y de la 4.",
+      "page": [116, 117],
+      "tables": ["battle-events"],
+      "when": {
+        "flag": "battle-events"
+      },
+      "optional": true
+    },
+    {
+      "id": "battle.round.check-end",
+      "phase": "battle",
+      "section": "3B · Cada ronda de batalla",
+      "title": "¿Termina la batalla?",
+      "body": "Todos los enemigos fuera, objetivo cumplido y retirada enemiga, o tu tripulación fuera.",
+      "page": 114,
+      "repeat": "per-round"
+    },
+    {
+      "id": "battle.end.result",
+      "phase": "battle",
+      "section": "3C · Al terminar",
+      "title": "Anotar el resultado",
+      "body": "Anotar si has Ganado ([[Win]]: cumplido el objetivo) y si has Mantenido el campo ([[Held the Field]]).",
+      "page": 114
+    },
+    {
+      "id": "battle.end.notes",
+      "phase": "battle",
+      "section": "3C · Al terminar",
+      "title": "Anotar bajas y hechos",
+      "body": "Anotar bajas, quién hizo la primera baja, Individuos únicos abatidos y objetos de Lugares destacados.",
+      "page": 123
+    }
+  ]
+}
