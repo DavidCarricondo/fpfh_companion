@@ -1,0 +1,42 @@
+{
+  "verified": false,
+  "id": "loot-melee-weapons",
+  "name": "Melee Weapons Subtable",
+  "page": 132,
+  "dice": "D100",
+  "group": "loot",
+  "rows": [
+    {
+      "range": [1, 20],
+      "result": "Blade"
+    },
+    {
+      "range": [21, 40],
+      "result": "Brutal Melee Weapon"
+    },
+    {
+      "range": [41, 55],
+      "result": "Boarding Saber"
+    },
+    {
+      "range": [56, 75],
+      "result": "Ripper Sword"
+    },
+    {
+      "range": [76, 85],
+      "result": "Shatter Axe"
+    },
+    {
+      "range": [86, 90],
+      "result": "Power Claw"
+    },
+    {
+      "range": [91, 95],
+      "result": "Glare Sword"
+    },
+    {
+      "range": [96, 100],
+      "result": "Suppression Maul"
+    }
+  ]
+}

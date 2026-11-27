@@ -45,6 +45,20 @@ describe('contenido', () => {
     expect(resolveRoll(alien, { natural: 100 }).match.row.result).toBe('Swift')
   })
 
+  it('Loot → Weapon Category → Slug Weapons se encadena (criterio v1)', () => {
+    const loot = resolveRoll(getTable('loot')!, { natural: 10 })
+    expect(loot.match.row.result).toBe('Weapon')
+    const category = resolveRoll(getTable(loot.next[0]!.tableId)!, { natural: 1 })
+    expect(category.match.row.result).toBe('Slug Weapons')
+    const slug = resolveRoll(getTable(category.next[0]!.tableId)!, { natural: 100 })
+    expect(slug.match.row.result).toBe('Rattle Gun')
+  })
+
+  it('Damaged weapons: dos tiradas en Weapon Category', () => {
+    const res = resolveRoll(getTable('loot')!, { natural: 30 })
+    expect(res.next.map((n) => n.tableId)).toEqual(['loot-weapon-category', 'loot-weapon-category'])
+  })
+
   it('Deployment Conditions por columna', () => {
     const t = getTable('deployment-conditions')!
     expect(resolveRoll(t, { natural: 30, column: 'opportunity-patron' }).match.row.result).toBe(

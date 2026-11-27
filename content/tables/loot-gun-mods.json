@@ -1,0 +1,42 @@
+{
+  "verified": false,
+  "id": "loot-gun-mods",
+  "name": "Gun Mods Subtable",
+  "page": 132,
+  "dice": "D100",
+  "group": "loot",
+  "rows": [
+    {
+      "range": [1, 10],
+      "result": "Assault Blade"
+    },
+    {
+      "range": [11, 20],
+      "result": "Beam Light"
+    },
+    {
+      "range": [21, 35],
+      "result": "Bipod"
+    },
+    {
+      "range": [36, 55],
+      "result": "Hot Shot Pack"
+    },
+    {
+      "range": [56, 65],
+      "result": "Cyber-configurable Nano-Sludge"
+    },
+    {
+      "range": [66, 80],
+      "result": "Stabilizer"
+    },
+    {
+      "range": [81, 90],
+      "result": "Shock Attachment"
+    },
+    {
+      "range": [91, 100],
+      "result": "Upgrade Kit"
+    }
+  ]
+}

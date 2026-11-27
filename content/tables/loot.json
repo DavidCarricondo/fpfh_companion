@@ -1,0 +1,80 @@
+{
+  "verified": false,
+  "id": "loot",
+  "name": "Loot Table",
+  "page": 131,
+  "dice": "D100",
+  "group": "loot",
+  "aliases": ["Loot"],
+  "notes": "Roll to determine the category, then the subtable, and finally the exact item. If you are awarded multiple Loot rolls, you may keep each item.",
+  "rows": [
+    {
+      "range": [1, 25],
+      "result": "Weapon",
+      "detail": "Roll once on the Weapons Category Subtable.",
+      "next": [
+        {
+          "tableId": "loot-weapon-category",
+          "label": "Roll Weapon Category"
+        }
+      ]
+    },
+    {
+      "range": [26, 35],
+      "result": "Damaged weapons",
+      "detail": "Roll twice on the Weapons Category Subtable. Both items require Repair.",
+      "next": [
+        {
+          "tableId": "loot-weapon-category",
+          "label": "Roll Weapon Category (damaged)",
+          "times": 2
+        }
+      ]
+    },
+    {
+      "range": [36, 45],
+      "result": "Damaged gear",
+      "detail": "Roll twice on Gear Subtable. Both items require Repair.",
+      "next": [
+        {
+          "tableId": "loot-gear",
+          "label": "Roll Gear Subtable (damaged)",
+          "times": 2
+        }
+      ]
+    },
+    {
+      "range": [46, 65],
+      "result": "Gear",
+      "detail": "Roll once on the Gear Subtable.",
+      "next": [
+        {
+          "tableId": "loot-gear",
+          "label": "Roll Gear Subtable"
+        }
+      ]
+    },
+    {
+      "range": [66, 80],
+      "result": "Odds and ends",
+      "detail": "Roll once on the Odds and Ends Subtable.",
+      "next": [
+        {
+          "tableId": "loot-odds-and-ends",
+          "label": "Roll Odds and Ends"
+        }
+      ]
+    },
+    {
+      "range": [81, 100],
+      "result": "Rewards",
+      "detail": "Roll once on the Rewards Subtable.",
+      "next": [
+        {
+          "tableId": "loot-rewards",
+          "label": "Roll Rewards"
+        }
+      ]
+    }
+  ]
+}

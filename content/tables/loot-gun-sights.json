@@ -1,0 +1,30 @@
+{
+  "verified": false,
+  "id": "loot-gun-sights",
+  "name": "Gun Sights Subtable",
+  "page": 132,
+  "dice": "D100",
+  "group": "loot",
+  "rows": [
+    {
+      "range": [1, 20],
+      "result": "Laser Sight"
+    },
+    {
+      "range": [21, 45],
+      "result": "Quality Sight"
+    },
+    {
+      "range": [46, 70],
+      "result": "Seeker Sight"
+    },
+    {
+      "range": [71, 85],
+      "result": "Tracker Sight"
+    },
+    {
+      "range": [86, 100],
+      "result": "Unity Battle Sight"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "verified": false,
+  "id": "loot-grenades",
+  "name": "Grenades Subtable",
+  "page": 132,
+  "dice": "D100",
+  "group": "loot",
+  "rows": [
+    {
+      "range": [1, 60],
+      "result": "3 Frakk Grenades"
+    },
+    {
+      "range": [61, 100],
+      "result": "3 Dazzle grenades"
+    }
+  ]
+}

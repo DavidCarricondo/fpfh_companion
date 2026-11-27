@@ -1,0 +1,66 @@
+{
+  "verified": false,
+  "id": "loot-slug-weapons",
+  "name": "Slug Weapons Subtable",
+  "page": 131,
+  "dice": "D100",
+  "group": "loot",
+  "rows": [
+    {
+      "range": [1, 5],
+      "result": "Hold Out Pistol"
+    },
+    {
+      "range": [6, 13],
+      "result": "Hand Gun"
+    },
+    {
+      "range": [14, 18],
+      "result": "Scrap Pistol"
+    },
+    {
+      "range": [19, 26],
+      "result": "Machine Pistol"
+    },
+    {
+      "range": [27, 32],
+      "result": "Duelling Pistol"
+    },
+    {
+      "range": [33, 37],
+      "result": "Hand Cannon"
+    },
+    {
+      "range": [38, 46],
+      "result": "Colony Rifle"
+    },
+    {
+      "range": [47, 56],
+      "result": "Military Rifle"
+    },
+    {
+      "range": [57, 65],
+      "result": "Shotgun"
+    },
+    {
+      "range": [66, 70],
+      "result": "Flak Gun"
+    },
+    {
+      "range": [71, 78],
+      "result": "Hunting Rifle"
+    },
+    {
+      "range": [79, 83],
+      "result": "Marksman's Rifle"
+    },
+    {
+      "range": [84, 92],
+      "result": "Auto Rifle"
+    },
+    {
+      "range": [93, 100],
+      "result": "Rattle Gun"
+    }
+  ]
+}

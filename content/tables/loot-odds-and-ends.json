@@ -1,0 +1,41 @@
+{
+  "verified": false,
+  "id": "loot-odds-and-ends",
+  "name": "Odds and Ends Table",
+  "page": 133,
+  "dice": "D100",
+  "group": "loot",
+  "aliases": ["Odds and Ends Subtable"],
+  "rows": [
+    {
+      "range": [1, 55],
+      "result": "Consumables (2 uses)",
+      "next": [
+        {
+          "tableId": "loot-consumables",
+          "label": "Roll Consumables"
+        }
+      ]
+    },
+    {
+      "range": [56, 70],
+      "result": "Implants",
+      "next": [
+        {
+          "tableId": "loot-implants",
+          "label": "Roll Implants"
+        }
+      ]
+    },
+    {
+      "range": [71, 100],
+      "result": "Ship Items",
+      "next": [
+        {
+          "tableId": "loot-ship-items",
+          "label": "Roll Ship Items"
+        }
+      ]
+    }
+  ]
+}
