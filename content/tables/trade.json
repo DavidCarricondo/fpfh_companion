@@ -1,0 +1,213 @@
+{
+  "verified": false,
+  "id": "trade",
+  "name": "Trade Table",
+  "aliases": ["Trade"],
+  "page": [79, 80],
+  "dice": "D100",
+  "group": "world",
+  "notes": "Rolls represent bartering unspecified items for new goods. You receive whatever the table indicates; if an entry offers a choice, you receive just one. If a roll would cost money, you may opt not to purchase it. Whatever you roll is available for use immediately. Additional rolls cost 3 credits each (at least one crew member must be Trading).",
+  "rows": [
+    {
+      "range": [1, 3],
+      "result": "A personal weapon",
+      "detail": "Roll once on the Low Tech Weapon Table (p.28).",
+      "next": [
+        {
+          "tableId": "low-tech-weapon",
+          "label": "Roll Low-tech Weapon"
+        }
+      ]
+    },
+    {
+      "range": [4, 6],
+      "result": "Sell some cargo",
+      "detail": "Earn 2 credits."
+    },
+    {
+      "range": [7, 9],
+      "result": "Find something useful",
+      "detail": "Roll once on the Gear Table (p.29).",
+      "next": [
+        {
+          "tableId": "gear",
+          "label": "Roll Gear"
+        }
+      ]
+    },
+    {
+      "range": [10, 11],
+      "result": "Quality food and booze",
+      "detail": "Recruit a new character to your crew. Single-use."
+    },
+    {
+      "range": [12, 14],
+      "result": "Instruction book",
+      "detail": "A crew member of choice can read it and earn +1 XP. Single-use."
+    },
+    {
+      "range": [15, 18],
+      "result": "Bits of scrap",
+      "detail": "You sell it on to an interested party, earning 1 credit of profit in the process."
+    },
+    {
+      "range": [19, 22],
+      "result": "Medical pack",
+      "detail": "Receive your choice of a Stim-pack or Med-patch."
+    },
+    {
+      "range": [23, 24],
+      "result": "Worthless trinket",
+      "detail": "Worthless? Roll 1D6. On a 6, earn +1 story point."
+    },
+    {
+      "range": [25, 26],
+      "result": "Local maps",
+      "detail": "If you receive a Quest on this or the following world, you may immediately add 1 Rumor. Single-use."
+    },
+    {
+      "range": [27, 28],
+      "result": "Luxury trinket",
+      "detail": "If Recruiting, you may use it as a gift to receive a +2 bonus to the roll. Alternatively, you can sell it: roll twice on the Trade Table and select the result you prefer. If a Swift character finds this, they will keep it for themselves, earning +2 XP. Single-use."
+    },
+    {
+      "range": [29, 30],
+      "result": "Basic supplies",
+      "detail": "Skip Upkeep costs for one campaign turn. Single-use."
+    },
+    {
+      "range": [31, 34],
+      "result": "Contraband",
+      "detail": "You can turn this down, but if you accept it, you earn 1D6 credits from selling it on. If you roll a 4-6, you also receive a Rival."
+    },
+    {
+      "range": [35, 37],
+      "result": "Gun Upgrade Kit",
+      "detail": "Receive your choice of a Laser Sight, Bipod or Beam Light."
+    },
+    {
+      "range": [38, 39],
+      "result": "Useless trinket",
+      "detail": "Useless? Roll 1D6. On a 6, earn +1 story point."
+    },
+    {
+      "range": [40, 44],
+      "result": "Trade goods",
+      "detail": "Every time you arrive on a new planet, you may roll 1D6 to see how many Credits the goods will sell for here. You can wait as long as you like, but if you roll a 1, they have perished or become damaged, and are now worthless."
+    },
+    {
+      "range": [45, 48],
+      "result": "Something interesting",
+      "detail": "Roll once on the Loot Table (p.131).",
+      "next": [
+        {
+          "tableId": "loot",
+          "label": "Roll Loot"
+        }
+      ]
+    },
+    {
+      "range": [49, 51],
+      "result": "Fuel",
+      "detail": "Roll 1D6. You have secured that many credits worth of fuel, which can be used to offset travel costs."
+    },
+    {
+      "range": [52, 53],
+      "result": "Spare parts",
+      "detail": "Add +1 when making a Repair attempt. If the roll is a natural 1, the Spare Parts are used up and must be erased from your roster."
+    },
+    {
+      "range": [54, 55],
+      "result": "Tourist garbage",
+      "detail": "Not actually worth anything, but roll 1D6. On a 5-6, you can add 1 story point."
+    },
+    {
+      "range": [56, 56],
+      "result": "Don't usually see these for sale",
+      "detail": "You may pay 3 credits. If you do, you can roll on the Loot Table (p.131). The item must be used by the crew member who went trading."
+    },
+    {
+      "range": [57, 59],
+      "result": "Ordnance",
+      "detail": "You receive 3 grenades (Frakk or Dazzle in any combination you like)."
+    },
+    {
+      "range": [60, 62],
+      "result": "Basic firearms",
+      "detail": "Your choice of a Handgun, Colony Rifle, or Shotgun."
+    },
+    {
+      "range": [63, 63],
+      "result": "Odd device",
+      "detail": "If you want to buy this, pay 1 credit, then roll 1D6. On a 6, you can roll on the Loot Table (p.131). On any other score, it's complete garbage."
+    },
+    {
+      "range": [64, 65],
+      "result": "Military fuel cell",
+      "detail": "Zero travel costs when jumping to a new planet. Single-use."
+    },
+    {
+      "range": [66, 69],
+      "result": "Hot tip",
+      "detail": "Gain 1 Quest Rumor."
+    },
+    {
+      "range": [70, 71],
+      "result": "Insider information",
+      "detail": "Automatically obtain a Patron next campaign turn, if you look for one. Single-use."
+    },
+    {
+      "range": [72, 75],
+      "result": "Army surplus",
+      "detail": "Your choice of an Auto Rifle, Blast Pistol or Glare Sword."
+    },
+    {
+      "range": [76, 78],
+      "result": "A chance to unload some stuff",
+      "detail": "A revolutionary will buy any weapons for 2 credits each, provided they are not damaged."
+    },
+    {
+      "range": [79, 81],
+      "result": "A lot of blinking lights",
+      "detail": "Roll once on the Gear subsection of the Loot Table (p.132).",
+      "next": [
+        {
+          "tableId": "loot-gear",
+          "label": "Roll Gear Subtable"
+        }
+      ]
+    },
+    {
+      "range": [82, 86],
+      "result": "\"Gently used\"",
+      "detail": "Roll once on the Gear subsection of the Loot Table (p.132). The item is damaged and needs Repair.",
+      "next": [
+        {
+          "tableId": "loot-gear",
+          "label": "Roll Gear Subtable (damaged)"
+        }
+      ]
+    },
+    {
+      "range": [87, 91],
+      "result": "\"Pre-owned\"",
+      "detail": "Roll once on the Loot Table (p.131). The item is damaged and needs Repair.",
+      "next": [
+        {
+          "tableId": "loot",
+          "label": "Roll Loot (damaged)"
+        }
+      ]
+    },
+    {
+      "range": [92, 95],
+      "result": "Medical reserves",
+      "detail": "Obtain 2 Stim-packs and 2 Med-patches."
+    },
+    {
+      "range": [96, 100],
+      "result": "Starship repair parts",
+      "detail": "Count as 1D6 credits for the purpose of repairing Hull Point damage. Single-use."
+    }
+  ]
+}

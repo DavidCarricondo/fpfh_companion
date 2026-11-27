@@ -1,0 +1,42 @@
+{
+  "verified": false,
+  "id": "patron-hazards",
+  "name": "Hazards Subtable",
+  "aliases": ["Patron Hazards"],
+  "page": 84,
+  "dice": "D10",
+  "group": "world",
+  "notes": "Benefits, Hazards, and Conditions: roll 1D10 for each category. Benefits apply on 8+ (Wealthy Individual 5+); Hazards on 8+ (Secretive Group 5+); Conditions on 8+ (Corporation 5+). If you have worked for this Patron before, the Benefit (if any) always remains the same. Benefits are paid out ONLY if the mission is a success.",
+  "rows": [
+    {
+      "range": [1, 2],
+      "result": "Dangerous Job",
+      "detail": "Increase enemy force numbers by +1."
+    },
+    {
+      "range": [3, 4],
+      "result": "Hot Job",
+      "detail": "After the job, you will earn an enemy on 1-2 instead of the normal roll of a 1."
+    },
+    {
+      "range": [5, 5],
+      "result": "VIP",
+      "detail": "A random enemy will have +1 Toughness and a final Combat Skill of +2 (regardless of current value)."
+    },
+    {
+      "range": [6, 6],
+      "result": "Veteran Opposition",
+      "detail": "Enemy is -1 to panic range."
+    },
+    {
+      "range": [7, 7],
+      "result": "Low Priority",
+      "detail": "Reduce enemy force numbers by 1."
+    },
+    {
+      "range": [8, 10],
+      "result": "Private Transport",
+      "detail": "If you have Rivals, they cannot track you this campaign turn."
+    }
+  ]
+}

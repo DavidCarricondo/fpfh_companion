@@ -1,0 +1,111 @@
+{
+  "verified": false,
+  "id": "patron",
+  "name": "Patron Table",
+  "aliases": ["Patron", "Job Offers"],
+  "page": 83,
+  "dice": "D10",
+  "group": "world",
+  "notes": "Determine job offers: roll D10 on the Patron, Danger Pay and Time Frame tables, then for Benefits, Hazards and Conditions. Benefits, Hazards, and Conditions: roll 1D10 for each category. Benefits apply on 8+ (Wealthy Individual 5+); Hazards on 8+ (Secretive Group 5+); Conditions on 8+ (Corporation 5+). If you have worked for this Patron before, the Benefit (if any) always remains the same. Benefits are paid out ONLY if the mission is a success.",
+  "fieldDefs": [
+    {
+      "id": "notes",
+      "label": "Notes"
+    }
+  ],
+  "rows": [
+    {
+      "range": [1, 2],
+      "result": "Corporation",
+      "fields": {
+        "notes": "+1 to the roll on the Danger Pay Table. Conditions on 5+."
+      },
+      "next": [
+        {
+          "tableId": "danger-pay",
+          "label": "Roll Danger Pay"
+        },
+        {
+          "tableId": "time-frame",
+          "label": "Roll Time Frame"
+        }
+      ]
+    },
+    {
+      "range": [3, 4],
+      "result": "Local Government",
+      "next": [
+        {
+          "tableId": "danger-pay",
+          "label": "Roll Danger Pay"
+        },
+        {
+          "tableId": "time-frame",
+          "label": "Roll Time Frame"
+        }
+      ]
+    },
+    {
+      "range": [5, 5],
+      "result": "Sector Government",
+      "next": [
+        {
+          "tableId": "danger-pay",
+          "label": "Roll Danger Pay"
+        },
+        {
+          "tableId": "time-frame",
+          "label": "Roll Time Frame"
+        }
+      ]
+    },
+    {
+      "range": [6, 7],
+      "result": "Wealthy Individual",
+      "fields": {
+        "notes": "Benefits on 5+."
+      },
+      "next": [
+        {
+          "tableId": "danger-pay",
+          "label": "Roll Danger Pay"
+        },
+        {
+          "tableId": "time-frame",
+          "label": "Roll Time Frame"
+        }
+      ]
+    },
+    {
+      "range": [8, 9],
+      "result": "Private Organization",
+      "next": [
+        {
+          "tableId": "danger-pay",
+          "label": "Roll Danger Pay"
+        },
+        {
+          "tableId": "time-frame",
+          "label": "Roll Time Frame"
+        }
+      ]
+    },
+    {
+      "range": [10, 10],
+      "result": "Secretive Group",
+      "fields": {
+        "notes": "+1 to the roll on the Time Frame Table. Hazards on 5+."
+      },
+      "next": [
+        {
+          "tableId": "danger-pay",
+          "label": "Roll Danger Pay"
+        },
+        {
+          "tableId": "time-frame",
+          "label": "Roll Time Frame"
+        }
+      ]
+    }
+  ]
+}
