@@ -11,6 +11,7 @@ Nov 27, 2026 · @David
 > - **Glosario en pasos:** los términos se marcan como `[[Held the Field]]` y `validate:content` comprueba que existen (§5.2, §12.1).
 > - **Ciclos:** se rechazan solo los bucles _forzosos_ (tablas desde las que ninguna fila termina la cadena). "Roll again on this table" en una fila concreta es válido (§12.1).
 > - **Flags de los pasos (v1, los marca el jugador):** `battle-events`, `commercial-passage`, `damaged-items`, `elite-ranks`, `every-third-turn`, `fled-invasion`, `has-rivals`, `held-the-field`, `hull-damaged`, `invaded`, `invasion-battle`, `invasion-threat`, `job-offer`, `patron-job`, `quest-active`, `quest-battle`, `rival-battle`, `ship-debt`, `sick-bay`, `starting-patrons`, `starting-rivals`, `story-track`, `tracking-invasions`, `traveling`, `victory-condition`. Los pasos de la guía rápida se agrupan en `creation.json`, `campaign-turn.json` (inicio, viaje, mundo, post-batalla y cierre) y `battle.json`; las páginas siguen la numeración impresa del libro.
+> - **M3 (interfaz, en memoria):** el estado vive en un store de Zustand sin persistencia (Dexie llega en M4); la creación se guarda como turno 0. Las pestañas del turno son Viaje · Mundo · Batalla (`battle-setup` + `battle`) · Post-batalla (`post-battle` + `end`). Los flags `every-third-turn`, `story-track`, `battle-events` y `victory-condition` se derivan del turno y de los ajustes; el resto se pregunta al inicio de la pestaña, y cambiar uno queda en el diario como `state-change`. La pestaña Batalla pregunta además `patron-job` y `quest-battle` para preseleccionar la columna de las tablas multicolumna. Pasos `per-casualty`: tantas casillas como el tamaño de tripulación; cuentan como hechos con una marcada. `LogEntry` añade `roll.natural`, `parentId` (tirada encadenada), `checkedSlot` (casilla que marcó, para deshacer) y `phase` opcional (tiradas desde la biblioteca); deshacer una tirada deshace también sus encadenadas. La exportación del diario a Markdown (F1.20) se adelanta a M3: es una crónica con tiradas, notas y batallas (las encadenadas como sub-viñetas), sin pasos marcados, respuestas a las preguntas de fase ni entradas deshechas; tiradas sin fase van en «Otros».
 
 ## 1. Resumen, objetivos y principios
 
@@ -214,7 +215,7 @@ interface LogEntry {
   id: string // ulid
   campaignId: string
   turn: number
-  phase: StepDef['phase']
+  phase?: StepDef['phase'] // sin fase: tirada anotada desde la biblioteca
   stepId?: string
   at: string // ISO
   kind: 'roll' | 'step-done' | 'note' | 'state-change' | 'battle'
@@ -222,11 +223,14 @@ interface LogEntry {
     tableId: string
     column?: string
     dice: number[]
+    natural: number // total del dado sin modificadores
     total: number
     modifiers?: Modifier[]
     rowIndex: number
     source: 'manual' | 'auto'
   }
+  parentId?: string // tirada encadenada: entrada de la que cuelga
+  checkedSlot?: { stepId: string; slot: number } // casilla marcada por esta entrada
   text: string // línea legible: 'Injury Table (D100=48): Serious injury — Twitch, 1D3+1 turns'
   note?: string // texto libre del jugador
   patch?: StatePatch // (v2) cambio aplicado, para deshacer
