@@ -28,4 +28,5 @@ npm run e2e               # Playwright (tablet 1180×820); requiere `npx playwri
 | ------------------- | ------------------------------------------------------------------------------ |
 | M0 Andamiaje        | Hecho (falta conectar el despliegue: Cloudflare Pages + Access)                |
 | M1 Motor y esquemas | Hecho: `dice.ts`, `lookup.ts`, esquemas Zod, `validate:content`, tablas piloto |
-| M2 Contenido        | Pendiente (tablas piloto transcritas, sin verificar)                           |
+| M2 Contenido        | Hecho: 69 tablas verificadas, 102 pasos, 55 términos de glosario               |
+| M3 Interfaz         | Hecho: guía + panel de tabla + encadenado + biblioteca + glosario, en memoria  |
